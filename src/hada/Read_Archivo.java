@@ -38,7 +38,7 @@ public class Read_Archivo {
         
         try {
         //log = new FileREader(bitacora);
-        
+        String Respuesta ="";
         escribirlog = new FileWriter(bitacora, true);
         reglonlog = new PrintWriter(escribirlog);
         nomArchivo = Archivo.substring(0, Archivo.indexOf('.'));
@@ -56,33 +56,35 @@ public class Read_Archivo {
                 
                 if (contador<10)
                 {
-                reglonerror.println("0000"+contador + " " + linea + " OK");
-                        System.out.println(contador + " " + linea );
-                        revi.AnalizaTexto(linea);
+                    Respuesta = revi.AnalizaTexto(linea);
+                reglonerror.println("0000"+contador + " " + linea + " >> "+Respuesta );
+                        System.out.println(contador + " " + linea + " >> "+Respuesta );
+                        
+                        
                         
                         contador++;
                 }
                 else{
                 if(contador<100){
-                reglonerror.println("000"+contador + " " + linea + " OK");
+                reglonerror.println("000"+contador + " " + linea );
                         System.out.println(contador + " " + linea );
                         contador++;
                 }
                 else{
                 if(contador<1000){
-                reglonerror.println("00"+contador + " " + linea + " OK");
+                reglonerror.println("00"+contador + " " + linea );
                         System.out.println(contador + " " + linea );
                         contador++;
                 }
                 else{
                 if(contador<10000){
-                reglonerror.println("0"+contador + " " + linea + " OK");
+                reglonerror.println("0"+contador + " " + linea );
                         System.out.println(contador + " " + linea );
                         contador++;
                 }
                 else{
                 
-                reglonerror.println(contador + " " + linea + " OK");
+                reglonerror.println(contador + " " + linea );
                         System.out.println(contador + " " + linea );
                         contador++;
                 

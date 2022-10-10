@@ -44,16 +44,18 @@ public class Analisis {
     }
     
     
-    public void AnalizaTexto(String TxtLinea)
+    public String AnalizaTexto(String TxtLinea)
     {
         StringTokenizer segmentos = new StringTokenizer(TxtLinea);
         int cuenta=0;
         String Expresion= new String();
         boolean TokenClasificado= false;
+        String Respuesta ="";
+        String Respuesta2 ="";
         while (segmentos.hasMoreTokens())
         {
             String token = segmentos.nextToken();
-            System.out.println("Token ---------------->> "+token + " <<----------------");
+            //System.out.println("Token ---------------->> "+token + " <<----------------");
             
             //=======================Verificar los tokens=================================
             
@@ -69,19 +71,23 @@ public class Analisis {
                     switch (comparaTOKENS)
                     {
                         case Reservada:
-                            System.out.println(token +" Es una palabra reservada");
+                            //System.out.println(token +" Es una palabra reservada");
+                            Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;
                         case Numeros:
-                            System.out.println(token +" Es un n�mero");
+                            //System.out.println(token +" Es un número");
+                            Respuesta = (token +" Es un número");
                             TokenClasificado =true;
                             break;
                         case Palabra:
-                            System.out.println(token + " Es un identificador de usuario");
+                            //System.out.println(token + " Es un identificador de usuario");
+                            Respuesta = (token + " Es un identificador de usuario");
                             TokenClasificado =true;
                             break;
                         case Operadores:
-                            System.out.println(token + " Es un operador relacional");
+                            //System.out.println(token + " Es un operador relacional");
+                            Respuesta =(token + " Es un operador relacional");
                             TokenClasificado =true;
                             break;
                     }
@@ -108,33 +114,41 @@ public class Analisis {
                 switch (comparaExpresiones)
                 {
                     case Inicio:
-                        System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta2 = (Expresion+" --> Es una instrucción de inicio");
                         encontrado=true;
                         break;
                     case Final:
-                        System.out.println(Expresion+" --> Es una instrucci�n de final");
+                        //System.out.println(Expresion+" --> Es una instrucci�n de final");
+                        Respuesta2 = (Expresion+" --> Es una instrucción de final");
                         encontrado=true;
                         break;
                     case Suma:
-                        System.out.println(Expresion+" --> Es una suma correcta!");
+                        //System.out.println(Expresion+" --> Es una suma correcta!");
+                        Respuesta2 = (Expresion+" --> Es una suma correcta!");
                         encontrado=true;
                         break;
                     case Resta:
-                        System.out.println(Expresion+" --> Es una resta correcta!");
+                        //System.out.println(Expresion+" --> Es una resta correcta!");
+                        Respuesta2 = (Expresion+" --> Es una resta correcta!");
                         encontrado=true;
                         break;                    
                     case Multiplica:
-                        System.out.println(Expresion+" --> Es una multiplicaci�n correcta!");
+                       // System.out.println(Expresion+" --> Es una multiplicaci�n correcta!");
+                        Respuesta2 = (Expresion+" --> Es una resta correcta!");
                         encontrado=true;
                         break;
                     default:
-                        System.out.println(Expresion+"---> Expresi�n no encontrada!!");
+                        //System.out.println(Expresion+"---> Expresi�n no encontrada!!");
+                        Respuesta2 = (Expresion+"---> Expresi�n no encontrada!!");
                 }           
             }
         }
         if (encontrado==false)
         {
-            System.out.println(Expresion+" >>>> Expresi�n no encontrada!!");
+            //System.out.println(Expresion+" >>>> Expresi�n no encontrada!!");
+            Respuesta2 = (Expresion+"---> Expresión no encontrada!!");
         }    
+        return (Respuesta + " "+ Respuesta2);
     }
 }
