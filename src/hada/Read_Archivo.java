@@ -21,33 +21,38 @@ import java.time.format.DateTimeFormatter;
  * @author elmer
  */
 public class Read_Archivo {
-    File log, errores;
-    FileWriter escribirlog, escribirerror;//para poder llenar los datos
-    PrintWriter reglonlog, reglonerror;//para agregar un nuevo reglon con información
+    Variables_Globales var = new Variables_Globales();
     
-    public void leerArchivo(String Archivo, String bitacora, DateTimeFormatter dtf)
+    
+    public void leerArchivo(String Arhivo, String log, DateTimeFormatter dtf)
     {
-        
+        var.setArchivo(Arhivo);
+        var.setBitacora(log);
+        var.setDtf(dtf);
         
         String nomArchivo ="";
         String linea;
-        int contador=0001;
+        int contador=1;
      
         
         BufferedReader br;
         
         try {
-        //log = new FileREader(bitacora);
+        
         String Respuesta ="";
-        escribirlog = new FileWriter(bitacora, true);
-        reglonlog = new PrintWriter(escribirlog);
-        nomArchivo = Archivo.substring(0, Archivo.indexOf('.'));
-        errores = new File (nomArchivo+"-errores.txt");
-        escribirerror = new FileWriter(errores, true);
-        reglonerror = new PrintWriter(escribirerror);
+        var.setLog(new File(var.getBitacora()));
+        var.setEscribirlog(new FileWriter(var.getLog(), true));
+        var.setReglonlog(new PrintWriter(var.getEscribirlog()));
+        
+       
+        nomArchivo = var.getArchivo().substring(0, var.getArchivo().indexOf('.'));
+        var.setErrores(new File (nomArchivo+"-errores.txt"));
+        var.setEscribirerror(new FileWriter(var.getErrores(), true));
+        var.setReglonerror(new PrintWriter(var.getEscribirerror()));
+        
             
-            br = new BufferedReader(new FileReader(Archivo));
-            reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 02 INFORMACIÓN se comienza lectura de archivo "+Archivo);
+            br = new BufferedReader(new FileReader(var.getArchivo()));
+            var.getReglonlog().println("> "+var.getDtf().format(LocalDateTime.now())+" ***** 02 INFORMACIÓN se comienza lectura de archivo "+var.getArchivo());
             Analisis revi = new Analisis();
             
             
@@ -56,9 +61,9 @@ public class Read_Archivo {
                 
                 if (contador<10)
                 {
-                    Respuesta = revi.AnalizaTexto(linea);
-                reglonerror.println("0000"+contador + " " + linea + " >> "+Respuesta );
-                        System.out.println(contador + " " + linea + " >> "+Respuesta );
+                    //revi.AnalizaTexto(linea);
+                var.getReglonerror().println("0000"+contador + " " + linea + " "+Respuesta );
+                       // System.out.println(contador + " " + linea + " "+Respuesta );
                         
                         
                         
@@ -66,26 +71,29 @@ public class Read_Archivo {
                 }
                 else{
                 if(contador<100){
-                reglonerror.println("000"+contador + " " + linea );
-                        System.out.println(contador + " " + linea );
+                   //revi.AnalizaTexto(linea);
+                var.getReglonerror().println("000"+contador + " " + linea + " "+Respuesta );
+                        //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<1000){
-                reglonerror.println("00"+contador + " " + linea );
-                        System.out.println(contador + " " + linea );
+                  //revi.AnalizaTexto(linea);
+                var.getReglonerror().println("00"+contador + " " + linea + " "+Respuesta );
+                        //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<10000){
-                reglonerror.println("0"+contador + " " + linea );
-                        System.out.println(contador + " " + linea );
+                  //revi.AnalizaTexto(linea);
+                var.getReglonerror().println("0"+contador + " " + linea + " "+Respuesta );
+                        //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
                 }
                 else{
-                
-                reglonerror.println(contador + " " + linea );
-                        System.out.println(contador + " " + linea );
+                //revi.AnalizaTexto(linea);
+               var.getReglonerror().println(contador + " " + linea + " "+Respuesta );
+                        //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
                 
                 }
@@ -101,12 +109,12 @@ public class Read_Archivo {
                 //AnalizaTexto(linea);
             
             }
-                reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 03 SE termina lectura de archivo "+Archivo);
+                var.getReglonlog().println("> "+var.getDtf().format(LocalDateTime.now())+" ***** 03 SE termina lectura de archivo "+var.getArchivo());
                 
-                reglonlog.close();
-                reglonerror.close();
-                escribirerror.close();
-                escribirlog.close();
+               var.getReglonlog().close();
+                var.getReglonerror().close();
+                var.getEscribirerror().close();
+                var.getEscribirlog().close();
                
             
         } catch (FileNotFoundException ex)
@@ -118,5 +126,13 @@ public class Read_Archivo {
         
     }
     
-    
+   
+    public void escribir (String txt)
+    {
+        try {
+         
+        } catch (Exception e) {
+        }
+    }
+   
 }

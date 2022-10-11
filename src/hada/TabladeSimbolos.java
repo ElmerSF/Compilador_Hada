@@ -13,10 +13,11 @@ public class TabladeSimbolos {
     
     enum Tipos 
     {
-        Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA)"),
+        Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA|ADA.TEXT_IO)"),
         Numeros("[0-9]*"),
+        nombre("(ELMER)"),
         Palabra("[A-Za-z]*"),
-        Operadores("(=|>=|<=|!=)");
+        Operadores("(=|>=|<=|!=|/+|;)");
         
         public final String patron;
         Tipos(String s){

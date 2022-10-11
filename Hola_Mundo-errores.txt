@@ -1,0 +1,805 @@
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002  >>  ---> Expresión no encontrada!!
+00003 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00004 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00006 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 >>  La línea supera los 80 caracteres 
+00003 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00004 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00006 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 >>  La línea supera los 80 caracteres 
+00003 1 + 2 >> 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 >>  La línea supera los 80 caracteres 
+00003 1 + 2 >> 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 >>  La línea supera los 80 caracteres 
+00003 1 + 2 >> 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; >> with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 >>  La línea supera los 80 caracteres 
+00003 1 + 2 >> 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is >> is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin >> begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; >> end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970  La línea supera los 80 caracteres 
+00003 1 + 2 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970  La línea supera los 80 caracteres 
+00003 1 + 2 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; with Es un identificador de usuario with Ada.Text_IO;---> Expresión no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970  La línea supera los 80 caracteres 
+00003 1 + 2 2 Es un número 1 + 2---> Expresión no encontrada!!
+00004 procedure Hola_Mundo is is Es un identificador de usuario procedure Hola_Mundo is---> Expresión no encontrada!!
+00005 begin begin Es un identificador de usuario begin---> Expresión no encontrada!!
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  Ada.Text_IO.Put_Line ( "Hola, mundo!" );---> Expresión no encontrada!!
+00007 end Hola_Mundo; end Es un identificador de usuario end Hola_Mundo;---> Expresión no encontrada!!
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 + 2 
+00004 procedure Hola_Mundo is 
+00005 begin 
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00007 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 + 2 
+00004 procedure Hola_Mundo is 
+00005 begin 
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00007 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 + 2 
+00004 procedure Hola_Mundo is 
+00005 begin 
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00007 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 procedure Hola_Mundo is 
+00005 begin 
+00006   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00007 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with 1 Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with 1 Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with 1 Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 Elmer SUMA 
+00005 procedure Hola_Mundo is 
+00006 begin 
+00007   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00008 end Hola_Mundo; 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00002 use  Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO; 
+00003  
+00004 procedure Calcular_Inflacion is 
+00005   Max_Anos  : integer; 
+00006   Ano       : integer; 
+00007   Respuesta : character; 
+00008   Factor1, Factor2, Factor3 : float; 
+00009 begin 
+00010   -- ***************************************************************** 
+00011   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          * 
+00012   -- * encontrar el factor por el cual cualquier moneda, tales como  * 
+00013   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  * 
+00014   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. * 
+00015   -- ***************************************************************** 
+00016  
+00017   -- Inicio del programa 
+00018  
+00019   <<inicio>> 
+00020     new_line; 
+00021     -- entrada de datos 
+00022     new_line; 
+00023     put ( "Por favor, indique la cantidad maxima de anos:"); 
+00024     new_line; 
+00025  
+00026   <<e10050>> 
+00027     get ( Max_Anos ); 
+00028     skip_line; 
+00029  
+00030     if ( Max_Anos <= 0 ) then 
+00031        goto ceroanos; 
+00032     end if; 
+00033  
+00034     -- Inicializacion de variables 
+00035     Ano     := 0; 
+00036     Factor1 := 1.0; 
+00037     Factor2 := 1.0; 
+00038     Factor3 := 1.0; 
+00039  
+00040     -- Calculos y salida de datos 
+00041     new_line; 
+00042     put ( "        Ano 7%           8%          10%" ); 
+00043     new_line; 
+00044     for Ano in 1.. Max_Anos loop 
+00045       Factor1 := ( Factor1 * 
+00046                    1.07 ); 
+00047       Factor2 := ( Factor2 ) 
+00048                  * 
+00049                  1.08; 
+00050       Factor3 := Factor3 * ( 1.10 ); 
+00051       put ( Ano, 3 ) ; 
+00052       put ( Factor1, 10, 2, 0 ) ; 
+00053       put ( Factor2, 10, 2, 0 ) ; 
+00054       put ( Factor3, 10, 2, 0 ) ; 
+00055       new_line; 
+00056     end loop; 
+00057  
+00058     new_line; 
+00059     put ( "*** Fin del programa normal ***" ); 
+00060     new_line; 
+00061  
+00062     put ( "Otra vez?" ); 
+00063     get ( respuesta ); 
+00064     skip_line; 
+00065     new_line; 
+00066     put ( "Lo que respondio: " ); 
+00067     put ( respuesta); 
+00068     new_line; 
+00069     if ( respuesta = 'S' or respuesta = 's' ) then 
+00070        goto inicio; 
+00071     else 
+00072        goto fin999; 
+00073     end if; 
+00074  
+00075   <<ceroanos>> 
+00076     put ( "*** Fin del programa porque indico 0 anos ***" ); 
+00077     new_line; 
+00078      
+00079   <<fin999>> 
+00080     null; 
+00081     put ( "*** Hasta luego ***" ); 
+00082     new_line; 
+00083  
+00084 end Calcular_Inflacion; 
+00085  
+00086 -- fin del programa 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 
+00005 Elmer SUMA 
+00006 procedure Hola_Mundo is 
+00007 begin 
+00008   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00009 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 
+00005 Elmer SUMA 
+00006 procedure Hola_Mundo is 
+00007 begin 
+00008   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00009 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 
+00005 Elmer SUMA 
+00006 1+3 
+00007 procedure Hola_Mundo is 
+00008 begin 
+00009   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00010 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 
+00005 Elmer SUMA 
+00006 1+3 
+00007 procedure Hola_Mundo is 
+00008 2 suma 3 
+00009 begin 
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00011 end Hola_Mundo; 
+00001 with 1  5 RESTA Ada.Text_IO; 
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 
+00003 1 SUMA 2 
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 
+00005 Elmer SUMA 
+00006 1+3 
+00007 procedure Hola_Mundo is 
+00008 2 suma 3 
+00009 begin 
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00011 end Hola_Mundo; 
