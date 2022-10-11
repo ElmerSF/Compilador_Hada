@@ -61,8 +61,8 @@ public class Read_Archivo {
                 
                 if (contador<10)
                 {
-                    revi.AnalizaTexto(linea);
-                var.getReglonerror().println("0000"+contador + " " + linea + " "+Respuesta );
+                    Respuesta =revi.AnalizaTexto(linea);
+                var.getReglonerror().println("0000"+contador + " " + linea + " "+ escribir(Respuesta) );
                        // System.out.println(contador + " " + linea + " "+Respuesta );
                         
                         
@@ -71,27 +71,27 @@ public class Read_Archivo {
                 }
                 else{
                 if(contador<100){
-                   //revi.AnalizaTexto(linea);
+                   Respuesta =revi.AnalizaTexto(linea);
                 var.getReglonerror().println("000"+contador + " " + linea + " "+Respuesta );
                         //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<1000){
-                  //revi.AnalizaTexto(linea);
+                  Respuesta =revi.AnalizaTexto(linea);
                 var.getReglonerror().println("00"+contador + " " + linea + " "+Respuesta );
                         //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<10000){
-                  //revi.AnalizaTexto(linea);
+                  Respuesta =revi.AnalizaTexto(linea);
                 var.getReglonerror().println("0"+contador + " " + linea + " "+Respuesta );
                         //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
                 }
                 else{
-                //revi.AnalizaTexto(linea);
+                Respuesta =revi.AnalizaTexto(linea);
                var.getReglonerror().println(contador + " " + linea + " "+Respuesta );
                         //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
@@ -127,12 +127,15 @@ public class Read_Archivo {
     }
     
    
-    public void escribir (String txt)
+    public String escribir (String txt)
     {
-        try {
-         
-        } catch (Exception e) {
+        switch (txt) {
+            case "1":
+                txt = txt + " error la cadena supera los 80 caracteres permitidos";
+                break;
+            
         }
+        return txt;
     }
    
 }

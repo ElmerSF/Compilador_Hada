@@ -43,18 +43,23 @@ public class Analisis {
     }
     
     
-    public void AnalizaTexto(String TxtLinea)
+    public String AnalizaTexto(String TxtLinea)
     {
         StringTokenizer segmentos = new StringTokenizer(TxtLinea);
         int cuenta=0;
         String Expresion= new String();
         boolean TokenClasificado= false;
         String Respuesta ="";
-        String Respuesta2 ="";
         
+        if (TxtLinea.isEmpty())
+        {
+            Respuesta = " ";
+        }
+        else
+        {
         if (TxtLinea.length()>80)
         {
-            txt.escribir(" La línea supera los 80 caracteres");
+            Respuesta =("1");
         }else{
             
                 while (segmentos.hasMoreTokens())
@@ -110,9 +115,9 @@ public class Analisis {
             else
                 Expresion=Expresion+" "+token;
             cuenta++;
+        }   
            
-           
-        }
+        
         
         //=======================Verificar las expresiones =================================
         //System.out.println("Expresion --->> "+Expresion);
@@ -126,42 +131,43 @@ public class Analisis {
                 {
                     case Inicio:
                         System.out.println(Expresion+" --> Es una instrucci�n de inicio");
-                        txt.escribir(" --> Es una instrucción de inicio");
+                        Respuesta =(" --> Es una instrucción de inicio");
                         encontrado=true;
                         break;
                     case Final:
                         System.out.println(Expresion+" --> Es una instrucci�n de final");
-                        txt.escribir(" --> Es una instrucción de final");
+                        Respuesta =(" --> Es una instrucción de final");
                         encontrado=true;
                         break;
                     case Suma:
                        System.out.println(Expresion+" --> Es una suma correcta!");
-                       txt.escribir(" --> Es una suma correcta!");
+                       Respuesta =(" --> Es una suma correcta!");
                         encontrado=true;
                         break;
                     case Resta:
                         System.out.println(Expresion+" --> Es una resta correcta!");
-                        txt.escribir(" --> Es una resta correcta!");
+                        Respuesta =(" --> Es una resta correcta!");
                         encontrado=true;
                         break;                    
                     case Multiplica:
                         System.out.println(Expresion+" --> Es una multiplicaci�n correcta!");
-                        txt.escribir(" --> Es una resta correcta!");
+                        Respuesta =(" --> Es una resta correcta!");
                         encontrado=true;
                         break;
                     default:
                         System.out.println(Expresion+"---> Expresi�n no encontrada!!");
-                        txt.escribir("---> Expresi�n no encontrada!!");
+                        Respuesta =("---> Expresi�n no encontrada!!");
                 }           
             }
         }
         if (encontrado==false)
         {
-            System.out.println(Expresion+" >>>> Expresi�n no encontrada!!");
+            Respuesta =(Expresion+" >>>> Expresi�n no encontrada!!");
          
         } 
         }
-       
+        }
+       return Respuesta;
     }
     
 }
