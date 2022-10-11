@@ -61,7 +61,7 @@ public class Read_Archivo {
                 
                 if (contador<10)
                 {
-                    //revi.AnalizaTexto(linea);
+                    revi.AnalizaTexto(linea);
                 var.getReglonerror().println("0000"+contador + " " + linea + " "+Respuesta );
                        // System.out.println(contador + " " + linea + " "+Respuesta );
                         
