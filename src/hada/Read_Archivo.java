@@ -64,35 +64,33 @@ public class Read_Archivo {
                     Respuesta =revi.AnalizaTexto(linea);
                 var.getReglonerror().println("0000"+contador + " " + linea + " "+ escribir(Respuesta) );
                        // System.out.println(contador + " " + linea + " "+Respuesta );
-                        
-                        
-                        
+                
                         contador++;
                 }
                 else{
                 if(contador<100){
                    Respuesta =revi.AnalizaTexto(linea);
-                var.getReglonerror().println("000"+contador + " " + linea + " "+Respuesta );
+                var.getReglonerror().println("000"+contador + " " + linea + " "+escribir(Respuesta) );
                         //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<1000){
                   Respuesta =revi.AnalizaTexto(linea);
-                var.getReglonerror().println("00"+contador + " " + linea + " "+Respuesta );
+                var.getReglonerror().println("00"+contador + " " + linea + " "+escribir(Respuesta) );
                         //System.out.println(contador + " " + linea + " "+Respuesta);
                         contador++;
                 }
                 else{
                 if(contador<10000){
                   Respuesta =revi.AnalizaTexto(linea);
-                var.getReglonerror().println("0"+contador + " " + linea + " "+Respuesta );
+                var.getReglonerror().println("0"+contador + " " + linea + " "+escribir(Respuesta) );
                         //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
                 }
                 else{
                 Respuesta =revi.AnalizaTexto(linea);
-               var.getReglonerror().println(contador + " " + linea + " "+Respuesta );
+               var.getReglonerror().println(contador + " " + linea + " "+escribir(Respuesta) );
                         //System.out.println(contador + " " + linea + " "+Respuesta );
                         contador++;
                 
@@ -127,7 +125,7 @@ public class Read_Archivo {
     }
     
    
-    public String escribir (String txt)
+    public String escribir ( String txt)
     {
         switch (txt) {
             case "1":
@@ -135,6 +133,7 @@ public class Read_Archivo {
                 break;
             
         }
+        System.out.print(txt+ "$ ");
         return txt;
     }
    

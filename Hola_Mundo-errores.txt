@@ -858,3 +858,680 @@
 00009 begin begin >>>> Expresi�n no encontrada!!
 00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
 00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00003 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00005 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00006 1+3 1+3 >>>> Expresi�n no encontrada!!
+00007 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00008 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00009 begin begin >>>> Expresi�n no encontrada!!
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00003 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00005 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00006 1+3 1+3 >>>> Expresi�n no encontrada!!
+00007 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00008 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00009 begin  --> Es una instrucción de inicio
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00003 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00005 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00006 1+3 1+3 >>>> Expresi�n no encontrada!!
+00007 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00008 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00009 begin  --> Es una instrucción de inicio
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00003 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00005 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00006 1+3 1+3 >>>> Expresi�n no encontrada!!
+00007 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00008 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00009 begin  --> Es una instrucción de inicio
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00002 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00003 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00004 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00005 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00006 1+3 1+3 >>>> Expresi�n no encontrada!!
+00007 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00008 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00009 begin  --> Es una instrucción de inicio
+00010   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00011 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 ;  --> fin linea
+00003 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00004 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00005 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00006 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00007 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00008 1+3 1+3 >>>> Expresi�n no encontrada!!
+00009 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00010 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00011 begin  --> Es una instrucción de inicio
+00012   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00013 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00004 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00005 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00006 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00007 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00008 1+3 1+3 >>>> Expresi�n no encontrada!!
+00009 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00010 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00011 begin  --> Es una instrucción de inicio
+00012   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00013 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00004 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00005 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00006 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00007 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00008 1+3 1+3 >>>> Expresi�n no encontrada!!
+00009 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00010 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00011 begin  --> Es una instrucción de inicio
+00012   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00013 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00005 esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970 1 error la cadena supera los 80 caracteres permitidos
+00006 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00007 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00008 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00009 1+3 1+3 >>>> Expresi�n no encontrada!!
+00010 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00011 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00012 begin  --> Es una instrucción de inicio
+00013   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00014 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00008   
+00009 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00010 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00011 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00012 1+3 1+3 >>>> Expresi�n no encontrada!!
+00013 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00014 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00015 begin  --> Es una instrucción de inicio
+00016   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00017 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00008   
+00009 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00010 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00011 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00012 1+3 1+3 >>>> Expresi�n no encontrada!!
+00013 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00014 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00015 begin  --> Es una instrucción de inicio
+00016   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00017 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00008   
+00009 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00010 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00011 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00012 1+3 1+3 >>>> Expresi�n no encontrada!!
+00013 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00014 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00015 begin  --> Es una instrucción de inicio
+00016   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00017 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 with 1  5 RESTA Ada.Text_IO; with 1 5 RESTA Ada.Text_IO; >>>> Expresi�n no encontrada!!
+00008   
+00009 1 SUMA 2 1 SUMA 2 >>>> Expresi�n no encontrada!!
+00010 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 >>>> Expresi�n no encontrada!!
+00011 Elmer SUMA Elmer SUMA >>>> Expresi�n no encontrada!!
+00012 1+3 1+3 >>>> Expresi�n no encontrada!!
+00013 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00014 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00015 begin  --> Es una instrucción de inicio
+00016   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00017 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 +  --> Es una suma correcta!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 +  --> Es una suma correcta!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 + + >>>> Expresi�n no encontrada!!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 ;  --> fin linea
+00002 juan; juan; >>>> Expresi�n no encontrada!!
+00003 +  --> Es una suma correcta!
+00004 ( ( >>>> Expresi�n no encontrada!!
+00005 ) ) >>>> Expresi�n no encontrada!!
+00006   
+00007 1 + 3 1 + 3 >>>> Expresi�n no encontrada!!
+00008 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00009 2 suma 3 2 suma 3 >>>> Expresi�n no encontrada!!
+00010 begin  --> Es una instrucción de inicio
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
+00012 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 juan juan >>>> Expresi�n no encontrada!!
+00003 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00004 ;  --> fin linea
+00005 12684-145  --> Es una resta correcta!
+00006 Elmer Elmer >>>> Expresi�n no encontrada!!
+00007 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00003 juan juan >>>> Expresi�n no encontrada!!
+00004 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00005 ;  --> fin linea
+00006 12684-145  --> Es una resta correcta!
+00007 Elmer Elmer >>>> Expresi�n no encontrada!!
+00008 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00003 juan juan >>>> Expresi�n no encontrada!!
+00004 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00005 ;  --> fin linea
+00006 12684-145  --> Es una resta correcta!
+00007 Elmer Elmer >>>> Expresi�n no encontrada!!
+00008 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00000 1+2  --> Es una suma correcta!
+00001 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00002 juan juan >>>> Expresi�n no encontrada!!
+00003 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00004 ;  --> fin linea
+00005 12684-145  --> Es una resta correcta!
+00006 Elmer Elmer >>>> Expresi�n no encontrada!!
+00007 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00003 juan juan >>>> Expresi�n no encontrada!!
+00004 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00005 ;  --> fin linea
+00006 12684-145  --> Es una resta correcta!
+00007 Elmer Elmer >>>> Expresi�n no encontrada!!
+00008 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00004 juan juan >>>> Expresi�n no encontrada!!
+00005 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00006 ;  --> fin linea
+00007 12684-145  --> Es una resta correcta!
+00008 Elmer Elmer >>>> Expresi�n no encontrada!!
+00009 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 4514-3  --> Es una resta correcta!
+00004 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00005 juan juan >>>> Expresi�n no encontrada!!
+00006 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00007 ;  --> fin linea
+00008 12684-145  --> Es una resta correcta!
+00009 Elmer Elmer >>>> Expresi�n no encontrada!!
+00010 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 4514-3  --> Es una resta correcta!
+00004 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00005 juan juan >>>> Expresi�n no encontrada!!
+00006 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00007 ;  --> fin linea
+00008 12684-145  --> Es una resta correcta!
+00009 Elmer Elmer >>>> Expresi�n no encontrada!!
+00010 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 (  >>>> Expresi�n no encontrada!!
+00003 4514-3  --> Es una resta correcta!
+00004 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00005 juan juan >>>> Expresi�n no encontrada!!
+00006 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00007 ;  >>>> Expresi�n no encontrada!!
+00008 12684-145  --> Es una resta correcta!
+00009 Elmer Elmer >>>> Expresi�n no encontrada!!
+00010 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 (  >>>> Expresi�n no encontrada!!
+00003 ;  >>>> Expresi�n no encontrada!!
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  >>>> Expresi�n no encontrada!!
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  >>>> Expresi�n no encontrada!!
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  >>>> Expresi�n no encontrada!!
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ;  --> fin linea
+00004 4514-3  --> Es una resta correcta!
+00005 6 +2 6 +2 >>>> Expresi�n no encontrada!!
+00006 juan; juan; >>>> Expresi�n no encontrada!!
+00007 5 + 6 5 + 6 >>>> Expresi�n no encontrada!!
+00008 ;  --> fin linea
+00009 12684-145  --> Es una resta correcta!
+00010 Elmer Elmer >>>> Expresi�n no encontrada!!
+00011 69 - 5 69 - 5 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3  --> Es una suma correcta!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3  --> Es una suma correcta!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3 +5 3 +5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2  --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5  --> Es una suma correcta!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2 1+2 --> Es una suma correcta!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 --> Es una suma correcta!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 --> Es una suma correcta!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 --> Es una suma correcta!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 --> Es una suma correcta!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00003 3+5 3+5 >>>> Expresi�n no encontrada!!
+00004 4*3 4*3 >>>> Expresi�n no encontrada!!
+00005 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00006 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5 SUMA 6 5 SUMA 6 >>>> Expresi�n no encontrada!!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 >>>> Expresi�n no encontrada!!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5SUMA6 5SUMA6 >>>> Expresi�n no encontrada!!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 >>>> Expresi�n no encontrada!!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5SUMA6 5SUMA6 --> Es una suma correcta!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 --> Es una suma correcta!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5 SUMA 6 5 SUMA 6 >>>> Expresi�n no encontrada!!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 --> Es una suma correcta!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5 SUMA 6 5 SUMA 6 >>>> Expresi�n no encontrada!!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 --> Es una suma correcta!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5 SUMA 6 5 SUMA 6 --> Es una suma correcta!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 --> Es una suma correcta!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+2+4+9+10 1+2+4+9+10 >>>> Expresi�n no encontrada!!
+00002 5 SUMA 6 5 SUMA 6 --> Es una suma correcta!
+00003 1- 3 1- 3 >>>> Expresi�n no encontrada!!
+00004 3+5 3+5 --> Es una suma correcta!
+00005 4*3 4*3 >>>> Expresi�n no encontrada!!
+00006 4/ 2 4/ 2 >>>> Expresi�n no encontrada!!
+00007 10 /2 10 /2 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 4 +6 4 +6 --> Es una suma correcta!
+00003 7+ 8 7+ 8 --> Es una suma correcta!
+00004 10 + 6 10 + 6 --> Es una suma correcta!
+00005 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!
+00001 1+3 1+3 --> Es una suma correcta!
+00002 ( ( >>>> Expresi�n no encontrada!!
+00003 ) ) >>>> Expresi�n no encontrada!!
+00004 ;  --> fin linea
+00005   
+00006 (4 +6) (4 +6) >>>> Expresi�n no encontrada!!
+00007 7+ 8 7+ 8 --> Es una suma correcta!
+00008 10 + 6 10 + 6 --> Es una suma correcta!
+00009 15+3+9 15+3+9 >>>> Expresi�n no encontrada!!

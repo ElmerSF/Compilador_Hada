@@ -1,11 +1,9 @@
-with 1  5 RESTA Ada.Text_IO;
-esto es una prueba para validar que pasa si se tienen más de 80 caracteres 1234567891011121314151617181920212223242526272829303132333435363738394041423444546474849505152535455565758596061626364656667686970
-1 SUMA 2
-1 2 3 4 5 6 7 8 9 10 11 12 13
-Elmer SUMA
 1+3
-procedure Hola_Mundo is
-2 suma 3
-begin
-  Ada.Text_IO.Put_Line ( "Hola, mundo!" );
-end Hola_Mundo;
+(
+)
+;
+
+(4 +6)
+7+ 8
+10 + 6
+15+3+9
