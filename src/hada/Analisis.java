@@ -88,7 +88,18 @@ public class Analisis {
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;
-                        
+                        case Inicio:
+                            
+                            txt.escribir(token + " Es una palabra reservada de INICIO");
+                          //  Respuesta = (token +" Es una palabra reservada");
+                            TokenClasificado =true;
+                            break;
+                        case Nombre_Archivo:
+                            
+                            txt.escribir(token + " Es una nombre de archivo valido");
+                          //  Respuesta = (token +" Es una palabra reservada");
+                            TokenClasificado =true;
+                            break;    
                         case Numero_Entero:
                             txt.escribir(token + " Es un número Entero");
                             TokenClasificado =true;
@@ -145,7 +156,7 @@ public class Analisis {
                 {
                     case Inicio:
                         //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
-                        Respuesta =(" --> Es una instrucción de inicio");
+                        Respuesta =(" --> Es la instrucción de inicio hecha correctamente");
                         encontrado=true;
                         break;
                     case Final:
