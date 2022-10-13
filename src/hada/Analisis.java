@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
  * @author cchac
  */
 public class Analisis {
+    int num;
     
     Read_Archivo txt = new Read_Archivo();
     
@@ -87,9 +88,13 @@ public class Analisis {
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;
-                        case Numeros:
-                           txt.escribir(token + " Es un número");
-                            
+                        
+                        case Numero_Entero:
+                            txt.escribir(token + " Es un número Entero");
+                            TokenClasificado =true;
+                            break;
+                        case Numero_Real:
+                            txt.escribir(token + " Es un número Real");
                             TokenClasificado =true;
                             break;
                         case Palabra:
@@ -148,11 +153,25 @@ public class Analisis {
                         Respuesta =(" --> Es una instrucción de final");
                         encontrado=true;
                         break;
+                    case Comentario:
+                        
+                         Respuesta =(TxtLinea +" --> Es una linea de comentario");
+                        encontrado=true;
+                        break;
+                    
+                    
                     case Suma:
                        //System.out.println(Expresion+" --> Es una suma correcta!");
                        Respuesta =(TxtLinea+" --> Es una suma correcta!");
                         encontrado=true;
                         break;
+                    case Constante_numerica_entera:
+                        num = Integer.parseInt(Expresion);
+                        
+                        Respuesta = Validanum(num);
+                        encontrado=true;
+                        break;
+                        
                     case Resta:
                         //System.out.println(Expresion+" --> Es una resta correcta!");
                         Respuesta =(" --> Es una resta correcta!");
@@ -163,6 +182,7 @@ public class Analisis {
                         Respuesta =(" --> Es una resta correcta!");
                         encontrado=true;
                         break;
+                    
                     case final_linea:
                         //System.out.println(Expresion+" --> Es una multiplicaci�n correcta!");
                         Respuesta =(" --> fin linea");
@@ -183,5 +203,19 @@ public class Analisis {
         }
        return Respuesta;
     }
-    
+    public String Validanum (int num){
+     String respuesta ="";
+        if (num>32767)
+        {respuesta = (num + " >>Es mayor al rango");
+                
+                }else{
+            if (num<-32767)
+            {respuesta = (num + " >>Es menor al rango");
+                
+            }else{
+            respuesta = (num + " >>Esta dentro del rango");
+            }
+                }
+        return respuesta;  
+    }
 }
