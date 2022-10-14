@@ -15,7 +15,7 @@ public class TabladeSimbolos {
     {
         Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA|ADA.TEXT_IO|begin)"),
         Inicio ("PROCEDURE|procedure|IS|is"),
-        Nombre_Archivo ("[[A-Z|a-z]*[A-Z|a-z|0-9|_]*[A-Z|a-z|0-9]*]{1,20}"),
+        Nombre_Archivo ("[a-z]{1,20}[a-z|0-9|_]{0,20}[a-z[0-9]*]{1,20}"),
         Operadores("[*|/|+|-]"),
         Numero_Entero("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),
         Numero_Real("[0-9]*[.][0-9]*"),

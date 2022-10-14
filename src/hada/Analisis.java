@@ -96,7 +96,7 @@ public class Analisis {
                             break;
                         case Nombre_Archivo:
                             
-                          //  txt.escribir(token + " Es una nombre de archivo valido");
+                            txt.escribir(token + " Es una nombre de archivo valido");
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;    
@@ -166,7 +166,7 @@ public class Analisis {
                         break;    
                     case Inicio2:
                         //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
-                        Respuesta =(TxtLinea +" --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial");
+                        Respuesta =(TxtLinea +" --> Error falta palabra Reservada IS en la declaración inicial");
                         encontrado=true;
                         break;  
                     case Inicio3:

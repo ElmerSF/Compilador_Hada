@@ -1,4 +1,4 @@
-procedure Hola_Mundo_quelindo 
+procedure a%mi_go is
 --comen
 <<etiqueta1>>
 
