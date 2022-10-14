@@ -1,5 +1,12 @@
-     --aqui empieza el programa procedure Hola_Mundo is
+procedure Hola_Mundo_quelindo 
 --comen
+<<etiqueta1>>
+
+5+3
+ etiquet$%a1>>
+--comen
+5+3 ;
+<< etiquet$%a1 
 begin
   Ada.Text_IO.Put_Line ( "Hola, mundo!" );
 end Hola_Mundo;

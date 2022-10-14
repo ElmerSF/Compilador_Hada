@@ -84,19 +84,19 @@ public class Analisis {
                     {
                         case Reservada:
                             
-                            txt.escribir(token + " Es una palabra reservada");
+                          //  txt.escribir(token + " Es una palabra reservada");
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;
                         case Inicio:
                             
-                            txt.escribir(token + " Es una palabra reservada de INICIO");
+                           // txt.escribir(token + " Es una palabra reservada de INICIO");
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;
                         case Nombre_Archivo:
                             
-                            txt.escribir(token + " Es una nombre de archivo valido");
+                          //  txt.escribir(token + " Es una nombre de archivo valido");
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;    
@@ -110,7 +110,7 @@ public class Analisis {
                             break;
                         case Palabra:
                            // System.out.println(token + " Es un identificador de usuario");
-                            txt.escribir(token +" Es una palabra");
+                            //txt.escribir(token +" Es una palabra");
                             TokenClasificado =true;
                             break;
                         case Operadores:
@@ -156,9 +156,24 @@ public class Analisis {
                 {
                     case Inicio:
                         //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
-                        Respuesta =(" --> Es la instrucción de inicio hecha correctamente");
+                        Respuesta =(" --> Error falta palabra Reservada PROCEDURE en la declaración inicial");
                         encontrado=true;
                         break;
+                    case Inicio1:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" --> Error hay caracteres antes de la instrucción de inicio, si es un comentario falta --");
+                        encontrado=true;
+                        break;    
+                    case Inicio2:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial");
+                        encontrado=true;
+                        break;  
+                    case Inicio3:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" --> Error Identificador de programa no valido ");
+                        encontrado=true;
+                        break;    
                     case Final:
                         //System.out.println(Expresion+" --> Es una instrucci�n de final");
                         Respuesta =(" --> Es una instrucción de final");
@@ -169,11 +184,18 @@ public class Analisis {
                          Respuesta =(TxtLinea +" --> Es una linea de comentario");
                         encontrado=true;
                         break;
-                    
+                     case Etiqueta1:
+                        Respuesta =(TxtLinea +" --> Eror falta >> de cierre de Etiqueta");
+                        encontrado=true;
+                        break;
+                    case Etiqueta2:
+                        Respuesta =(TxtLinea +" --> Eror falta << de apertura de Etiqueta");
+                        encontrado=true;
+                        break;    
                     
                     case Suma:
                        //System.out.println(Expresion+" --> Es una suma correcta!");
-                       Respuesta =(TxtLinea+" --> Es una suma correcta!");
+                       Respuesta =(TxtLinea+" --> Falta ; en la expresión de suma ");
                         encontrado=true;
                         break;
                     case Constante_numerica_entera:
@@ -201,13 +223,13 @@ public class Analisis {
                         break;    
                     default:
                         //System.out.println(Expresion+"---> Expresi�n no encontrada!!");
-                        Respuesta =("---> Expresi�n no encontrada!!2");
+                        Respuesta =(" ok");
                 }           
             }
         }
         if (encontrado==false)
         {
-            Respuesta =(Expresion+" >>>> Expresi�n no encontrada!!");
+            Respuesta =(" ok");
          
         } 
         }

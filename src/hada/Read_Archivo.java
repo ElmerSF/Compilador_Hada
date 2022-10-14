@@ -133,7 +133,7 @@ public class Read_Archivo {
                 break;
             
         }
-        System.out.println(txt+ "$ ");
+        System.out.println(txt+ " ");
         return txt;
     }
    

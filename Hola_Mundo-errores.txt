@@ -1,278 +1,900 @@
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 with Ada.Text_IO; with Ada.Text_IO; >>>> Expresi�n no encontrada!!
-00002   
-00003 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00004 begin begin >>>> Expresi�n no encontrada!!
-00005   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00006 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 begin begin >>>> Expresi�n no encontrada!!
-00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00004 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00001 -preuba Procedure Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Procedure Hola_Mundo is  --> Error falta palabra Reservada PROCEDURE en la declaración inicial
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Procedure Hola_Mundo is  --> Error falta palabra Reservada PROCEDURE en la declaración inicial
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Procedure Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba  Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 --comen --comen >>>> Expresi�n no encontrada!!
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 --comen --comen >>>> Expresi�n no encontrada!!
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 --comen --comen >>>> Expresi�n no encontrada!!
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
-00002 --comen --comen >>>> Expresi�n no encontrada!!
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --preuba Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is --comentario procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 Hola_Mundo is  --> Error falta palabra Reservada PROCEDURE en la declaración inicial
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --comentario procedure Hola_Mundo is  ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001 --comentario procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -comentario procedure Hola_Mundo is -comentario procedure Hola_Mundo is --> Error hay caracteres antes de la instrucción de inicio, si es un comentario falta --
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001       procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -comentario procedure Hola_Mundo is -comentario procedure Hola_Mundo is --> Error hay caracteres antes de la instrucción de inicio, si es un comentario falta --
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001      --aqui empieza el programa procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo   ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001      -aqui empieza el programa procedure Hola_Mundo is -aqui empieza el programa procedure Hola_Mundo is >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo   ok
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
-00001      --aqui empieza el programa procedure Hola_Mundo is  --> Es la instrucción de inicio hecha correctamente
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo  procedure Hola_Mundo  --> Error falta palabra Reservada IS en la declaración inicial
 00002 --comen --comen --> Es una linea de comentario
-00003 begin begin >>>> Expresi�n no encontrada!!
-00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); Ada.Text_IO.Put_Line ( "Hola, mundo!" ); >>>> Expresi�n no encontrada!!
-00005 end Hola_Mundo; end Hola_Mundo; >>>> Expresi�n no encontrada!!
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -- esta es un preuba procedure Hola_Mundo   ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -- esta es un preuba procedure Hola_Mundo   ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -- esta es un preuba procedure Hola_Mundo  -- esta es un preuba procedure Hola_Mundo  --> Error falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -- esta es un preuba procedure Hola%Mundo is  -- esta es un preuba procedure Hola%Mundo is  --> Es una linea de comentario
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 -- esta es un preuba procedure Hola%Mundo is  -- esta es un preuba procedure Hola%Mundo is  --> Es una linea de comentario
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  procedure Hola%Mundo is  --> Error falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is   ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo    ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo   procedure Hola_Mundo   --> Error falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo   procedure Hola_Mundo   --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure is is procedure is is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure is is procedure is is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure is is procedure is is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure is is procedure is is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure procedure is procedure procedure is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo  procedure Hola_Mundo  --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo   ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo  procedure Hola_Mundo  --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 --comentario procedure Hola_Mundo  --comentario procedure Hola_Mundo  --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is procedure Hola_Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola%Mundo is procedure Hola%Mundo is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo_quelindo_estodo_murcielago_aeropuertuarios is procedure Hola_Mundo_quelindo_estodo_murcielago_aeropuertuarios is --> Error Identificador de programa no valido 
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo_quelindo is  ok
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
+00001 procedure Hola_Mundo_quelindo  procedure Hola_Mundo_quelindo  --> Error Identificador de programa no valido o falta palabra Reservada IS en la declaración inicial
+00002 --comen --comen --> Es una linea de comentario
+00003 <<etiqueta1>>  ok
+00004   
+00005 5+3 5+3 --> Falta ; en la expresión de suma 
+00006  etiquet$%a1>>  etiquet$%a1>> --> Eror falta << de apertura de Etiqueta
+00007 --comen --comen --> Es una linea de comentario
+00008 5+3 ;  ok
+00009 << etiquet$%a1  << etiquet$%a1  --> Eror falta >> de cierre de Etiqueta
+00010 begin  ok
+00011   Ada.Text_IO.Put_Line ( "Hola, mundo!" );  ok
+00012 end Hola_Mundo;  ok
