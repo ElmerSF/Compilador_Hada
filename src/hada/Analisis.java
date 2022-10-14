@@ -78,8 +78,15 @@ public class Analisis {
                     TokenClasificado = false; 
                     break; 
                 }
+                   if(token.length()>20){
+                      txt.escribir(token +" Error sobre pasa los 20 caracteres");
+                            TokenClasificado =true;
+                            break;
+                }else{
+                
                 if (token.matches(comparaTOKENS.patron))
                 {
+                 
                     switch (comparaTOKENS)
                     {
                         case Reservada:
@@ -96,12 +103,12 @@ public class Analisis {
                             break;
                         case Nombre_Archivo:
                             
-                            txt.escribir(token + " Es una nombre de archivo valido");
+                           // txt.escribir(token + " Es una nombre de archivo valido");
                           //  Respuesta = (token +" Es una palabra reservada");
                             TokenClasificado =true;
                             break;    
                         case Numero_Entero:
-                            txt.escribir(token + " Es un número Entero");
+                           // txt.escribir(token + " Es un número Entero");
                             TokenClasificado =true;
                             break;
                         case Numero_Real:
@@ -132,6 +139,7 @@ public class Analisis {
                             txt.escribir( token +" sin clasificar");
                             break;
                     }
+                     }
                 }
             
             }
@@ -171,7 +179,22 @@ public class Analisis {
                         break;  
                     case Inicio3:
                         //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
-                        Respuesta =(TxtLinea +" --> Error Identificador de programa no valido ");
+                        Respuesta =(TxtLinea +" !!!Error Nombre de Identificador Empieza con _");
+                        encontrado=true;
+                        break;    
+                    case Inicio4:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" !!!Error Nombre de Identificador Termina con _");
+                        encontrado=true;
+                        break;    
+                    case Inicio5:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" !!!Error Nombre de Identificador Contiene caracteres no permitidos");
+                        encontrado=true;
+                        break;    
+                    case Inicio6:
+                        //System.out.println(Expresion+" --> Es una instrucci�n de inicio");
+                        Respuesta =(TxtLinea +" !!!Error Nombre de Identifcador Empieza con un número");
                         encontrado=true;
                         break;    
                     case Final:

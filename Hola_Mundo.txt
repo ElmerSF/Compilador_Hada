@@ -1,12 +1,16 @@
-procedure a%mi_go is
---comen
-<<etiqueta1>>
-
-5+3
- etiquet$%a1>>
---comen
-5+3 ;
-<< etiquet$%a1 
-begin
-  Ada.Text_IO.Put_Line ( "Hola, mundo!" );
-end Hola_Mundo;
+Amigo is
+-- comentario pegado procedure amigo
+--78461 846
+--
+@>>
+<<prueba etiqueta>>
+prueba etiqueta>>
+Procedure am##igo is
+Procedure am#!%igo is
+Procedure _amigo is
+Procedure amigo54_ is
+Procedure 45amgo is
+Procedure _am##igo_ is
+Procedure _amigo_ is
+Procedure 3am#igo_ is
+Procedure am_igo is
