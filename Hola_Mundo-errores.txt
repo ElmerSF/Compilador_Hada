@@ -78,3 +78,19 @@
 00009 --comentario 
 00010 <<etiqueta>>  
 00011   
+00001 Procedure Amigo  
+00002 5+36 
+00003 14 
+00004 --coment 
+00005 <<etiqueta 
+00006 5+3; 
+00007 vaca 
+00008 --comentario+  
+ --> Error falta palabra Reservada IS en la declaración inicial 
+ --> Falta ; en la expresión de suma  
+ --> Falta ; en la expresión de suma 
+14   
+ --> Eror falta >> de cierre de Etiqueta    
+00009 --comentario 
+00010 <<etiqueta>>  
+00011   

@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
 
 
 public class Read_Archivo {
-    Variables_Globales var = new Variables_Globales();
+    
     
     
     public void leerArchivo(String Archivo)
