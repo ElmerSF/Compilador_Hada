@@ -1,6 +1,8 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ UNED Informática Compiladores 3307
+Estudiante Elmer Eduardo Salazar Flores 3-0426-0158
+III Cuatrimestre 2022
+Clase con variables
  */
 package hada;
 
@@ -9,10 +11,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.time.format.DateTimeFormatter;
 
-/**
- *
- * @author elmer
- */
+
 public class Variables_Globales {
     String archivo;
     String bitacora;

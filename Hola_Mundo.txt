@@ -1,16 +1,11 @@
-Amigo is
--- comentario pegado procedure amigo
---78461 846
---
-@>>
-<<prueba etiqueta>>
-prueba etiqueta>>
-Procedure am##igo is
-Procedure am#!%igo is
-Procedure _amigo is
-Procedure amigo54_ is
-Procedure 45amgo is
-Procedure _am##igo_ is
-Procedure _amigo_ is
-Procedure 3am#igo_ is
-Procedure am_igo is
+Procedure Amigo 
+5+36
+14
+--coment
+<<etiqueta
+5+3;
+vaca
+--comentario+
+--comentario
+<<etiqueta>>
+

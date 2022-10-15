@@ -1,14 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ UNED Informática Compiladores 3307
+Estudiante Elmer Eduardo Salazar Flores 3-0426-0158
+III Cuatrimestre 2022
+Tabla de las expresiones según los lineamientos del lenguaje HADA
  */
 package hada;
-//("[*|/|+|-]"
-/**
- *("[*|/|+|-]"
- * @author cchac
- */
+
 public class TabladeExpresiones {
     
     
@@ -22,19 +19,12 @@ public class TabladeExpresiones {
         Inicio4("((PROCEDURE|procedure|Procedure)[' '](.{1,20}[_]{1,20})[' '](IS|is|Is))"), //TERMINA
         Inicio5("((PROCEDURE|procedure|Procedure)[' '](.{0,20}[-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>]{1,20}.{0,20})[' '](IS|is|Is))"),//CARACTER
         Inicio6 ("((PROCEDURE|procedure|Procedure)[' ']([0-9]{1,20}.{0,20})[' '](IS|is|Is))"),//NUMERO
-
-
-
-
         Etiqueta1("([\\<<]{1,})([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([^\\>>])"),
         Etiqueta2("([^\\<<])([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([\\>>]{1,})"),
         Final("(fin del programa)"),
         Suma("([[0-9|' '0-9|0-9' ']*\\+[0-9|' '0-9]*]*|[[(0-9|(' '0-9|(0-9' ']*\\+[0-9|' '0-9)|0-9' '))]*]*)([^;])"),
          Resta("[0-9]*\\-[0-9]*"),
-         
-         
         Constante_numerica_entera("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),
-       
         final_linea(";"),
         Multiplica("[0-9]*\\s+(MULTIPLICA|MULTI|X)+\\s[0-9]*");
         

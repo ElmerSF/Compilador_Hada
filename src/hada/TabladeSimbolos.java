@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ UNED Informática Compiladores 3307
+Estudiante Elmer Eduardo Salazar Flores 3-0426-0158
+III Cuatrimestre 2022
+Tabla de los Simbolos según los lineamientos del lenguaje HADA
  */
 package hada;
 
@@ -13,8 +14,9 @@ public class TabladeSimbolos {
     
     enum Tipos 
     {
+        Procedure("PROCEDURE|procedure|Procedure"),
         Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA|ADA.TEXT_IO|begin)"),
-        Inicio ("PROCEDURE|procedure|Procedure|IS|is"),
+        Is ("IS|is"),
         Nombre_Archivo ("[a-z|A-Z]{1,20}[a-z|A-Z|0-9|_]*{0,20}[a-z|A-Z|0-9]*]{0,20}[^_]"),
         Operadores("[*|/|+|-]"),
         Numero_Entero("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),
