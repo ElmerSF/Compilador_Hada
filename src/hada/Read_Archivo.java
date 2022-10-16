@@ -23,7 +23,7 @@ public class Read_Archivo {
        String nomArchivo =""; 
        String compilar ="";
         
-    public void leerArchivo(String Archivo)
+    public void leerArchivo(String Archivo) throws InterruptedException
     {
         Analisis revi = new Analisis();
         String Bitacora ="Hada_log.txt";
@@ -143,7 +143,12 @@ public class Read_Archivo {
                 
             reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: "+nomArchivo);    
              System.out.println("Se comienza proceso de generación archivo "+ nomArchivo); 
-             System.out.println("\\dir");
+            // System.out.write(dir);
+             
+            Fase2 fase2 = new Fase2();
+            fase2.Mostrar_Proceso("Hola_Mundo.adb");
+            
+            
             reglonlog.close();
                 escribirlog.close();
             }

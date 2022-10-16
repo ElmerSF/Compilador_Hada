@@ -17,7 +17,7 @@ import java.time.format.DateTimeFormatter;
 public class HADA {
        
    
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
       
         //Creamos un archivo llamado Hada_log para revisión de la herramienta
         

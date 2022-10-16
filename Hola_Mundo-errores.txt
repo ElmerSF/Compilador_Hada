@@ -10,3 +10,115 @@
 00002 begin 
 00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
 00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
