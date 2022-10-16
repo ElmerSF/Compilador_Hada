@@ -19,10 +19,24 @@ import java.time.format.DateTimeFormatter;
 
 public class Read_Archivo {
     
+//     Analisis revi = new Analisis();
     
-    
+     int cuenta_errores;
+        //Analisis revi = new Analisis();
+//        String Bitacora ="Hada_log.txt";
+//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //formato para el Log
+//        File log, errores;
+//        FileWriter escribirlog, escribirerror;
+//        PrintWriter reglonlog, reglonerror;
+//        String nomArchivo ="";
+//        String linea;
+//        String pendiente ="";
+//        int contador=1;
+        int cuenta_error=0;
+        
     public void leerArchivo(String Archivo)
     {
+        Analisis revi = new Analisis();
         String Bitacora ="Hada_log.txt";
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //formato para el Log
         File log, errores;
@@ -56,7 +70,7 @@ public class Read_Archivo {
             br = new BufferedReader(new FileReader(Archivo));
             reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 02 INFORMACIÓN se comienza lectura de archivo "+Archivo);
             
-            Analisis revi = new Analisis();
+           // Analisis revi = new Analisis();
             
             
             while ((linea= br.readLine())!=null) //Lectura del archivo por línea
@@ -128,7 +142,10 @@ public class Read_Archivo {
                 //AnalizaTexto(linea);
             
             }
-                reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 03 SE termina lectura de archivo "+Archivo);
+            //cuenta_errores = revi.valida_errores();
+           cuenta_error = valida_errores();
+            reglonlog.println("> "+dtf.format(LocalDateTime.now())+" >!!!Se encontraron "+cuenta_error+ " Errores para detalle consulte "+nomArchivo+"-errores.txt");    
+            reglonlog.println("\n> "+dtf.format(LocalDateTime.now())+" ***** 03 SE termina lectura de archivo "+Archivo);
                 
                 reglonlog.close();
                 reglonerror.close();
@@ -144,18 +161,25 @@ public class Read_Archivo {
         }
         
     }
-    
+   public int valida_errores()
+    {
+        
+        
+        System.out.println("Se encontraron "+ cuenta_errores+ " Errores");
+        if (cuenta_errores>0)
+        {
+        String directoryName = System.getProperty("user.dir");
+        System.out.println("Es necesario que revise el archivo "+ nomArchivo+"-errores.txt");  
+        System.out.println("También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: "+directoryName); 
+        
+        }else
+        {
+            
+        }
+        return cuenta_errores;
+    }
+
    
-//    public String escribir ( String txt)
-//    {
-//        switch (txt) {
-//            case "1":
-//                txt = txt + " error la cadena supera los 80 caracteres permitidos";
-//                break;
-//            
-//        }
-//        System.out.print(txt+ " ");
-//        return txt;
-//    }
+   
    
 }
