@@ -1,16 +1,4 @@
-Procedure Amigo 
-5+36
-murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto
-14
---coment
-<<etiqueta
-5+3;
-vaca
---comentario+
---comentario
-<<etiqueta>>
-
-ejemplo>>
--35767
-Procedure amigo
-35767
+procedure Hola_Mundo is
+begin
+  Ada.Text_IO.Put_Line ( "Hola, mundo!" );
+end Hola_Mundo;

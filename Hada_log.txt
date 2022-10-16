@@ -6,7 +6,16 @@ Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Docum
 **********************************************************************************
 
 
-> 2022/10/16 01:55:03 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
+> 2022/10/16 15:03:52 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
+> 2022/10/16 15:03:52 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+> 2022/10/16 15:03:52 >!!!AVISO Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
+
+> 2022/10/16 15:03:52 ***** 03 INFORMACIÓN SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:03:52 ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.hada
 **********************************************************************************
 ***************  Log del Proyecto Compilador HADA               ******************
 Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
@@ -15,27 +24,16 @@ Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Docum
 **********************************************************************************
 
 
-> 2022/10/16 01:55:27 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
-> 2022/10/16 01:55:27 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:07 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
+> 2022/10/16 15:12:07 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
 	 & {linea de lectura [1] }
 	 & {linea de lectura [2] }
 	 & {linea de lectura [3] }
 	 & {linea de lectura [4] }
-	 & {linea de lectura [5] }
-	 & {linea de lectura [6] }
-	 & {linea de lectura [7] }
-	 & {linea de lectura [8] }
-	 & {linea de lectura [9] }
-	 & {linea de lectura [10] }
-	 & {linea de lectura [11] }
-	 & {linea de lectura [12] }
-	 & {linea de lectura [13] }
-	 & {linea de lectura [14] }
-	 & {linea de lectura [15] }
-	 & {linea de lectura [16] }
-> 2022/10/16 01:55:27 >!!!Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
+> 2022/10/16 15:12:07 >!!!AVISO Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
 
-> 2022/10/16 01:55:27 ***** 03 SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:07 ***** 03 INFORMACIÓN SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:07 ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.adb
 **********************************************************************************
 ***************  Log del Proyecto Compilador HADA               ******************
 Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
@@ -44,82 +42,13 @@ Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Docum
 **********************************************************************************
 
 
-> 2022/10/16 01:57:08 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
-> 2022/10/16 01:57:08 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:24 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
+> 2022/10/16 15:12:24 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
 	 & {linea de lectura [1] }
 	 & {linea de lectura [2] }
 	 & {linea de lectura [3] }
 	 & {linea de lectura [4] }
-	 & {linea de lectura [5] }
-	 & {linea de lectura [6] }
-	 & {linea de lectura [7] }
-	 & {linea de lectura [8] }
-	 & {linea de lectura [9] }
-	 & {linea de lectura [10] }
-	 & {linea de lectura [11] }
-	 & {linea de lectura [12] }
-	 & {linea de lectura [13] }
-	 & {linea de lectura [14] }
-	 & {linea de lectura [15] }
-	 & {linea de lectura [16] }
-> 2022/10/16 01:57:08 >!!!Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
+> 2022/10/16 15:12:24 >!!!AVISO Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
 
-> 2022/10/16 01:57:08 ***** 03 SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
-**********************************************************************************
-***************  Log del Proyecto Compilador HADA               ******************
-Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
-UNED compiladores 03307
-Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
-**********************************************************************************
-
-
-> 2022/10/16 01:58:20 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
-> 2022/10/16 01:58:20 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
-	 & {linea de lectura [1] }
-	 & {linea de lectura [2] }
-	 & {linea de lectura [3] }
-	 & {linea de lectura [4] }
-	 & {linea de lectura [5] }
-	 & {linea de lectura [6] }
-	 & {linea de lectura [7] }
-	 & {linea de lectura [8] }
-	 & {linea de lectura [9] }
-	 & {linea de lectura [10] }
-	 & {linea de lectura [11] }
-	 & {linea de lectura [12] }
-	 & {linea de lectura [13] }
-	 & {linea de lectura [14] }
-	 & {linea de lectura [15] }
-	 & {linea de lectura [16] }
-> 2022/10/16 01:58:20 >!!!Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
-
-> 2022/10/16 01:58:20 ***** 03 SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
-**********************************************************************************
-***************  Log del Proyecto Compilador HADA               ******************
-Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
-UNED compiladores 03307
-Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
-**********************************************************************************
-
-
-> 2022/10/16 02:00:22 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt OK
-> 2022/10/16 02:00:22 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
-	 & {linea de lectura [1] }
-	 & {linea de lectura [2] }
-	 & {linea de lectura [3] }
-	 & {linea de lectura [4] }
-	 & {linea de lectura [5] }
-	 & {linea de lectura [6] }
-	 & {linea de lectura [7] }
-	 & {linea de lectura [8] }
-	 & {linea de lectura [9] }
-	 & {linea de lectura [10] }
-	 & {linea de lectura [11] }
-	 & {linea de lectura [12] }
-	 & {linea de lectura [13] }
-	 & {linea de lectura [14] }
-	 & {linea de lectura [15] }
-	 & {linea de lectura [16] }
-> 2022/10/16 02:00:22 >!!!Se encontraron 0 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo-errores.txt
-
-> 2022/10/16 02:00:22 ***** 03 SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:24 ***** 03 INFORMACIÓN SE termina lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.txt
+> 2022/10/16 15:12:24 ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Hola_Mundo.adb

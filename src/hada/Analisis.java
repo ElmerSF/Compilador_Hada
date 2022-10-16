@@ -249,5 +249,22 @@ public class Analisis {
                 }
         return Respuesta_int;  
     }
-   
+   public int valida_errores(String nomArchivo)
+    {
+        
+        
+        System.out.println("Se encontraron "+ cuenta_errores+ " Errores");
+        if (cuenta_errores>0)
+        {
+        String directoryName = System.getProperty("user.dir");
+        System.out.println("Es necesario que revise el archivo "+ nomArchivo+"-errores.txt");  
+        System.out.println("También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: "+directoryName); 
+        
+        }else
+        {
+            
+        }
+        return cuenta_errores;
+    }
+    
 }

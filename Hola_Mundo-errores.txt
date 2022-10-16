@@ -1,104 +1,12 @@
-00001 Procedure Amigo  
-00002 5+36 
-00003 murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto 
-00004 14 
-00005 --coment 
-00006 <<etiqueta 
-00007 5+3; 
-00008 vaca  
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure Amigo ]  
->!!!Error [11] Falta ; en la expresión de suma  [5+36]  
->!!!Error [1] La Linea supera los 80 caracteres [murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto]  
->!!!Error [11] Falta ; en la expresión de suma  [14]   
->!!!Error [9] falta >> de cierre de Etiqueta [<<etiqueta]    
-00009 --comentario+  
-00010 --comentario 
-00011 <<etiqueta>>  
-00012   
-00013 ejemplo>> 
->!!!Error [10] falta << de apertura de Etiqueta [ejemplo>>] 
-00014 -35767 
->!!!Error [13] Es menor al rango [-35767] 
-00015 Procedure amigo 
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure amigo] 
-00016 35767 
->!!!Error [11] Falta ; en la expresión de suma  [35767] 
->!!!Error [12] Es mayor al rango [35767] 
-00001 Procedure Amigo  
-00002 5+36 
-00003 murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto 
-00004 14 
-00005 --coment 
-00006 <<etiqueta 
-00007 5+3; 
-00008 vaca  
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure Amigo ]  
->!!!Error [11] Falta ; en la expresión de suma  [5+36]  
->!!!Error [1] La Linea supera los 80 caracteres [murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto]  
->!!!Error [11] Falta ; en la expresión de suma  [14]   
->!!!Error [9] falta >> de cierre de Etiqueta [<<etiqueta]    
-00009 --comentario+  
-00010 --comentario 
-00011 <<etiqueta>>  
-00012   
-00013 ejemplo>> 
->!!!Error [10] falta << de apertura de Etiqueta [ejemplo>>] 
-00014 -35767 
->!!!Error [13] Es menor al rango [-35767] 
-00015 Procedure amigo 
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure amigo] 
-00016 35767 
->!!!Error [11] Falta ; en la expresión de suma  [35767] 
->!!!Error [12] Es mayor al rango [35767] 
-00001 Procedure Amigo  
-00002 5+36 
-00003 murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto 
-00004 14 
-00005 --coment 
-00006 <<etiqueta 
-00007 5+3; 
-00008 vaca  
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure Amigo ]  
->!!!Error [11] Falta ; en la expresión de suma  [5+36]  
->!!!Error [1] La Linea supera los 80 caracteres [murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto]  
->!!!Error [11] Falta ; en la expresión de suma  [14]   
->!!!Error [9] falta >> de cierre de Etiqueta [<<etiqueta]    
-00009 --comentario+  
-00010 --comentario 
-00011 <<etiqueta>>  
-00012   
-00013 ejemplo>> 
->!!!Error [10] falta << de apertura de Etiqueta [ejemplo>>] 
-00014 -35767 
->!!!Error [13] Es menor al rango [-35767] 
-00015 Procedure amigo 
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure amigo] 
-00016 35767 
->!!!Error [11] Falta ; en la expresión de suma  [35767] 
->!!!Error [12] Es mayor al rango [35767] 
-00001 Procedure Amigo  
-00002 5+36 
-00003 murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto 
-00004 14 
-00005 --coment 
-00006 <<etiqueta 
-00007 5+3; 
-00008 vaca  
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure Amigo ]  
->!!!Error [11] Falta ; en la expresión de suma  [5+36]  
->!!!Error [1] La Linea supera los 80 caracteres [murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto]  
->!!!Error [11] Falta ; en la expresión de suma  [14]   
->!!!Error [9] falta >> de cierre de Etiqueta [<<etiqueta]    
-00009 --comentario+  
-00010 --comentario 
-00011 <<etiqueta>>  
-00012   
-00013 ejemplo>> 
->!!!Error [10] falta << de apertura de Etiqueta [ejemplo>>] 
-00014 -35767 
->!!!Error [13] Es menor al rango [-35767] 
-00015 Procedure amigo 
->!!!Error [4] falta palabra Reservada IS en la declaración inicial [Procedure amigo] 
-00016 35767 
->!!!Error [11] Falta ; en la expresión de suma  [35767] 
->!!!Error [12] Es mayor al rango [35767] 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
+00001 procedure Hola_Mundo is 
+00002 begin 
+00003   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00004 end Hola_Mundo; 
