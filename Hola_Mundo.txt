@@ -1,5 +1,6 @@
 Procedure Amigo 
 5+36
+murcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuertomurcielagovelozdelaeropuerto
 14
 --coment
 <<etiqueta
@@ -9,3 +10,7 @@ vaca
 --comentario
 <<etiqueta>>
 
+ejemplo>>
+-35767
+Procedure amigo
+35767

@@ -13,6 +13,10 @@ public class Analisis {
     int num;
     
     Read_Archivo txt = new Read_Archivo();
+    Errores error = new Errores();
+    String falla ="";
+    int cuenta_errores =0;
+    
     
     public String AnalizaTexto(String TxtLinea)
     {
@@ -32,7 +36,7 @@ public class Analisis {
         {
         if (TxtLinea.length()>80)
         {
-            Respuesta =("1");
+                cuenta_errores++; Respuesta =(falla=error.Asigna_Error(1)+" ["+TxtLinea+"] ");
         }else{
             
                 while (segmentos.hasMoreTokens())
@@ -131,65 +135,62 @@ public class Analisis {
             {
                 switch (comparaExpresiones)
                 {
-                    case Inicio:
-                        Respuesta =(Respuesta+"\n --> Error falta palabra Reservada PROCEDURE en la declaración inicial");
+                    case Inicio: 
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(2)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;
                     
                     case Inicio1:
-                        Respuesta =(Respuesta+"\n--> Error hay caracteres antes de la instrucción de inicio, si es un comentario falta --");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(3)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Inicio2:
-                        Respuesta =(Respuesta+"\n --> Error falta palabra Reservada IS en la declaración inicial");
+                      cuenta_errores++; Respuesta =(falla=error.Asigna_Error(4)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;  
                     
                     case Inicio3:
-                        Respuesta =(Respuesta+"\n !!!Error Nombre de Identificador Empieza con _");
+                      cuenta_errores++; Respuesta =(falla=error.Asigna_Error(5)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Inicio4:
-                        Respuesta =(Respuesta+"\n !!!Error Nombre de Identificador Termina con _");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(6)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Inicio5:
-                    
-                        Respuesta =(TxtLinea +" !!!Error Nombre de Identificador Contiene caracteres no permitidos");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(7)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Inicio6:
-                        Respuesta =(Respuesta+"\n !!!Error Nombre de Identifcador Empieza con un número");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(8)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Final:
-                        
-                        //Respuesta =(Respuesta+"\n --> Es una instrucción de final");
                         encontrado=true;
                         break;
+
                     case Comentario:
-                        
-                        //Respuesta =(Respuesta+"\n --> Es una linea de comentario");
                         encontrado=true;
                         break;
                     
                     case Etiqueta1:
-                        Respuesta =(Respuesta+"\n --> Eror falta >> de cierre de Etiqueta");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(9)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;
                     
                     case Etiqueta2:
-                        Respuesta =(Respuesta+"\n --> Eror falta << de apertura de Etiqueta");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(10)+" ["+TxtLinea+"] ");
                         encontrado=true;
                         break;    
                     
                     case Suma:
-                        Respuesta =(Respuesta+"\n --> Falta ; en la expresión de suma ");
+                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(11)+" ["+TxtLinea+"] ");
+
                         encontrado=true;
                         break;
                     
@@ -197,7 +198,7 @@ public class Analisis {
                     
                         num = Integer.parseInt(Expresion);
                         
-                        Respuesta =(Respuesta+ "\n"+ Validanum(num));
+                       Respuesta =(Respuesta+ Validanum(num));
                         encontrado=true;
                         break;
                         
@@ -232,18 +233,20 @@ public class Analisis {
        return Respuesta;
     }
     public String Validanum (int num){
-     String respuesta ="";
+     String Respuesta_int ="";
         if (num>32767)
-        {respuesta = (num + " >>Es mayor al rango");
-                
+        {
+            cuenta_errores++; Respuesta_int =(falla=error.Asigna_Error(12)+" ["+num+"] ");
                 }else{
             if (num<-32767)
-            {respuesta = (num + " >>Es menor al rango");
-                
+            {
+                cuenta_errores++; Respuesta_int =(falla=error.Asigna_Error(13)+" ["+num+"] ");
             }else{
-            respuesta = (num + " ");
+                
+                
+            Respuesta_int = ("");
             }
                 }
-        return respuesta;  
+        return Respuesta_int;  
     }
 }
