@@ -1,0 +1,5 @@
+00001 with Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin 
+00004   Ada.Text_IO.Put_Line ( "Hola, mundo!" ); 
+00005 end Hola_Mundo; 

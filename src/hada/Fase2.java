@@ -18,75 +18,61 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-
-/**
- *
- * @author elmer
- */
 public class Fase2 {
-    public String Mostrar_Proceso(String ruta) 
-    {
-        
-        String mensaje ="";
-        try 
-        {
-            
-           // String directoryName = System.getProperty("user.dir");
-            System.out.println(" Ejecutando " +ruta);
-            
+
+    public String Mostrar_Proceso(String ruta) {
+
+        String mensaje = "";
+        try {
+
+           
+            System.out.println(" Ejecutando " + ruta);
             Process process = Runtime.getRuntime().exec(ruta);
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            
-            
+
             String resultOfExecution = null;
-            while((resultOfExecution = br.readLine()) != null)
+            while ((resultOfExecution = br.readLine()) != null) 
             {
                 System.out.println(resultOfExecution);
-                    
-            }     
+
+            }
             mensaje = ">OK se ejecuto correctamente";
-            
+
             try {
                 process.waitFor();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Fase2.class.getName()).log(Level.SEVERE, null, ex);
             }
-                    
-            }
-             catch (IOException e) 
-                     {
+
+        } catch (IOException e) {
             e.printStackTrace();
             mensaje = "Error en la ejecución";
         }
         return mensaje;
-        }    
-     public void tmp_lectura(String Archivo, File tmp) throws FileNotFoundException{
-        
-         FileWriter escribir;
+    }
+
+    public void tmp_lectura(String Archivo, File tmp) throws FileNotFoundException {
+
+        FileWriter escribir;
         PrintWriter reglon;
         String linea;
         BufferedReader br;
-         try {
-        escribir = new FileWriter(tmp, true);
-        reglon= new PrintWriter(escribir);
-        br = new BufferedReader(new FileReader(Archivo));
-        while ((linea= br.readLine())!=null)
-        {
-            if (linea.isEmpty()){
-                
-            }else{
-                reglon.println(linea);
+        try {
+            escribir = new FileWriter(tmp, true);
+            reglon = new PrintWriter(escribir);
+            br = new BufferedReader(new FileReader(Archivo));
+            while ((linea = br.readLine()) != null) {
+                if (linea.isEmpty()) {
+
+                } else {
+                    reglon.println(linea);
+                }
+
             }
-            
-            
+            reglon.close();
+            escribir.close();
+        } catch (Exception e) {
         }
-        reglon.close();
-        escribir.close();
-         } catch (Exception e) {
-         }
-        
-     }
+
     }
-    
-
-
+}

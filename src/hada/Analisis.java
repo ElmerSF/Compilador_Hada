@@ -6,268 +6,139 @@ Basado en los ejemplos compartidos en la Tutoría en esta clase se verifican los
  */
 package hada;
 
-
 import java.util.StringTokenizer;
 
 public class Analisis {
+
     int num;
-    
     Read_Archivo txt = new Read_Archivo();
     Errores error = new Errores();
-    String falla ="";
-    int cuenta_errores =0;
-    
-    
-    public String AnalizaTexto(String TxtLinea)
-    {
-        
-        StringTokenizer segmentos = new StringTokenizer( TxtLinea  );
-        int cuenta=0;
-        
-        String Expresion= new String();
-        boolean TokenClasificado= false;
-        String Respuesta ="";
-        
-        if (TxtLinea.isEmpty())
-        {
+    String falla = "";
+    int cuenta_errores = 0;
+
+    public String AnalizaTexto(String TxtLinea) {
+
+        StringTokenizer segmentos = new StringTokenizer(TxtLinea);
+        int cuenta = 0;
+        String Expresion = new String();
+        boolean TokenClasificado = false;
+        String Respuesta = "";
+
+        if (TxtLinea.isEmpty()) {
             Respuesta = " ";
-        }
-        else
-        {
-        if (TxtLinea.length()>80)
-        {
-                cuenta_errores++; Respuesta =(falla=error.Asigna_Error(1)+" ["+TxtLinea+"] ");
-        }else{
-            
-                while (segmentos.hasMoreTokens())
-        {
-            String token = segmentos.nextToken();
-                        
-            //=======================Verificar los tokens=================================
-            
-            for (TabladeSimbolos.Tipos comparaTOKENS : TabladeSimbolos.Tipos.values())
-            {
-                
-                if (TokenClasificado)
-                {
-                    TokenClasificado = false; 
-                    break; 
-                                   
-                }
-                
-                   if(token.length()>20){
-                      //txt.escribir(token +"!!! Error sobre pasa los 20 caracteres");
-                            //TokenClasificado =true;
-                            //break;
-                }else{
-                       
-                          
-                if (token.matches(comparaTOKENS.patron))
-                {
-                 
-                    switch (comparaTOKENS)
-                    {
-                        case Reservada:
-                            TokenClasificado =true;
-                            break;
-                        case Cadena:
-                            System.out.println("Cadena encontrada " +token);
-                        TokenClasificado =true;
-                            break;    
-                        case Procedure:
-                        TokenClasificado =true;
-                            break;
-                        
-                        case Is:
-                        TokenClasificado =true;
-                            break;    
-                        
-                        case Nombre_Archivo:
-                        TokenClasificado =true;
-                            break;    
-                        
-                        case Numero_Entero:
-                        TokenClasificado =true;
-                            break;
-                        
-                        case Numero_Real:
-                            TokenClasificado =true;
+        } else {
+            if (TxtLinea.length() > 80) {
+                cuenta_errores++;
+                Respuesta = (falla = error.Asigna_Error(1) + " [" + TxtLinea + "] ");
+            } else {
+
+                while (segmentos.hasMoreTokens()) {
+                    String token = segmentos.nextToken();
+
+                    //Revisa los token para clasificarlos 
+                    for (TabladeSimbolos.Tipos comparaTOKENS : TabladeSimbolos.Tipos.values()) {
+
+                        if (TokenClasificado) {
+                            TokenClasificado = false;
                             break;
 
-                        case Palabra:
-                          TokenClasificado =true;
-                            break;
-                            
-                        case Operadores:
-                          
-                            TokenClasificado =true;
-                            break;
-                        
-                        case finlinea:
-                           TokenClasificado =true;
-                            break;   
-                        
-                        case Agrupacion:
-                            TokenClasificado =true;
-                            break;  
-                        
-                        default:
-                            Respuesta =( token +" sin clasificar");
-                            break;
+                        }
+
+                        if (token.length() > 20) {
+
+                        } else {
+
+                            if (token.matches(comparaTOKENS.patron)) {
+
+                                switch (comparaTOKENS) {
+                                    case Reservada:      TokenClasificado = true; break;
+                                    case Cadena:         TokenClasificado = true; break;
+                                    case Procedure:      TokenClasificado = true; break;
+                                    case Is:             TokenClasificado = true; break;
+                                    case Nombre_Archivo: TokenClasificado = true; break;
+                                    case Numero_Entero:  TokenClasificado = true; break;
+                                    case Numero_Real:    TokenClasificado = true; break;
+                                    case Palabra:        TokenClasificado = true; break;
+                                    case Operadores:     TokenClasificado = true; break;
+                                    case finlinea:       TokenClasificado = true; break;
+                                    case Agrupacion:     TokenClasificado = true; break;
+                                    default: Respuesta = (token + " sin clasificar"); break;
+                                }
+                            }
+                        }
+
                     }
-                     }
+                    if (cuenta == 0) {
+                        Expresion = Expresion + token;
+                    } else {
+                        Expresion = Expresion + " " + token;
+                    }
+                    cuenta++;
                 }
-            
-            }
-            if (cuenta==0)
-                Expresion=Expresion+token;
-            else
-                Expresion=Expresion+" "+token;
-            cuenta++;
-        }   
-           
-        
-        
-        //=======================Verificar las expresiones =================================
-        //System.out.println("Expresion --->> "+Expresion);
-    
-        Boolean encontrado=false;
-        for (TabladeExpresiones.Tipos comparaExpresiones : TabladeExpresiones.Tipos.values())
-        {
-            if (Expresion.matches(comparaExpresiones.patron))
-            {
-                switch (comparaExpresiones)
-                {
-                    case Inicio: 
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(2)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;
-                    
-                    case Inicio1:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(3)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Inicio2:
-                      cuenta_errores++; Respuesta =(falla=error.Asigna_Error(4)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;  
-                    
-                    case Inicio3:
-                      cuenta_errores++; Respuesta =(falla=error.Asigna_Error(5)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Inicio4:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(6)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Inicio5:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(7)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Inicio6:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(8)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Final:
-                        encontrado=true;
-                        break;
 
-                    case Comentario:
-                        encontrado=true;
-                        break;
-                    
-                    case Etiqueta1:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(9)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;
-                    
-                    case Etiqueta2:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(10)+" ["+TxtLinea+"] ");
-                        encontrado=true;
-                        break;    
-                    
-                    case Suma:
-                        cuenta_errores++; Respuesta =(falla=error.Asigna_Error(11)+" ["+TxtLinea+"] ");
-
-                        encontrado=true;
-                        break;
-                    
-                    case Constante_numerica_entera:
-                    
-                        num = Integer.parseInt(Expresion);
-                        
-                       Respuesta =(Respuesta+ Validanum(num));
-                        encontrado=true;
-                        break;
-                        
-                    case Resta:
-                        
-                        encontrado=true;
-                        break;                    
-                    
-                    case Multiplica:
-                    
-                        encontrado=true;
-                        break;
-                    
-                    case final_linea:
-                    
-                    
-                        encontrado=true;
-                        break;    
-                    default:
-                    
-                        Respuesta =(Respuesta+"\n ok");
-                }           
-            }
-        }
-        if (encontrado==false)
-        {
-            Respuesta =(Respuesta+" ");
-         
-        } 
-        }
-        }
-       return Respuesta;
-    }
-    public String Validanum (int num){
-     String Respuesta_int ="";
-        if (num>32767)
-        {
-            cuenta_errores++; Respuesta_int =(falla=error.Asigna_Error(12)+" ["+num+"] ");
-                }else{
-            if (num<-32767)
-            {
-                cuenta_errores++; Respuesta_int =(falla=error.Asigna_Error(13)+" ["+num+"] ");
-            }else{
-                
-                
-            Respuesta_int = ("");
-            }
+                //Revisa las expresiones y en caso de una coincidencia indica un numero de error
+                Boolean encontrado = false;
+                for (TabladeExpresiones.Tipos comparaExpresiones : TabladeExpresiones.Tipos.values()) {
+                    if (Expresion.matches(comparaExpresiones.patron)) {
+                        switch (comparaExpresiones) {
+                            case Inicio:      cuenta_errores++; Respuesta = (falla = error.Asigna_Error(2) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio1:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(3) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio2:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio3:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(5) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio4:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(6) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio6:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Final:       encontrado = true; break;
+                            case Comentario:  encontrado = true; break;
+                            case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Etiqueta2:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(10) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            case Suma:        cuenta_errores++; Respuesta = (falla = error.Asigna_Error(11) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            case Constante_numerica_entera: num = Integer.parseInt(Expresion); Respuesta = (Respuesta + Validanum(num)); encontrado = true; break;
+                            case Resta:       encontrado = true; break;
+                            case Multiplica:  encontrado = true; break;
+                            case final_linea: encontrado = true; break;
+                            default: Respuesta = (Respuesta + "\n ok");
+                        }
+                    }
                 }
-        return Respuesta_int;  
+                if (encontrado == false) {
+                    Respuesta = (Respuesta + " ");
+
+                }
+            }
+        }
+        return Respuesta;
     }
-   public int valida_errores(String nomArchivo)
-    {
-        
-        
-        System.out.println("\n !!!!!!!! Se encontraron "+ cuenta_errores+ " Errores !!!!!!!!!!!!");
-        if (cuenta_errores>0)
-        {
-        String directoryName = System.getProperty("user.dir");
-        System.out.println("\n !!!Es necesario que revise el archivo "+ nomArchivo+"-errores.txt");  
-        System.out.println("\n También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: "+directoryName); 
-        
-        }else
-        {
-            
+
+    public String Validanum(int num) {
+        String Respuesta_int = "";
+        if (num > 32767) {
+            cuenta_errores++;
+            Respuesta_int = (falla = error.Asigna_Error(12) + " [" + num + "] ");
+        } else {
+            if (num < -32767) {
+                cuenta_errores++;
+                Respuesta_int = (falla = error.Asigna_Error(13) + " [" + num + "] ");
+            } else {
+
+                Respuesta_int = ("");
+            }
+        }
+        return Respuesta_int;
+    }
+
+    public int valida_errores(String nomArchivo) {
+
+        System.out.println("\n !!!!!!!! Se encontraron " + cuenta_errores + " Errores !!!!!!!!!!!!");
+        if (cuenta_errores > 0) {
+            String directoryName = System.getProperty("user.dir");
+            System.out.println("\n !!!Es necesario que revise el archivo " + nomArchivo + "-errores.txt");
+            System.out.println("\n También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: " + directoryName);
+
+        } else {
+
         }
         return cuenta_errores;
     }
-    
+
 }
