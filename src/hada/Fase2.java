@@ -7,8 +7,15 @@ En esta clase se realiza la segunda fase de compilación
 package hada;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 
@@ -17,15 +24,15 @@ import java.io.InputStreamReader;
  * @author elmer
  */
 public class Fase2 {
-    public void Mostrar_Proceso(String nombArchivo) throws IOException, InterruptedException
+    public String Mostrar_Proceso(String ruta) 
     {
-        String ruta=("cmd /c C:\\GNAT\\2021\\bin\\gnatmake "+nombArchivo);
         
+        String mensaje ="";
         try 
         {
             
            // String directoryName = System.getProperty("user.dir");
-            System.out.println("Ejecutando" +ruta);
+            System.out.println(" Ejecutando " +ruta);
             
             Process process = Runtime.getRuntime().exec(ruta);
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -37,38 +44,47 @@ public class Fase2 {
                 System.out.println(resultOfExecution);
                     
             }     
-            Mostrar_dir("cmd /c dir");
+            mensaje = ">OK se ejecuto correctamente";
+            
+            try {
+                process.waitFor();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Fase2.class.getName()).log(Level.SEVERE, null, ex);
+            }
                     
             }
              catch (IOException e) 
                      {
             e.printStackTrace();
+            mensaje = "Error en la ejecución";
         }
+        return mensaje;
         }    
-     public void Mostrar_dir(String nombArchivo) throws IOException, InterruptedException
-     {
-         try 
+     public void tmp_lectura(String Archivo, File tmp) throws FileNotFoundException{
+        
+         FileWriter escribir;
+        PrintWriter reglon;
+        String linea;
+        BufferedReader br;
+         try {
+        escribir = new FileWriter(tmp, true);
+        reglon= new PrintWriter(escribir);
+        br = new BufferedReader(new FileReader(Archivo));
+        while ((linea= br.readLine())!=null)
         {
-            
-           // String directoryName = System.getProperty("user.dir");
-            System.out.println("Ejecutando" +nombArchivo);
-            
-            Process process = Runtime.getRuntime().exec(nombArchivo);
-            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            
-            
-            String resultOfExecution = null;
-            while((resultOfExecution = br.readLine()) != null)
-            {
-                System.out.println(resultOfExecution);
-                    
-            }     
-                    
+            if (linea.isEmpty()){
+                
+            }else{
+                reglon.println(linea);
             }
-             catch (IOException e) 
-                     {
-            e.printStackTrace();
+            
+            
         }
+        reglon.close();
+        escribir.close();
+         } catch (Exception e) {
+         }
+        
      }
     }
     

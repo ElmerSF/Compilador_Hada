@@ -18,12 +18,13 @@ public class TabladeSimbolos {
         Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA|ADA.TEXT_IO|begin)"),
         Is ("IS|is"),
         Nombre_Archivo ("[a-z|A-Z]{1,20}[a-z|A-Z|0-9|_]*{0,20}[a-z|A-Z|0-9]*]{0,20}[^_]"),
-        Operadores("[*|/|+|-]"),
+        Operadores("[*|/|+|-]{1,}"),
+        Cadena("(([\"])([' '|\n|\t]|[^\"].{0,})([\"]))"),
         Numero_Entero("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),
         Numero_Real("[0-9]*[.][0-9]*"),
         finlinea("(;)"),
-        Palabra("[A-Za-z]*"),
-        Agrupacion("[(|)]+");
+        Palabra("[A-Za-z]{1,}"),
+        Agrupacion("[(|)]{1,}");
         
         
         public final String patron;

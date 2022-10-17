@@ -70,7 +70,10 @@ public class Analisis {
                         case Reservada:
                             TokenClasificado =true;
                             break;
-                       
+                        case Cadena:
+                            System.out.println("Cadena encontrada " +token);
+                        TokenClasificado =true;
+                            break;    
                         case Procedure:
                         TokenClasificado =true;
                             break;
@@ -253,12 +256,12 @@ public class Analisis {
     {
         
         
-        System.out.println("Se encontraron "+ cuenta_errores+ " Errores");
+        System.out.println("\n !!!!!!!! Se encontraron "+ cuenta_errores+ " Errores !!!!!!!!!!!!");
         if (cuenta_errores>0)
         {
         String directoryName = System.getProperty("user.dir");
-        System.out.println("Es necesario que revise el archivo "+ nomArchivo+"-errores.txt");  
-        System.out.println("También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: "+directoryName); 
+        System.out.println("\n !!!Es necesario que revise el archivo "+ nomArchivo+"-errores.txt");  
+        System.out.println("\n También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: "+directoryName); 
         
         }else
         {

@@ -21,9 +21,9 @@ public class Read_Archivo {
     
         int cuenta_error=0;
        String nomArchivo =""; 
-       String compilar ="";
-        
-    public void leerArchivo(String Archivo) throws InterruptedException
+       File compilar;
+        Fase2 fase2 = new Fase2();
+    public void leerArchivo(String Archivo) 
     {
         Analisis revi = new Analisis();
         String Bitacora ="Hada_log.txt";
@@ -48,6 +48,10 @@ public class Read_Archivo {
        
         nomArchivo = Archivo.substring(0, Archivo.indexOf('.')); //tomamos el arhivo y le eliminamos la extensión
         errores = new File(nomArchivo+"-errores.txt");
+       // String prueba1 =nomArchivo;
+        //System.out.println(prueba1);
+       // String prueba2 = Archivo.substring(0, Archivo.indexOf('/'));
+      // System.out.println("hola amigos "+prueba2);
         escribirerror = new FileWriter(errores, true);
         reglonerror= new PrintWriter(escribirerror);
         
@@ -138,19 +142,32 @@ public class Read_Archivo {
             escribirlog.close();
             }else
             {
-                //compilar = nomArchivo+".ada";
-                nomArchivo = nomArchivo+".adb";
+                String Temporal =(nomArchivo+".adb");
+                compilar = new File(Temporal);
+                fase2.tmp_lectura(Archivo, compilar);
+                
                 
             reglonlog.println("> "+dtf.format(LocalDateTime.now())+" ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: "+nomArchivo);    
-             System.out.println("Se comienza proceso de generación archivo "+ nomArchivo); 
-            // System.out.write(dir);
-             
-            Fase2 fase2 = new Fase2();
-            fase2.Mostrar_Proceso("Hola_Mundo.adb");
+            System.out.println("Se comienza proceso de generación archivo "+ compilar.getName()); 
+                      
             
+            String ruta=("cmd /c C:\\GNAT\\2021\\bin\\gnatmake "+compilar.getName());
+            String compilacion =(fase2.Mostrar_Proceso(ruta));
+            reglonlog.println("> "+dtf.format(LocalDateTime.now())+compilacion + " Compilación de archivo");
+            ruta = "cmd /c dir";
+            compilacion=(fase2.Mostrar_Proceso(ruta));
+            reglonlog.println("> "+dtf.format(LocalDateTime.now())+compilacion+ " Ejecución comando dir");
+           
+            String Temp2 =compilar.getName();
+            Temp2 = (Temp2.substring(0, Temp2.indexOf('.')))+".exe";
+            reglonlog.println("> "+dtf.format(LocalDateTime.now())+ " Ejecución programa"+ Temp2);
+            compilacion=(fase2.Mostrar_Proceso(Temp2));
+            reglonlog.println("> "+dtf.format(LocalDateTime.now())+compilacion+ " Se ejecuto el programa");
+            
+             reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");
             
             reglonlog.close();
-                escribirlog.close();
+            escribirlog.close();
             }
                  
             

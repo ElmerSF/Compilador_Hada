@@ -40,10 +40,10 @@ public class HADA {
                
                 if (args.length>0)
                 {
-                   Archivo=args[0];
+                   Archivo=(args[0]+"");
                    
                    String directoryName = System.getProperty("user.dir");
-                   System.out.println("Current Working Directory is = " +directoryName);
+                   System.out.println("Estamos en la ubicación " +directoryName);
                    reglonlog.println("**********************************************************************************");
                    reglonlog.println("***************  Log del Proyecto Compilador HADA               ******************");
                    reglonlog.println("Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)");
@@ -55,9 +55,9 @@ public class HADA {
                    
                     reglonlog.close();
                     escribirlog.close();
-                    System.out.println("El archivo a analizar es " + Archivo );
+                    System.out.println("\nEl archivo a analizar es " + Archivo );
                     System.out.println("Se genera automáticamente un arhivo de log llamado Hada_log.txt en la ruta " + directoryName );
-                    System.out.println("Tambien se genera un archivo de errores basado en el archivo recibido" + Archivo );
+                    System.out.println("Tambien se genera un archivo de errores basado en el archivo recibido\n\n" + Archivo );
                      
                     Read_Archivo lectura = new Read_Archivo();
                    lectura.leerArchivo(Archivo);
