@@ -1,5 +1,14 @@
-with Ada.Text_IO;
+wi$%th Ada.Text_IO;
 procedure Hola_Mundo is
-begin
-  Ada.Text_IO.Put_Line ( "Hola, mundo!" );
-end Hola_Mundo;
+begin;
+35Amigo
+A35go
+esteesunnombrelargo11
+esteesunnombremaslargo
+amigo65
+a_migo
+_go
+amigo_
+a"##migo
+vamos <<Amigo>>;
+<<carlos>>

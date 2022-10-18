@@ -27,7 +27,9 @@ public class Errores {
             case 11: Error = ("\n>!!!Error [" +codigo+"] Falta ; en la expresión de suma " ); break;
             case 12: Error = ("\n>!!!Error [" +codigo+"] Es mayor al rango" ); break;
             case 13: Error = ("\n>!!!Error [" +codigo+"] Es menor al rango" ); break;
-
+            case 14: Error = ("\n>!!!Error [" +codigo+"] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ;" ); break;
+            case 15: Error = ("\n>!!!Error [" +codigo+"] Un token NO debe exender los 20 caracteres" ); break;
+            case 16: Error = ("\n>!!!Error [" +codigo+"] Una Etiqueta no debe llevar ; al final" ); break;
 
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );

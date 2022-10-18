@@ -69,7 +69,7 @@ public class Read_Archivo {
                         contador++;
                     } else {
 
-                        if (contador < 10) {
+                        if (contador <10) {
                             Respuesta = (Respuesta + revi.AnalizaTexto(linea));
                             reglonerror.println("0000" + contador + " " + linea + " " + Respuesta);
                             contador++;

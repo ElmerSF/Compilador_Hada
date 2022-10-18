@@ -18,7 +18,9 @@ public class TabladeExpresiones {
         Inicio4("((PROCEDURE|procedure|Procedure)[' '](.{1,20}[_]{1,20})[' '](IS|is|Is))"), //TERMINA
         Inicio5("((PROCEDURE|procedure|Procedure)[' '](.{0,20}[-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>]{1,20}.{0,20})[' '](IS|is|Is))"),//CARACTER
         Inicio6("((PROCEDURE|procedure|Procedure)[' ']([0-9]{1,20}.{0,20})[' '](IS|is|Is))"),//NUMERO
+        Reservado("^[PROCEDURE|procedure|Procedure|BEGIN|begin|Begin|if|IF|If|ELSE|else|Else|For|FOR|For]{1,}([' '|(|)|A-Z|a-z|0-9]{0,})[;]$"),
         Etiqueta1("([\\<<]{1,})([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([^\\>>])"),
+        ///Etiqueta1("([\\<<]{1,})([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([^\\>>])"),
         Etiqueta2("([^\\<<])([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([\\>>]{1,})"),
         Final("(fin del programa)"),
         Suma("([[0-9|' '0-9|0-9' ']*\\+[0-9|' '0-9]*]*|[[(0-9|(' '0-9|(0-9' ']*\\+[0-9|' '0-9)|0-9' '))]*]*)([^;])"),

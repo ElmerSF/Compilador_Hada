@@ -1,0 +1,288 @@
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  
+00001 wi$%th Ada.Text_IO; 
+00002 procedure Hola_Mundo is 
+00003 begin; 
+00004 35Amigo 
+00005 A35go 
+00006 esteesunnombrelargo11 
+00007 esteesunnombremaslargo 
+00008 amigo65      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [begin;]      
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombrelargo11]   
+>!!!Error [15] Un token NO debe exender los 20 caracteres [esteesunnombremaslargo]   
+00009 a_migo   
+00010 _go  
+00011 amigo_  
+00012 a"##migo  
+00013 vamos <<Amigo>>; 
+>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<Amigo>>;]  
+00014 <<carlos>>  

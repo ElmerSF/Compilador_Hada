@@ -45,7 +45,10 @@ public class Analisis {
                         }
 
                         if (token.length() > 20) {
-
+                                 cuenta_errores++;
+                                Respuesta = (falla = error.Asigna_Error(15) + " [" + TxtLinea + "] ");
+                                TokenClasificado = true;
+                                
                         } else {
 
                             if (token.matches(comparaTOKENS.patron)) {
@@ -55,14 +58,15 @@ public class Analisis {
                                     case Cadena:         TokenClasificado = true; break;
                                     case Procedure:      TokenClasificado = true; break;
                                     case Is:             TokenClasificado = true; break;
-                                    case Nombre_Archivo: TokenClasificado = true; break;
+                                    case Nombre_Archivo: System.out.println("Encontré una lindo nombre de archivo "+ token); TokenClasificado = true; break;
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
-                                    case Palabra:        TokenClasificado = true; break;
+                                    case Palabra:        cuenta_errores++; System.out.println("Encontré una linda palabra "+ token); TokenClasificado = true; break;
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
+                                    case Etiqueta:       cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
                                     case Agrupacion:     TokenClasificado = true; break;
-                                    default: Respuesta = (token + " sin clasificar"); break;
+                                    default:             Respuesta = (token + " sin clasificar");  break;
                                 }
                             }
                         }
@@ -97,6 +101,7 @@ public class Analisis {
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
+                            case Reservado:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             default: Respuesta = (Respuesta + "\n ok");
                         }
                     }
