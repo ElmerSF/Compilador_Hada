@@ -8,24 +8,27 @@ package hada;
 
 
 public class TabladeSimbolos {
-
+    
+    static Palabras_Reservadas_Ada Res_ada = new Palabras_Reservadas_Ada();
+    static final String Reservadas = Res_ada.lista();
+    static Palabras_Reservadas_Hada Res_hada = new Palabras_Reservadas_Hada();
+    static final String Reservadas_ha = Res_hada.lista();
+    
     enum Tipos {
-        Procedure("PROCEDURE|procedure|Procedure"),
-        Reservada("(SUMA|RESTA|MULTIPLICA|DIVIDE|PROGRAMA|ADA.TEXT_IO|begin)"),
-        Is("IS|is"),
-        //Palabra ("[A-Z|a-z]{1,}"),
+       Procedure("PROCEDURE|procedure|Procedure"),
+       Is("IS|is"),
+       Begin("BEGIN|Begin|begin"),
+       End("END|end|End"),
+       Reservada_Hada(""+Reservadas_ha),
+       Reservada_Ada(""+Reservadas),
+        
         num("[0-9]"),
-        //alfanum("["+letras+"|"+num+"]"),
-       // caracter ("[!|\"|#|$|%|‰|&|'|(|)|*|+|,|-|.|/||:|;|<|<|=|>|>|?|@||[|\\|]|^|_|`||{|||}|~||¡|¢|£|¤|¥|¦|§|¨|©|ª|«|¬|­|®|¯|°|±|²|³|´|µ|¶|·|¸|¹|º|»|¼|½|¾|⅛|⅜|⅝|⅞|¿|À|Á|Â|Ã|Ä|Å|Æ|Ç|È|É|Ê|Ë|Ì|Í|Î|Ï|Ð|Ñ|Ò|Ó|Ô|Õ|Ö|×|Ø|Ù|Ú|Û|Ü|Ý|Þ|ß|à|á|â|ã|ä|å|æ|ç|è|é|ê|ë|ì|í|î|ï|ð|ñ|ò|ó|ô|õ|ö|÷|ø|ù|ú|û|ü|ý|þ|ÿ|€|≠|≤|≥|√|Ω|↑|↓|←|→|↔|№|▲|►|▼|◄|■|□|▪|▫|●|○|◊]*"),
-       // Nombre_Archivo("["+letras+"]*["+letras+"|_]*["+letras+"]*"),
         Nombre_Archivo("([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})"),
-        Palabra ("[^A-Z|a-z]*{1,}[0-9|_]*{1,}][A-Z|a-z]{1,}"),
         Operadores("[\\*|/|+|-]{1,}"),
         Cadena("(([\"])([' '|\n|\t]|[^\"].{0,})([\"]))"),
         Numero_Entero("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),
         Numero_Real("[0-9]*[.][0-9]*"),
         finlinea("(;)"),
-        
         Etiqueta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,}[;])"),
         Agrupacion("[(|)]{1,}");
         
@@ -34,7 +37,11 @@ public class TabladeSimbolos {
 
         Tipos(String s) {
             this.patron = s;
+            
         }
     }
+  
+  
+    
 
 }

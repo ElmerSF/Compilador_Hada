@@ -10,11 +10,13 @@ import java.util.StringTokenizer;
 
 public class Analisis {
 
+    
     int num;
     Read_Archivo txt = new Read_Archivo();
     Errores error = new Errores();
     String falla = "";
     int cuenta_errores = 0;
+    boolean procedure = false, begin =false, end =false;
 
     public String AnalizaTexto(String TxtLinea) {
 
@@ -54,14 +56,17 @@ public class Analisis {
                             if (token.matches(comparaTOKENS.patron)) {
 
                                 switch (comparaTOKENS) {
-                                    case Reservada:      TokenClasificado = true; break;
+                                    case Reservada_Hada:     System.out.println("Encontré una palabra reservada de HADA "+ token); TokenClasificado = true; break;
+                                    case Reservada_Ada:     System.out.println("Encontré una palabra reservada de ADA "+ token); TokenClasificado = true; break;
                                     case Cadena:         TokenClasificado = true; break;
-                                    case Procedure:      TokenClasificado = true; break;
-                                    case Is:             TokenClasificado = true; break;
+                                    case Procedure:      System.out.println("Encontré linea PROCEDURE "+ token); procedure =true; TokenClasificado = true; break;
+                                    case Is:             System.out.println("Encontré linea IS "+ token); TokenClasificado = true; break;
+                                    case Begin:      System.out.println("Encontré linea BEGIN "+ token); begin =true; TokenClasificado = true; break;
+                                    case End:      System.out.println("Encontré linea END "+ token); end =true; TokenClasificado = true; break;
                                     case Nombre_Archivo: System.out.println("Encontré una lindo nombre de archivo "+ token); TokenClasificado = true; break;
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
-                                    case Palabra:        cuenta_errores++; System.out.println("Encontré una linda palabra "+ token); TokenClasificado = true; break;
+                                  
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
                                     case Etiqueta:       cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
@@ -97,7 +102,7 @@ public class Analisis {
                             case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Etiqueta2:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(10) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             case Suma:        cuenta_errores++; Respuesta = (falla = error.Asigna_Error(11) + " [" + TxtLinea + "] ");   encontrado = true; break;
-                            case Constante_numerica_entera: num = Integer.parseInt(Expresion); Respuesta = (Respuesta + Validanum(num)); encontrado = true; break;
+                            //case Constante_numerica_entera: num = Integer.parseInt(Expresion); Respuesta = (Respuesta + Validanum(num)); encontrado = true; break;
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
@@ -131,6 +136,8 @@ public class Analisis {
         }
         return Respuesta_int;
     }
+    
+    
 
     public int valida_errores(String nomArchivo) {
 
