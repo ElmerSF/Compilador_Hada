@@ -13,8 +13,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class Read_Archivo {
 
@@ -22,14 +20,15 @@ public class Read_Archivo {
     String nomArchivo = "";
     File compilar;
     Fase2 fase2 = new Fase2();
+    Logs log_Aplicacion = new Logs();
 
     public void leerArchivo(String Archivo) {
         Analisis revi = new Analisis();
-        String Bitacora = "Hada_log.txt";
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //formato para el Log
-        File log, errores;
-        FileWriter escribirlog, escribirerror;
-        PrintWriter reglonlog, reglonerror;
+        //String Bitacora = "Hada_log.txt";
+        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //formato para el Log
+        File errores;
+        FileWriter escribirerror;
+        PrintWriter reglonerror;
         String linea;
         String pendiente = "";
         int contador = 1;
@@ -39,9 +38,6 @@ public class Read_Archivo {
         try {
 
             String Respuesta = "";
-            log = new File(Bitacora);
-            escribirlog = new FileWriter(log, true);
-            reglonlog = new PrintWriter(escribirlog);
 
             nomArchivo = Archivo.substring(0, Archivo.indexOf('.')); //tomamos el arhivo y le eliminamos la extensión
             errores = new File(nomArchivo + "-errores.txt");
@@ -49,12 +45,12 @@ public class Read_Archivo {
             reglonerror = new PrintWriter(escribirerror);
 
             br = new BufferedReader(new FileReader(Archivo));
-            reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 02 INFORMACIÓN se comienza lectura de archivo " + Archivo);
-
-          
+            log_Aplicacion.escribe_log(4, Archivo);
+            
             while ((linea = br.readLine()) != null) //Lectura del archivo por línea
             {
-                reglonlog.println("\t & {linea de lectura [" + contador + "] }");
+                log_Aplicacion.escribe_log(5, "\t & {linea de lectura [" + contador + "] }" );
+                
 
                 if (contador < 8) {
 
@@ -103,46 +99,46 @@ public class Read_Archivo {
             }
 
             cuenta_error = revi.valida_errores(nomArchivo);
-            reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " >!!!AVISO Se encontraron " + cuenta_error + " Errores para detalle consulte " + nomArchivo + "-errores.txt");
-            reglonlog.println("\n> " + dtf.format(LocalDateTime.now()) + " ***** 03 INFORMACIÓN SE termina lectura de archivo " + Archivo);
-            reglonerror.close();
-            escribirerror.close();
-
+            log_Aplicacion.escribe_log(6,  + cuenta_error + " Errores para detalle consulte " + nomArchivo + "-errores.txt" );
+            log_Aplicacion.escribe_log(7,  Archivo);
+        
             if (cuenta_error > 0) {
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación");
-                reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");
-                reglonlog.close();
-                escribirlog.close();
+                
+                log_Aplicacion.escribe_log(8, "");
+                             
             } else {
                 String Temporal = (nomArchivo + ".adb");
                 compilar = new File(Temporal);
                 fase2.tmp_lectura(Archivo, compilar);
 
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: " + nomArchivo);
+                log_Aplicacion.escribe_log(9, Archivo);
+                
                 System.out.println("Se comienza proceso de generación archivo " + compilar.getName());
 
                 String ruta = ("cmd /c C:\\GNAT\\2021\\bin\\gnatmake " + compilar.getName());
+                
                 String compilacion = (fase2.Mostrar_Proceso(ruta));
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + compilacion + " Compilación de archivo");
+                log_Aplicacion.escribe_log(10, ""+compilacion);
+               
                 ruta = "cmd /c dir";
                 compilacion = (fase2.Mostrar_Proceso(ruta));
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + compilacion + " Ejecución comando dir");
-
+                log_Aplicacion.escribe_log(11, ""+compilacion);
+                
                 String Temp2 = compilar.getName();
+                
                 Temp2 = (Temp2.substring(0, Temp2.indexOf('.'))) + ".exe";
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " Ejecución programa" + Temp2);
+                
+                log_Aplicacion.escribe_log(12, Temp2);
+               
                 compilacion = (fase2.Mostrar_Proceso(Temp2));
-                reglonlog.println("> " + dtf.format(LocalDateTime.now()) + compilacion + " Se ejecuto el programa");
-
-                reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");
-
-                reglonlog.close();
-                escribirlog.close();
-            }
+                log_Aplicacion.escribe_log(13, compilacion);
+                 }
 
         } catch (FileNotFoundException ex) {
+            log_Aplicacion.escribe_log(0,"Error "+ex );
             System.out.println("Archivo no encontrado");
         } catch (IOException ex) {
+            log_Aplicacion.escribe_log(0,"Error "+ex );
             System.out.println("Archivo no encontrado o no se pudo abrir");
         }
 

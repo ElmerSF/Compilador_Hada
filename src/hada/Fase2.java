@@ -19,7 +19,8 @@ import java.util.logging.Logger;
 
 
 public class Fase2 {
-
+Logs log = new Logs();
+    
     public String Mostrar_Proceso(String ruta) {
 
         String mensaje = "";
@@ -42,10 +43,12 @@ public class Fase2 {
                 process.waitFor();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Fase2.class.getName()).log(Level.SEVERE, null, ex);
+                log.escribe_log(0,"Error" +ex);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
+            log.escribe_log(0,"Error" +e);
             mensaje = "Error en la ejecución";
         }
         return mensaje;
@@ -72,6 +75,7 @@ public class Fase2 {
             reglon.close();
             escribir.close();
         } catch (Exception e) {
+           log.escribe_log(0,"Error" +e); 
         }
 
     }
