@@ -101,6 +101,8 @@ public class Read_Archivo {
             cuenta_error = revi.valida_errores(nomArchivo);
             log_Aplicacion.escribe_log(6,  + cuenta_error + " Errores para detalle consulte " + nomArchivo + "-errores.txt" );
             log_Aplicacion.escribe_log(7,  Archivo);
+            reglonerror.close();
+            escribirerror.close();
         
             if (cuenta_error > 0) {
                 
