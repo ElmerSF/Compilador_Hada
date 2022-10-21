@@ -1,9 +1,14 @@
 with Ada.Text_IO;
-
+end
 procedure Hola_Mundo is
-
-begin
-
+is
+PROCEDURE
+separate
+Procedure
   Ada.Text_IO.Put_Line ( "Hola, mundo!" );
-
+procedure
+amigo36
+task
+ser mejor
+<<etiqueta>>;
 end Hola_Mundo;

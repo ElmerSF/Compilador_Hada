@@ -30,6 +30,12 @@ public class Errores {
             case 14: Error = ("\n>!!!Error [" +codigo+"] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ;" ); break;
             case 15: Error = ("\n>!!!Error [" +codigo+"] Un token NO debe exender los 20 caracteres" ); break;
             case 16: Error = ("\n>!!!Error [" +codigo+"] Una Etiqueta no debe llevar ; al final" ); break;
+            case 17: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"Procedure\" aparece [" ); break;
+            case 18: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"Begin\" aparece [" ); break;
+            case 19: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"end\" aparece [" ); break;
+            case 20: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"Procedure\" no aparece" ); break;
+            case 21: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"Begin\" no aparece" ); break;
+            case 22: Error = ("\n>!!!Error [" +codigo+"] La palabra Reservada \"end\" no aparece" ); break;
 
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );

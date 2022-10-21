@@ -12,11 +12,12 @@ public class Analisis {
 
     
     int num;
+    String reporte="";
     Read_Archivo txt = new Read_Archivo();
     Errores error = new Errores();
-    String falla = "";
+    String falla = "", No_soportada="";
     int cuenta_errores = 0;
-    boolean procedure = false, begin =false, end =false;
+    int procedure = 0, begin =0, end =0,ada =0;
 
     public String AnalizaTexto(String TxtLinea) {
 
@@ -57,19 +58,19 @@ public class Analisis {
 
                                 switch (comparaTOKENS) {
                                     case Reservada_Hada:     System.out.println("Encontré una palabra reservada de HADA "+ token); TokenClasificado = true; break;
-                                    case Reservada_Ada:     System.out.println("Encontré una palabra reservada de ADA "+ token); TokenClasificado = true; break;
+                                    case Reservada_Ada:  No_soportada = No_soportada+ " [" + token; ada++;    TokenClasificado = true; break;
                                     case Cadena:         TokenClasificado = true; break;
-                                    case Procedure:      System.out.println("Encontré linea PROCEDURE "+ token); procedure =true; TokenClasificado = true; break;
+                                    case Procedure:      System.out.println("Encontré linea PROCEDURE "+ token); procedure++; TokenClasificado = true; break;
                                     case Is:             System.out.println("Encontré linea IS "+ token); TokenClasificado = true; break;
-                                    case Begin:      System.out.println("Encontré linea BEGIN "+ token); begin =true; TokenClasificado = true; break;
-                                    case End:      System.out.println("Encontré linea END "+ token); end =true; TokenClasificado = true; break;
+                                    case Begin:      System.out.println("Encontré linea BEGIN "+ token); begin++; TokenClasificado = true; break;
+                                    case End:      System.out.println("Encontré linea END "+ token); end++; TokenClasificado = true; break;
                                     case Nombre_Archivo: System.out.println("Encontré una lindo nombre de archivo "+ token); TokenClasificado = true; break;
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
                                   
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
-                                    case Etiqueta:       cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
+                                    case Etiqueta:       cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
                                     case Agrupacion:     TokenClasificado = true; break;
                                     default:             Respuesta = (token + " sin clasificar");  break;
                                 }
@@ -81,6 +82,7 @@ public class Analisis {
                         Expresion = Expresion + token;
                     } else {
                         Expresion = Expresion + " " + token;
+                        System.out.println(Expresion);
                     }
                     cuenta++;
                 }
@@ -112,12 +114,12 @@ public class Analisis {
                     }
                 }
                 if (encontrado == false) {
-                    Respuesta = (Respuesta + " ");
+                    Respuesta = (reporte +Respuesta + " ");
 
                 }
             }
         }
-        return Respuesta;
+        return reporte +Respuesta;
     }
 
     public String Validanum(int num) {
@@ -152,5 +154,42 @@ public class Analisis {
         }
         return cuenta_errores;
     }
-
+    String palabras_reservadas(){
+        String resultado ="";
+        
+        if (procedure>1){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(17) + procedure + "] veces");
+        }
+        if (begin>1){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(18) + begin + "] veces");
+        }
+        if (end>1){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(19) + end + "] veces");
+        }
+        if (procedure==0){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(20));
+        }
+        if (begin==0){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(21));
+        }
+        if (end==0){
+            cuenta_errores++;
+            resultado = (resultado +  error.Asigna_Error(22));
+        }
+        return resultado;
+    }
+        public String ada (){
+            String mensaje="";
+            if (ada>0){
+                mensaje = "\n" + No_soportada + "] ¤{Advertencia instrucción no soportada por esta versión}¤";
+            }
+            ada =0;
+            No_soportada ="";
+            return mensaje;
+        }
 }

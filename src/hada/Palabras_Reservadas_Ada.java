@@ -118,7 +118,8 @@ public class Palabras_Reservadas_Ada {
           }
           
        }
-        System.out.println(palabras);
+        // si se necesita validar la lista de palabras se descomenta la siguiente línea
+       // System.out.println(palabras); 
         
         return palabras;
         

@@ -41,8 +41,7 @@ public class Logs {
                     reglonlog.println("***************  Log del Proyecto Compilador HADA               ******************");
                     reglonlog.println("Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)");
                     reglonlog.println("UNED compiladores 03307\n");
-                    reglonlog.println("**********************************************************************************\n\n");
-                    reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ERROR No se recibió archivo parámetro "+ Mensaje);}
+                    reglonlog.println("**********************************************************************************\n\n");}
                 case 3 -> {reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 01 AVISO se recibe Archivo parámetro " + Mensaje + " OK");}
                 case 4 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 02 INFORMACIÓN se comienza lectura de archivo " + Mensaje);}
                 case 5 -> { reglonlog.println(Mensaje);}
@@ -56,7 +55,9 @@ public class Logs {
                 case 12 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " Ejecución programa" + Mensaje);}
                 case 13 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + Mensaje + " Se ejecuto el programa");
                              reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");}
-                
+                case 14 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " Nombre de archivo no cumple con los requisitos " + Mensaje);}
+                case 15 -> { reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");}
+                case 16 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ERROR No se recibió archivo parámetro "+ Mensaje);}
                 default -> throw new AssertionError();
             }
             reglonlog.close();

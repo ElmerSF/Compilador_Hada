@@ -54,7 +54,7 @@ public class Read_Archivo {
 
                 if (contador < 8) {
 
-                    pendiente = (pendiente + " " + revi.AnalizaTexto(linea));
+                    pendiente = (pendiente + " " + revi.AnalizaTexto(linea)+" "+revi.ada());
                     reglonerror.println("0000" + contador + " " + linea + " ");
 
                     contador++;
@@ -67,26 +67,26 @@ public class Read_Archivo {
 
                         if (contador <10) {
                             Respuesta = (Respuesta + revi.AnalizaTexto(linea));
-                            reglonerror.println("0000" + contador + " " + linea + " " + Respuesta);
+                            reglonerror.println("0000" + contador + " " + linea + " " + Respuesta+" "+revi.ada());
                             contador++;
                         } else {
                             if (contador < 100) {
                                 Respuesta = revi.AnalizaTexto(linea);
-                                reglonerror.println("000" + contador + " " + linea + " " + Respuesta);
+                                reglonerror.println("000" + contador + " " + linea + " " + Respuesta+" "+revi.ada());
                                 contador++;
                             } else {
                                 if (contador < 1000) {
                                     Respuesta = revi.AnalizaTexto(linea);
-                                    reglonerror.println("00" + contador + " " + linea + " " + Respuesta);
+                                    reglonerror.println("00" + contador + " " + linea + " " + Respuesta+" "+revi.ada());
                                     contador++;
                                 } else {
                                     if (contador < 10000) {
                                         Respuesta = revi.AnalizaTexto(linea);
-                                        reglonerror.println("0" + contador + " " + linea + " " + Respuesta);
+                                        reglonerror.println("0" + contador + " " + linea + " " + Respuesta+" "+revi.ada());
                                         contador++;
                                     } else {
                                         Respuesta = revi.AnalizaTexto(linea);
-                                        reglonerror.println(contador + " " + linea + " " + Respuesta);
+                                        reglonerror.println(contador + " " + linea + " " + Respuesta+" "+revi.ada());
                                         contador++;
 
                                     }
@@ -97,7 +97,7 @@ public class Read_Archivo {
                 }
 
             }
-
+             reglonerror.println(revi.palabras_reservadas());   
             cuenta_error = revi.valida_errores(nomArchivo);
             log_Aplicacion.escribe_log(6,  + cuenta_error + " Errores para detalle consulte " + nomArchivo + "-errores.txt" );
             log_Aplicacion.escribe_log(7,  Archivo);
