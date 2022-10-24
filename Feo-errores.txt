@@ -1,0 +1,115 @@
+00001  
+00002   
+00003    
+00004     
+00005             
+00006                                   
+00007 with    Ada.Text_IO,   Ada.Integer_Text_IO,    Ada.Float_Text_IO; 
+00008 USE                    ADA.Text_IO, Ada.Integer_Text_IO, ADA.Float_Text_IO;                           
+ [with] ¤{Advertencia instrucción no soportada por esta versión}¤ 
+00009     
+ [USE] ¤{Advertencia instrucción no soportada por esta versión}¤
+00010    PROCEDURE    FEO     iS        
+00011    Max_Anos    :   integer;      
+00012        Ano     :   integer;       
+00013        Respuesta   :      character       ;   
+00014        Factor1,Factor2,Factor3:           float      ;   
+00015 BEGin   
+00016     --    *****************************************************************  
+00017   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *  
+00018   --  * encontrar el factor por el cual cualquier moneda, tales como  *  
+00019   -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  *  
+00020   --  * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *  
+00021     --    *****************************************************************  
+00022    
+00023 --     Inicio del programa                 
+00024    
+00025        <<   inicio     >>         
+00026     new_line;       
+00027        --    entrada de datos  
+00028 new_line     ;   
+00029     put    (   "Por favor, indique la cantidad maxima de anos:"   )   ;       
+00030     new_line;            
+00031    
+00032   <<      e10050>>   
+00033     get(Max_Anos);   
+00034           skip_line        ;   
+00035    
+00036     if(Max_Anos<=0)then   
+00037 goto            ceroanos; 
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [goto            ceroanos;]  
+ [goto] ¤{Advertencia instrucción no soportada por esta versión}¤
+00038         end if;        
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [        end if;       ]  
+00039    
+00040 -- Inicializacion de variables  
+00041     Ano:=0;   
+00042     Factor1     :=    1.0     ;     
+00043     Factor2   :=     1.0   ;      
+00044     Factor3 :=      1.0  ;      
+00045        
+00046     -- Calculos    y    salida de datos  
+00047     new_line      ;            
+00048     put    (    "        Ano 7%           8%          10%"    )  ;       
+00049 new_line;   
+00050     for    Ano    in   1  ..   Max_Anos   loop    1 sin clasificar  
+00051       Factor1 :=    ( Factor1 *      
+00052                                  1.07 );       
+00053       Factor2 := ( Factor2     )   
+00054                       * 
+>!!!Error [11] Falta ; en la expresión de suma  [                      *]  
+00055                       1.08   ;       
+00056 Factor3:=Factor3*(1.10);   
+00057       put (     Ano,      3 ) ;    3 sin clasificar  
+00058         put (   Factor1, 10, 2, 0 ) ;    0 sin clasificar  
+00059           put ( Factor2, 10, 2, 0 ) ;    0 sin clasificar  
+00060             put ( Factor3, 10, 2, 0 )  ;     0 sin clasificar  
+00061       new_line   ;      
+00062     end             loop;      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    end             loop;     ]  
+00063    
+00064     new_line;         
+00065     put    ( "*** Fin del programa normal ***"        );        
+00066     new_line;      
+00067    
+00068     put (    "Otra vez?"    );      
+00069     get (    respuesta    )   ;    
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    get (    respuesta    )   ;   ]  
+00070     skip_line   ;   
+00071     new_line    ;   
+00072 put("Lo que respondio: ");         
+00073     put (         respuesta);            
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    put (         respuesta);           ]  
+00074     new_line;          
+00075     if(respuesta='S' or     respuesta   =   's'   )     then   
+ [or] ¤{Advertencia instrucción no soportada por esta versión}¤
+00076        goto inicio;      
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       goto inicio;     ]  
+ [goto] ¤{Advertencia instrucción no soportada por esta versión}¤
+00077     else   
+00078  goto fin999;     
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [ goto fin999;    ]  
+ [goto] ¤{Advertencia instrucción no soportada por esta versión}¤
+00079     end                        if; 
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    end                        if;]  
+00080    
+00081   <<             ceroanos>>        
+00082     put      ( "*** Fin del programa porque indico 0 anos ***" )   ;     0 sin clasificar  
+00083     new_line;      
+00084         
+00085   <<         fin999          >>   
+00086     null    ;        
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    null    ;       ]  
+00087     put ( "*** Hasta luego ***" )       ;   
+00088           new_line;   
+00089    
+00090     end     feo;            
+>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [    end     feo;           ]  
+00091    
+00092     -- fin del programa       
+00093      
+00094        
+00095            
+00096                                
+
+>!!!Error [19] La palabra Reservada "end" aparece [4] veces

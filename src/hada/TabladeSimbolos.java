@@ -21,9 +21,11 @@ public class TabladeSimbolos {
        End("END|end|End"),
        Reservada_Hada(""+Reservadas_ha),
        Reservada_Ada(""+Reservadas),
-        
+        comentario("[--]."),
+       
         num("[0-9]"),
         Nombre_Archivo("([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})"),
+        lista_variables("([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([[,][[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]]]{1,})([[,][[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]]]{0,})*(:)"),
         Operadores("[\\*|/|+|-]{1,}"),
         Cadena("(([\"])([' '|\n|\t]|[^\"].{0,})([\"]))"),
         Numero_Entero("[0-9]*|[' '][0-9]*|[0-9]*[' ']|[+|-][0-9]*"),

@@ -24,8 +24,9 @@ public class Analisis {
         StringTokenizer segmentos = new StringTokenizer(TxtLinea);
         int cuenta = 0;
         String Expresion = new String();
-        boolean TokenClasificado = false;
+        boolean TokenClasificado = false, comentario= false;
         String Respuesta = "";
+        String copia="";
 
         if (TxtLinea.isEmpty()) {
             Respuesta = " ";
@@ -35,7 +36,7 @@ public class Analisis {
                 Respuesta = (falla = error.Asigna_Error(1) + " [" + TxtLinea + "] ");
             } else {
 
-                while (segmentos.hasMoreTokens()) {
+                while ((segmentos.hasMoreTokens())&&(comentario==false)) {
                     String token = segmentos.nextToken();
 
                     //Revisa los token para clasificarlos 
@@ -47,14 +48,14 @@ public class Analisis {
 
                         }
 
-                        if (token.length() > 20) {
+                        if ((token.length() > 20)&&(!token.contains(","))&&(!token.contains("--"))&&(!token.contains("+")&&!token.contains("-")&&!token.contains("/")&&!token.contains("*"))) {
                                  cuenta_errores++;
                                 Respuesta = (falla = error.Asigna_Error(15) + " [" + TxtLinea + "] ");
                                 TokenClasificado = true;
                                 
                         } else {
-
-                            if (token.matches(comparaTOKENS.patron)) {
+                                copia = token;
+                            if ((copia.toLowerCase()).matches(comparaTOKENS.patron)) {
 
                                 switch (comparaTOKENS) {
                                     case Reservada_Hada:     System.out.println("Encontré una palabra reservada de HADA "+ token); TokenClasificado = true; break;
@@ -67,7 +68,8 @@ public class Analisis {
                                     case Nombre_Archivo: System.out.println("Encontré una lindo nombre de archivo "+ token); TokenClasificado = true; break;
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
-                                  
+                                    case comentario:     TokenClasificado = true; comentario =true; break;
+                                    case lista_variables: TokenClasificado = true; System.out.println("!!!!!! hay una lista de variables " + token); break;
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
                                     case Etiqueta:       cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
@@ -109,7 +111,7 @@ public class Analisis {
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
                             case Reservado:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true; break;
-                            default: Respuesta = (Respuesta + "\n ok");
+                            default: Respuesta = (Respuesta + " ");
                         }
                     }
                 }

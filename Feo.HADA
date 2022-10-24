@@ -1,0 +1,96 @@
+
+ 
+  
+   
+           
+                                 
+with    Ada.Text_IO,   Ada.Integer_Text_IO,    Ada.Float_Text_IO;
+USE                    ADA.Text_IO, Ada.Integer_Text_IO, ADA.Float_Text_IO;
+
+   PROCEDURE    FEO     iS     
+   Max_Anos    :   integer;   
+       Ano     :   integer;    
+       Respuesta   :      character       ;
+       Factor1,Factor2,Factor3:           float      ;
+BEGin
+    --    *****************************************************************
+  -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *
+  --  * encontrar el factor por el cual cualquier moneda, tales como  *
+  -- * el franco, el dolar, la libra esterlina, el marco, el rublo,  *
+  --  * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *
+    --    *****************************************************************
+
+--     Inicio del programa               
+
+       <<   inicio     >>      
+    new_line;    
+       --    entrada de datos
+new_line     ;
+    put    (   "Por favor, indique la cantidad maxima de anos:"   )   ;    
+    new_line;         
+
+  <<      e10050>>
+    get(Max_Anos);
+          skip_line        ;
+
+    if(Max_Anos<=0)then
+goto            ceroanos;
+        end if;       
+
+-- Inicializacion de variables
+    Ano:=0;
+    Factor1     :=    1.0     ;  
+    Factor2   :=     1.0   ;   
+    Factor3 :=      1.0  ;   
+   
+    -- Calculos    y    salida de datos
+    new_line      ;         
+    put    (    "        Ano 7%           8%          10%"    )  ;    
+new_line;
+    for    Ano    in   1  ..   Max_Anos   loop   
+      Factor1 :=    ( Factor1 *   
+                                 1.07 );    
+      Factor2 := ( Factor2     )
+                      *
+                      1.08   ;    
+Factor3:=Factor3*(1.10);
+      put (     Ano,      3 ) ;   
+        put (   Factor1, 10, 2, 0 ) ;   
+          put ( Factor2, 10, 2, 0 ) ;   
+            put ( Factor3, 10, 2, 0 )  ;    
+      new_line   ;   
+    end             loop;     
+
+    new_line;      
+    put    ( "*** Fin del programa normal ***"        );     
+    new_line;   
+
+    put (    "Otra vez?"    );   
+    get (    respuesta    )   ;   
+    skip_line   ;
+    new_line    ;
+put("Lo que respondio: ");      
+    put (         respuesta);           
+    new_line;       
+    if(respuesta='S' or     respuesta   =   's'   )     then
+       goto inicio;     
+    else
+ goto fin999;    
+    end                        if;
+
+  <<             ceroanos>>     
+    put      ( "*** Fin del programa porque indico 0 anos ***" )   ;    
+    new_line;   
+    
+  <<         fin999          >>
+    null    ;       
+    put ( "*** Hasta luego ***" )       ;
+          new_line;
+
+    end     feo;           
+
+    -- fin del programa     
+ 
+   
+       
+                           
