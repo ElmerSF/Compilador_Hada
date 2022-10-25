@@ -14,11 +14,12 @@ public class TabladeSimbolos {
     static Palabras_Reservadas_Hada Res_hada = new Palabras_Reservadas_Hada();
     static final String Reservadas_ha = Res_hada.lista();
     
-    enum Tipos {
+    public enum Tipos {
        Procedure("PROCEDURE|procedure|Procedure"),
        Is("IS|is"),
        Begin("BEGIN|Begin|begin"),
        End("END|end|End"),
+      
        Reservada_Hada(""+Reservadas_ha),
        Reservada_Ada(""+Reservadas),
         comentario("[--]."),

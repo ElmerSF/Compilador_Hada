@@ -55,24 +55,25 @@ public class Analisis {
                                 
                         } else {
                                 copia = token;
-                            if ((copia.toLowerCase()).matches(comparaTOKENS.patron)) {
+                            if ((copia.toUpperCase()).matches(comparaTOKENS.patron)) {
 
                                 switch (comparaTOKENS) {
-                                    case Reservada_Hada:     System.out.println("Encontré una palabra reservada de HADA "+ token); TokenClasificado = true; break;
+                                    case Reservada_Hada:      TokenClasificado = true; break;
                                     case Reservada_Ada:  No_soportada = No_soportada+ " [" + token; ada++;    TokenClasificado = true; break;
                                     case Cadena:         TokenClasificado = true; break;
-                                    case Procedure:      System.out.println("Encontré linea PROCEDURE "+ token); procedure++; TokenClasificado = true; break;
-                                    case Is:             System.out.println("Encontré linea IS "+ token); TokenClasificado = true; break;
-                                    case Begin:      System.out.println("Encontré linea BEGIN "+ token); begin++; TokenClasificado = true; break;
-                                    case End:      System.out.println("Encontré linea END "+ token); end++; TokenClasificado = true; break;
-                                    case Nombre_Archivo: System.out.println("Encontré una lindo nombre de archivo "+ token); TokenClasificado = true; break;
+                                    case Procedure:      procedure++; TokenClasificado = true; break;
+                                    case Is:             TokenClasificado = true; break;
+                                    case Begin:       begin++; TokenClasificado = true; break;
+                                    case End:       end++; TokenClasificado = true; break;
+                                    case Nombre_Archivo:  TokenClasificado = true; break;
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
                                     case comentario:     TokenClasificado = true; comentario =true; break;
-                                    case lista_variables: TokenClasificado = true; System.out.println("!!!!!! hay una lista de variables " + token); break;
+                                    case lista_variables: TokenClasificado = true;  break;
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
                                     case Etiqueta:       cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
+                                    
                                     case Agrupacion:     TokenClasificado = true; break;
                                     default:             Respuesta = (token + " sin clasificar");  break;
                                 }
@@ -84,7 +85,7 @@ public class Analisis {
                         Expresion = Expresion + token;
                     } else {
                         Expresion = Expresion + " " + token;
-                        System.out.println(Expresion);
+                        //System.out.println(Expresion);
                     }
                     cuenta++;
                 }
@@ -92,7 +93,7 @@ public class Analisis {
                 //Revisa las expresiones y en caso de una coincidencia indica un numero de error
                 Boolean encontrado = false;
                 for (TabladeExpresiones.Tipos comparaExpresiones : TabladeExpresiones.Tipos.values()) {
-                    if (Expresion.matches(comparaExpresiones.patron)) {
+                    if (Expresion.toUpperCase().matches(comparaExpresiones.patron)) {
                         switch (comparaExpresiones) {
                             case Inicio:      cuenta_errores++; Respuesta = (falla = error.Asigna_Error(2) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Inicio1:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(3) + " [" + TxtLinea + "] ");    encontrado = true; break;
@@ -110,7 +111,9 @@ public class Analisis {
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
-                            case Reservado:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            case Reservado:   System.out.println("!!! Error Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; "+ TxtLinea); cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            
+ 
                             default: Respuesta = (Respuesta + " ");
                         }
                     }
