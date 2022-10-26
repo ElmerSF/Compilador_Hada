@@ -11,7 +11,7 @@ USE                    ADA.Text_IO, Ada.Integer_Text_IO, ADA.Float_Text_IO;
    Max_Anos    :   integer;   
        Ano     :   integer;    
        Respuesta   :      character       ;
-       Factor1,Factor2,Factor3:           float      ;
+        Factor1, Factor2, Factor3  :         float           ;
 BEGin
     --    *****************************************************************
   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *
@@ -36,6 +36,7 @@ new_line     ;
     if(Max_Anos<=0)then
 goto            ceroanos;
         end if;       
+Factor1, Factor5, Factor6  :         float           ;
 
 -- Inicializacion de variables
     Ano:=0;

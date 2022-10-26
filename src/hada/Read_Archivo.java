@@ -24,8 +24,6 @@ public class Read_Archivo {
 
     public void leerArchivo(String Archivo) {
         Analisis revi = new Analisis();
-        //String Bitacora = "Hada_log.txt";
-        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //formato para el Log
         File errores;
         FileWriter escribirerror;
         PrintWriter reglonerror;

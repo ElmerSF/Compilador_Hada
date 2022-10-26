@@ -18,7 +18,7 @@ public class Analisis {
     String falla = "", No_soportada="";
     int cuenta_errores = 0;
     int procedure = 0, begin =0, end =0,ada =0;
-
+    String identificadores ="", elemento ="";
     public String AnalizaTexto(String TxtLinea) {
 
         StringTokenizer segmentos = new StringTokenizer(TxtLinea);
@@ -27,6 +27,7 @@ public class Analisis {
         boolean TokenClasificado = false, comentario= false;
         String Respuesta = "";
         String copia="";
+        
 
         if (TxtLinea.isEmpty()) {
             Respuesta = " ";
@@ -65,15 +66,14 @@ public class Analisis {
                                     case Is:             TokenClasificado = true; break;
                                     case Begin:       begin++; TokenClasificado = true; break;
                                     case End:       end++; TokenClasificado = true; break;
-                                    case Nombre_Archivo:  TokenClasificado = true; break;
+                                    case Nombre_Archivo: TokenClasificado = true; break;                                  
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
                                     case comentario:     TokenClasificado = true; comentario =true; break;
-                                    case lista_variables: TokenClasificado = true;  break;
+                                    case lista_variables: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(23) + " [" + token + "] "); TokenClasificado = true;  break;
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
                                     case Etiqueta:       cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
-                                    
                                     case Agrupacion:     TokenClasificado = true; break;
                                     default:             Respuesta = (token + " sin clasificar");  break;
                                 }
@@ -102,6 +102,31 @@ public class Analisis {
                             case Inicio4:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(6) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Inicio6:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(24) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables1: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(25) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables2: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(26) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables3: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(27) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables4: 
+                                if ((Expresion.toUpperCase().contains("FLOAT"))||(Expresion.toUpperCase().contains("INTERGER"))||(Expresion.toUpperCase().contains("CARACTER")))
+                                {
+                                    encontrado = true; break;
+                                }else{
+                                cuenta_errores++; Respuesta = (falla = error.Asigna_Error(28) + " [" + TxtLinea + "] ");    encontrado = true; break;}
+                            case Definicion_variables5:
+                                
+                                elemento =Expresion.substring(identificadores.length(), Expresion.indexOf(':'));
+                              
+                                if (identificadores.contains(elemento)){
+                                   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(29) + " [" + TxtLinea + "] ");    
+                                  // System.out.println("ERROR identificador repetido"); 
+                                   encontrado = true; break;
+                               }else{
+                                   identificadores = identificadores + elemento;
+                                
+                                //System.out.println(identificadores);
+                                 encontrado = true; break;
+                               }
+                                
                             case Final:       encontrado = true; break;
                             case Comentario:  encontrado = true; break;
                             case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
@@ -111,7 +136,9 @@ public class Analisis {
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
-                            case Reservado:   System.out.println("!!! Error Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; "+ TxtLinea); cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            case Reservado:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true;
+                             //System.out.println("!!! Error Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; "+ TxtLinea);
+                            break;
                             
  
                             default: Respuesta = (Respuesta + " ");
