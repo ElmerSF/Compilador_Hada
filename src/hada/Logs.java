@@ -35,7 +35,21 @@ public class Logs {
                     reglonlog.println("Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)");
                     reglonlog.println("UNED compiladores 03307");
                     reglonlog.println("Actualmente se está ejecuantando en el directorio " + Mensaje);
-                    reglonlog.println("**********************************************************************************\n\n");}
+                    reglonlog.println("**********************************************************************************\n\n");
+                    reglonlog.println("                          .-\"\"\"-.");
+                    reglonlog.println("                         / .===. \\");
+                    reglonlog.println("                         \\/ 6 6 \\/");
+                    reglonlog.println("                         ( \\___/ )");
+                    reglonlog.println("    _________________ooo__\\_____/_____________________");
+                    reglonlog.println("   /                                                  \\");
+                    reglonlog.println("  |Log de la Aplicación HADA. Creado por Elmer Salazar |");
+                    reglonlog.println("   \\______________________________ooo_________________/");
+                    reglonlog.println("                         |  |  |");
+                    reglonlog.println("                         |_ | _|");
+                    reglonlog.println("                         |  |  |");
+                    reglonlog.println("                         |__|__|");
+                    reglonlog.println("                         /-'Y'-\\");
+                    reglonlog.println("                        (__/ \\__)\n");}
                 case 2 -> {
                     reglonlog.println("**********************************************************************************");
                     reglonlog.println("***************  Log del Proyecto Compilador HADA               ******************");
@@ -48,7 +62,7 @@ public class Logs {
                 case 6 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " >!!!AVISO Se encontraron "+Mensaje);}
                 case 7 -> { reglonlog.println("\n> " + dtf.format(LocalDateTime.now()) + " ***** 03 INFORMACIÓN SE termina lectura de archivo ");}
                 case 8 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación");
-                            reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");}
+                            reglonlog.println("\n\n *************************FIN DE LOG **********************************\n\n");}
                 case 9 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ***** 04 INFORMACIÓN se comienza generación de archivo para segunda fase de compilar Archivo nombre: " + Mensaje);}
                 case 10 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + Mensaje + " Compilación de archivo");}
                 case 11 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + Mensaje + " Ejecución comando dir");}
@@ -56,7 +70,7 @@ public class Logs {
                 case 13 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + Mensaje + " Se ejecuto el programa");
                              reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");}
                 case 14 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " Nombre de archivo no cumple con los requisitos " + Mensaje);}
-                case 15 -> { reglonlog.println("\n\n *************************FIN DE LOG ********************************** ");}
+                case 15 -> { reglonlog.println("\n\n *************************FIN DE LOG **********************************\n\n ");}
                 case 16 -> { reglonlog.println("> " + dtf.format(LocalDateTime.now()) + " ERROR No se recibió archivo parámetro "+ Mensaje);}
                 default -> throw new AssertionError();
             }

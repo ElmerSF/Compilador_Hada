@@ -68,6 +68,23 @@ public static void main(String[] args) throws InterruptedException {
                                     System.out.println("Se genera automáticamente un arhivo de log llamado Hada_log.txt en la ruta " + directoryName);
                                     System.out.println("Tambien se genera un archivo de errores basado en el archivo recibido\n\n" + Archivo);
 
+                                    System.out.println("                          .-\"\"\"-.");
+                                    System.out.println("                         / .===. \\");
+                                    System.out.println("                         \\/ 6 6 \\/");
+                                    System.out.println("                         ( \\___/ )");
+                                    System.out.println("    _________________ooo__\\_____/_____________________");
+                                    System.out.println("   /                                                  \\");
+                                    System.out.println("  |    COMPILADOR HADA. Creado por Elmer Salazar       |");
+                                    System.out.println("   \\______________________________ooo_________________/");
+                                    System.out.println("                         |  |  |");
+                                    System.out.println("                         |_ | _|");
+                                    System.out.println("                         |  |  |");
+                                    System.out.println("                         |__|__|");
+                                    System.out.println("                         /-'Y'-\\");
+                                    System.out.println("                        (__/ \\__)\n");
+                                    
+                                    
+                                    
                                     Read_Archivo lectura = new Read_Archivo();
                                     lectura.leerArchivo(Archivo);
 
