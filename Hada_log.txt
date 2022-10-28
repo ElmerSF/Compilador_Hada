@@ -1,0 +1,1255 @@
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 00:59:52 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 00:59:52 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+> 2022/10/28 00:59:52 >!!!AVISO Se encontraron 7 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 00:59:52 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 00:59:52 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:03:20 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:03:20 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+> 2022/10/28 01:03:20 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:03:20 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:03:20 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:09:54 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:09:54 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+> 2022/10/28 01:09:54 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:09:54 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:09:54 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:10:17 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:10:17 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+> 2022/10/28 01:10:17 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:10:17 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:10:17 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:10:50 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:10:50 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:10:50 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:10:50 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:10:50 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:11:07 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:11:07 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:11:07 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:11:07 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:11:07 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:13:21 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:13:21 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:13:44 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:13:44 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:13:44 >!!!AVISO Se encontraron 12 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:13:44 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:13:44 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:14:01 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:14:01 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:14:01 >!!!AVISO Se encontraron 12 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:14:01 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:14:01 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:15:47 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:15:47 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:15:47 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:15:47 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:15:47 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:16:04 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:16:04 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:16:04 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:16:04 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:16:04 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:18:17 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:18:17 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:18:17 >!!!AVISO Se encontraron 12 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:18:17 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:18:17 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:18:33 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:18:33 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:18:33 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:18:33 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:18:33 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:22:09 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:22:09 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:22:09 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:22:09 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:22:09 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:23:05 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:23:05 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:23:05 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:23:05 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:23:05 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:24:05 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:24:05 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+> 2022/10/28 01:24:05 >!!!AVISO Se encontraron 8 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:24:05 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:24:05 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:28:48 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:28:48 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+	 & {linea de lectura [27] }
+	 & {linea de lectura [28] }
+	 & {linea de lectura [29] }
+	 & {linea de lectura [30] }
+	 & {linea de lectura [31] }
+	 & {linea de lectura [32] }
+	 & {linea de lectura [33] }
+	 & {linea de lectura [34] }
+	 & {linea de lectura [35] }
+	 & {linea de lectura [36] }
+	 & {linea de lectura [37] }
+	 & {linea de lectura [38] }
+	 & {linea de lectura [39] }
+	 & {linea de lectura [40] }
+	 & {linea de lectura [41] }
+	 & {linea de lectura [42] }
+	 & {linea de lectura [43] }
+	 & {linea de lectura [44] }
+	 & {linea de lectura [45] }
+	 & {linea de lectura [46] }
+	 & {linea de lectura [47] }
+	 & {linea de lectura [48] }
+	 & {linea de lectura [49] }
+	 & {linea de lectura [50] }
+	 & {linea de lectura [51] }
+	 & {linea de lectura [52] }
+	 & {linea de lectura [53] }
+	 & {linea de lectura [54] }
+	 & {linea de lectura [55] }
+	 & {linea de lectura [56] }
+	 & {linea de lectura [57] }
+	 & {linea de lectura [58] }
+	 & {linea de lectura [59] }
+	 & {linea de lectura [60] }
+	 & {linea de lectura [61] }
+	 & {linea de lectura [62] }
+	 & {linea de lectura [63] }
+	 & {linea de lectura [64] }
+	 & {linea de lectura [65] }
+	 & {linea de lectura [66] }
+	 & {linea de lectura [67] }
+	 & {linea de lectura [68] }
+	 & {linea de lectura [69] }
+	 & {linea de lectura [70] }
+	 & {linea de lectura [71] }
+	 & {linea de lectura [72] }
+	 & {linea de lectura [73] }
+	 & {linea de lectura [74] }
+	 & {linea de lectura [75] }
+	 & {linea de lectura [76] }
+	 & {linea de lectura [77] }
+> 2022/10/28 01:28:49 >!!!AVISO Se encontraron 18 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:28:49 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:28:49 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:29:00 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:29:00 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+	 & {linea de lectura [27] }
+	 & {linea de lectura [28] }
+	 & {linea de lectura [29] }
+	 & {linea de lectura [30] }
+	 & {linea de lectura [31] }
+	 & {linea de lectura [32] }
+	 & {linea de lectura [33] }
+	 & {linea de lectura [34] }
+	 & {linea de lectura [35] }
+	 & {linea de lectura [36] }
+	 & {linea de lectura [37] }
+	 & {linea de lectura [38] }
+	 & {linea de lectura [39] }
+	 & {linea de lectura [40] }
+	 & {linea de lectura [41] }
+	 & {linea de lectura [42] }
+	 & {linea de lectura [43] }
+	 & {linea de lectura [44] }
+	 & {linea de lectura [45] }
+	 & {linea de lectura [46] }
+	 & {linea de lectura [47] }
+	 & {linea de lectura [48] }
+	 & {linea de lectura [49] }
+	 & {linea de lectura [50] }
+	 & {linea de lectura [51] }
+	 & {linea de lectura [52] }
+	 & {linea de lectura [53] }
+	 & {linea de lectura [54] }
+	 & {linea de lectura [55] }
+	 & {linea de lectura [56] }
+	 & {linea de lectura [57] }
+	 & {linea de lectura [58] }
+	 & {linea de lectura [59] }
+	 & {linea de lectura [60] }
+	 & {linea de lectura [61] }
+	 & {linea de lectura [62] }
+	 & {linea de lectura [63] }
+	 & {linea de lectura [64] }
+	 & {linea de lectura [65] }
+	 & {linea de lectura [66] }
+	 & {linea de lectura [67] }
+	 & {linea de lectura [68] }
+	 & {linea de lectura [69] }
+	 & {linea de lectura [70] }
+	 & {linea de lectura [71] }
+	 & {linea de lectura [72] }
+	 & {linea de lectura [73] }
+	 & {linea de lectura [74] }
+	 & {linea de lectura [75] }
+	 & {linea de lectura [76] }
+	 & {linea de lectura [77] }
+> 2022/10/28 01:29:00 >!!!AVISO Se encontraron 18 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:29:00 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:29:00 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+
+**********************************************************************************
+***************  Log del Proyecto Compilador HADA               ******************
+Creado por el Estudiante: Elmer Eduardo Salazar Flores (3-0426-0158)
+UNED compiladores 03307
+Actualmente se está ejecuantando en el directorio C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA
+**********************************************************************************
+
+
+                          .-"""-.
+                         / .===. \
+                         \/ 6 6 \/
+                         ( \___/ )
+    _________________ooo__\_____/_____________________
+   /                                                  \
+  |Log de la Aplicación HADA. Creado por Elmer Salazar |
+   \______________________________ooo_________________/
+                         |  |  |
+                         |_ | _|
+                         |  |  |
+                         |__|__|
+                         /-'Y'-\
+                        (__/ \__)
+
+> 2022/10/28 01:31:50 ***** 01 AVISO se recibe Archivo parámetro C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA OK
+> 2022/10/28 01:31:50 ***** 02 INFORMACIÓN se comienza lectura de archivo C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc.HADA
+	 & {linea de lectura [1] }
+	 & {linea de lectura [2] }
+	 & {linea de lectura [3] }
+	 & {linea de lectura [4] }
+	 & {linea de lectura [5] }
+	 & {linea de lectura [6] }
+	 & {linea de lectura [7] }
+	 & {linea de lectura [8] }
+	 & {linea de lectura [9] }
+	 & {linea de lectura [10] }
+	 & {linea de lectura [11] }
+	 & {linea de lectura [12] }
+	 & {linea de lectura [13] }
+	 & {linea de lectura [14] }
+	 & {linea de lectura [15] }
+	 & {linea de lectura [16] }
+	 & {linea de lectura [17] }
+	 & {linea de lectura [18] }
+	 & {linea de lectura [19] }
+	 & {linea de lectura [20] }
+	 & {linea de lectura [21] }
+	 & {linea de lectura [22] }
+	 & {linea de lectura [23] }
+	 & {linea de lectura [24] }
+	 & {linea de lectura [25] }
+	 & {linea de lectura [26] }
+	 & {linea de lectura [27] }
+	 & {linea de lectura [28] }
+	 & {linea de lectura [29] }
+	 & {linea de lectura [30] }
+	 & {linea de lectura [31] }
+	 & {linea de lectura [32] }
+	 & {linea de lectura [33] }
+	 & {linea de lectura [34] }
+	 & {linea de lectura [35] }
+	 & {linea de lectura [36] }
+	 & {linea de lectura [37] }
+	 & {linea de lectura [38] }
+	 & {linea de lectura [39] }
+	 & {linea de lectura [40] }
+	 & {linea de lectura [41] }
+	 & {linea de lectura [42] }
+	 & {linea de lectura [43] }
+	 & {linea de lectura [44] }
+	 & {linea de lectura [45] }
+	 & {linea de lectura [46] }
+	 & {linea de lectura [47] }
+	 & {linea de lectura [48] }
+	 & {linea de lectura [49] }
+	 & {linea de lectura [50] }
+	 & {linea de lectura [51] }
+	 & {linea de lectura [52] }
+	 & {linea de lectura [53] }
+	 & {linea de lectura [54] }
+	 & {linea de lectura [55] }
+	 & {linea de lectura [56] }
+	 & {linea de lectura [57] }
+	 & {linea de lectura [58] }
+	 & {linea de lectura [59] }
+	 & {linea de lectura [60] }
+	 & {linea de lectura [61] }
+	 & {linea de lectura [62] }
+	 & {linea de lectura [63] }
+	 & {linea de lectura [64] }
+	 & {linea de lectura [65] }
+	 & {linea de lectura [66] }
+	 & {linea de lectura [67] }
+	 & {linea de lectura [68] }
+	 & {linea de lectura [69] }
+	 & {linea de lectura [70] }
+	 & {linea de lectura [71] }
+	 & {linea de lectura [72] }
+	 & {linea de lectura [73] }
+	 & {linea de lectura [74] }
+	 & {linea de lectura [75] }
+	 & {linea de lectura [76] }
+	 & {linea de lectura [77] }
+> 2022/10/28 01:31:50 >!!!AVISO Se encontraron 18 Errores para detalle consulte C:\Users\elmer\OneDrive\Documents\NetBeansProjects\HADA\Tareacc-errores.txt
+
+> 2022/10/28 01:31:50 ***** 03 INFORMACIÓN SE termina lectura de archivo 
+> 2022/10/28 01:31:50 ***** 04 AVISO Por los errores no se pasa a segunda fase de Compilación
+
+
+ *************************FIN DE LOG **********************************
+
+

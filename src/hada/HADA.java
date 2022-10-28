@@ -22,11 +22,11 @@ public static void main(String[] args) throws InterruptedException {
         
         String Archivo = "";
 
-        if (args.length > 0) {
-        
-            Archivo = (args[0] + "");
+        if (!args[0].isEmpty()) {
             
-            String nom1Archivo = Archivo.substring(directoryName.length()+1);
+            Archivo = (args[0]+"");
+            
+            String nom1Archivo = Archivo.substring((Archivo.lastIndexOf('\\')+1));
             String nomArchivo = nom1Archivo.substring(0, nom1Archivo.indexOf('.'));
                  if (nomArchivo.length()>20)  {
                    continuar = false;

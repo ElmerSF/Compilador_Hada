@@ -62,7 +62,7 @@ public class Analisis {
                                     case Reservada_Hada:      TokenClasificado = true; break;
                                     case Reservada_Ada:  No_soportada = No_soportada+ " [" + token; ada++;    TokenClasificado = true; break;
                                     case Cadena:         TokenClasificado = true; break;
-                                    case Procedure:      procedure++; TokenClasificado = true; break;
+                                   case Procedure:      procedure++; TokenClasificado = true; break;
                                     case Is:             TokenClasificado = true; break;
                                     case Begin:       begin++; TokenClasificado = true; break;
                                     case End:       end++; TokenClasificado = true; break;
@@ -95,13 +95,23 @@ public class Analisis {
                 for (TabladeExpresiones.Tipos comparaExpresiones : TabladeExpresiones.Tipos.values()) {
                     if (Expresion.toUpperCase().matches(comparaExpresiones.patron)) {
                         switch (comparaExpresiones) {
-                            case Inicio:      cuenta_errores++; Respuesta = (falla = error.Asigna_Error(2) + " [" + TxtLinea + "] ");    encontrado = true; break;
-                            case Inicio1:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(3) + " [" + TxtLinea + "] ");    encontrado = true; break;
-                            case Inicio2:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio:     
+                              
+                                if (Expresion.toUpperCase().contains("IS")){
+                                  encontrado = true; 
+                                  System.out.println("se definio PROCEDURE ---- IS correctamente");
+                                  break;
+                                }else{
+                                    System.out.println(" se encontro!!!!!!"); cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                                }
+                                
+                                
+                            case Inicio1:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Inicio2:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Inicio3:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(5) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Inicio4:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(6) + " [" + TxtLinea + "] ");    encontrado = true; break;
-                            case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
-                            case Inicio6:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
+//                            case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
+//                            case Inicio6:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Definicion_variables: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(24) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Definicion_variables1: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(25) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Definicion_variables2: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(26) + " [" + TxtLinea + "] ");    encontrado = true; break;
