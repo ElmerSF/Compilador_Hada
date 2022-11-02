@@ -7,7 +7,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
       PROCEDURE Tarea1_        aS           
       PROCEDURE Tarea1        aS           
       PROCEDURE Tarea1        iS           ;
-    
+      
    -- La siguiente es correcta
       PROCEDURE Tarea1        iS 
 -- Viene la validsacion de identificadores;    mucha suerte	

@@ -54,6 +54,7 @@ public class Analisis {
                                 Respuesta = (falla = error.Asigna_Error(15) + " [" + TxtLinea + "] ");
                                 TokenClasificado = true;
                                 
+                                
                         } else {
                                 copia = token;
                             if ((copia.toUpperCase()).matches(comparaTOKENS.patron)) {
@@ -71,6 +72,8 @@ public class Analisis {
                                     case Numero_Real:    TokenClasificado = true; break;
                                     case comentario:     TokenClasificado = true; comentario =true; break;
                                     case lista_variables: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(23) + " [" + token + "] "); TokenClasificado = true;  break;
+                                    
+                                    
                                     case Operadores:     TokenClasificado = true; break;
                                     case finlinea:       TokenClasificado = true; break;
                                     case Etiqueta:       cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
@@ -112,6 +115,12 @@ public class Analisis {
                             case Inicio4:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(6) + " [" + TxtLinea + "] ");    encontrado = true; break;
 //                            case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
 //                            case Inicio6:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                           case Nombre_Archivo_num: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(30) + " [" + TxtLinea + "] "); TokenClasificado = true;  break;
+                           
+                           case Nombre_Arhivo_caracter: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(31) + " [" + TxtLinea + "] "); TokenClasificado = true;  break;
+                           case Nombre_Archiv_caracter_mitad: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(32) + " [" + TxtLinea + "] "); TokenClasificado = true;  break;
+                           case Nombre_Archiv_caracter_mitad2: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(32) + " [" + TxtLinea + "] "); TokenClasificado = true;  break;
+                           case Nombre_Archiv_caracter_final: cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(33) + " [" + TxtLinea + "] "); TokenClasificado = true;  break;
                             case Definicion_variables: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(24) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Definicion_variables1: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(25) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Definicion_variables2: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(26) + " [" + TxtLinea + "] ");    encontrado = true; break;
@@ -137,6 +146,19 @@ public class Analisis {
                                  encontrado = true; break;
                                }
                                 
+                            case Definicion_variables7: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(34) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables8: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(35) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables9: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(25) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                            case Definicion_variables10:
+                                if ((Expresion.toUpperCase().contains("INTEGER"))|(Expresion.toUpperCase().contains("FLOAT"))|(Expresion.toUpperCase().contains("CHARACTER")))
+                                {
+                                    encontrado = true; break;
+                                }
+                                else{
+                                           cuenta_errores++; Respuesta = (falla = error.Asigna_Error(28) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                                }
+                         
+                            
                             case Final:       encontrado = true; break;
                             case Comentario:  encontrado = true; break;
                             case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
