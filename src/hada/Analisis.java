@@ -10,7 +10,8 @@ import java.util.StringTokenizer;
 
 public class Analisis {
 
-    
+   
+        
     int num;
     String reporte="";
     Read_Archivo txt = new Read_Archivo();
@@ -20,7 +21,11 @@ public class Analisis {
     int procedure = 0, begin =0, end =0,ada =0;
     String identificadores ="", elemento ="";
     public String AnalizaTexto(String TxtLinea) {
-
+         boolean multilinea = false;
+         boolean PrimerToken = false;
+         int contarpuntoycoma =0;
+        int ContadorLineas=1;
+        String LineaAnterior="";
         StringTokenizer segmentos = new StringTokenizer(TxtLinea);
         int cuenta = 0;
         String Expresion = new String();
@@ -60,14 +65,14 @@ public class Analisis {
                             if ((copia.toUpperCase()).matches(comparaTOKENS.patron)) {
 
                                 switch (comparaTOKENS) {
-                                    case Reservada_Hada:      TokenClasificado = true; break;
+                                    case Reservada_Hada:  PrimerToken = true;    TokenClasificado = true; break;
                                     case Reservada_Ada:  No_soportada = No_soportada+ " [" + token; ada++;    TokenClasificado = true; break;
                                     case Cadena:         TokenClasificado = true; break;
-                                   case Procedure:      procedure++; TokenClasificado = true; break;
+                                    case Procedure:      procedure++; TokenClasificado = true; break;
                                     case Is:             TokenClasificado = true; break;
                                     case Begin:       begin++; TokenClasificado = true; break;
                                     case End:       end++; TokenClasificado = true; break;
-                                    case Nombre_Archivo: TokenClasificado = true; break;                                  
+                                    case Nombre_Archivo: PrimerToken = true; TokenClasificado = true; break;                                  
                                     case Numero_Entero:  TokenClasificado = true; break;
                                     case Numero_Real:    TokenClasificado = true; break;
                                     case comentario:     TokenClasificado = true; comentario =true; break;
@@ -92,7 +97,44 @@ public class Analisis {
                     }
                     cuenta++;
                 }
+                if(TxtLinea.contains(":")) { // &&(!TxtLinea.contains(";"))){
+                    multilinea = true;
+                }
+                if (multilinea)
+            {
+                       ContadorLineas++;
 
+                       if (PrimerToken && ContadorLineas > 1){
+                           LineaAnterior = LineaAnterior + TxtLinea + "\n";
+                            if (TxtLinea.contains(";")) 
+                            {
+                                  contarpuntoycoma++;
+                                  ContadorLineas =0;
+                                multilinea =false;
+                            }
+                      }
+                       if (PrimerToken && ContadorLineas > 1 && LineaAnterior.contains(";")){
+                                System.out.println("Linea: " + LineaAnterior + "==>  ***************  Multilinea definida correctamente");
+                                contarpuntoycoma=0;
+                                ContadorLineas =0;
+                                multilinea =false;
+                       }
+                       
+                        if ((PrimerToken )&& (ContadorLineas >= 5 )&& (!TxtLinea.contains(";"))){
+                                System.out.println("Linea: " + TxtLinea + " ==> ***************  Le falta ; al multilinea");
+                                contarpuntoycoma=0;
+                                ContadorLineas =0;
+                               // multilinea =false;
+                       }
+
+                      if (PrimerToken && TxtLinea.contains(";")){
+                            multilinea =false;
+                            contarpuntoycoma=0;
+                            ContadorLineas =0;
+                       }
+
+             }
+                
                 //Revisa las expresiones y en caso de una coincidencia indica un numero de error
                 Boolean encontrado = false;
                 for (TabladeExpresiones.Tipos comparaExpresiones : TabladeExpresiones.Tipos.values()) {
@@ -102,10 +144,10 @@ public class Analisis {
                               
                                 if (Expresion.toUpperCase().contains("IS")){
                                   encontrado = true; 
-                                  System.out.println("se definio PROCEDURE ---- IS correctamente");
+                                  System.out.println("se definio PROCEDURE ---- IS correctamente ["+ Expresion+"] ");
                                   break;
                                 }else{
-                                    System.out.println(" se encontro!!!!!!"); cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                                    System.out.println(" falta palabra Reservada IS en la declaración inicial ["+Expresion+"]"); cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
                                 }
                                 
                                 
@@ -183,6 +225,12 @@ public class Analisis {
                 }
             }
         }
+        if (multilinea)
+        {
+//            System.out.println("valor de multilinea " + multilinea + " en la línea "+TxtLinea);
+//            System.out.println("valor de primer toquen " + PrimerToken );
+//            System.out.println("valor de primer contador de lineas " + ContadorLineas );
+        }
         return reporte +Respuesta;
     }
 
@@ -207,14 +255,15 @@ public class Analisis {
 
     public int valida_errores(String nomArchivo) {
 
-        System.out.println("\n !!!!!!!! Se encontraron " + cuenta_errores + " Errores !!!!!!!!!!!!");
+       
         if (cuenta_errores > 0) {
+             System.err.println("\n\t !!!!!!!!\033[31m Se encontraron " + cuenta_errores + " Errores \033[32m!!!!!!!!!!!!\n\n\u001B[0m");
             String directoryName = System.getProperty("user.dir");
-            System.out.println("\n !!!Es necesario que revise el archivo " + nomArchivo + "-errores.txt");
+            System.out.println("\033[33m !!!Es necesario que revise el archivo " + nomArchivo + "-errores.txt");
             System.out.println("\n También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: " + directoryName);
 
         } else {
-
+            System.err.println("\n\t\033[32m !!!!!!!! No see encontraron Errores !!!!!!!!!!!!\n\n\u001B[0m");
         }
         return cuenta_errores;
     }

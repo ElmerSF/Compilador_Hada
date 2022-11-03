@@ -22,13 +22,18 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
    Max_Anos_Entera_20    =   integer;   
    Max_Anos_Entera_20    =   entera;   
    Max_Anos_Entera_20    :   integers   ;
-   Max_Anos_Entera_20    :   integer
+   Max_Anos_Entera_20    :   integer;
    -- La siguiente es correcta
    Max_Anos_Entera_20    :   integer;
    Max_Anos    :   integer;   
    -- una multilinea
-       Ano     
-       :   
+       Ano     :
+1
+2
+3
+4
+5
+6   
        integer
        ; 
    -- otro tipo de datos --
@@ -43,7 +48,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
        Factor1, Factor2, Factor3 =           float      ;
        Factor1, Factor2, Factor3 :           flotante      ;
        Factor1, Factor2, Factor3 :           floatt      ;
-       Factor1, Factor2, Factor3 :           float      
+       Factor1, Factor2, Factor3 :           float   ;   
        -- La siguiente es correcta
        Factor1,Factor2,Factor3:           float      ;	 
 
