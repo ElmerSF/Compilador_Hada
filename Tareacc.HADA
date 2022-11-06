@@ -25,9 +25,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
    Max_Anos_Entera_20    :   integer;
    -- La siguiente es correcta
    Max_Anos_Entera_20    :   integer;
-   Max_Anos    :   integer;   
-   -- una multilinea
-       Ano     :
+   Max_Anos   
 1
 2
 3
@@ -36,6 +34,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
 6   
        integer
        ; 
+
    -- otro tipo de datos --
        Respuesta   :      caracter       ;
        Respuesta   :      character       ;
@@ -66,6 +65,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *     
      *****************************************************************     
      --     Inicio   del   procedure; ya pasamos BEGIN
+Max_Anos_Entera_21    :   integer;
      No_procede :   float      ;
     -- Esta linea tiene mas de 80 caracteres
     null                                                                       ;      

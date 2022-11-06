@@ -25,17 +25,41 @@ public class TabladeExpresiones {
        Nombre_Archiv_caracter_final("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[-|#|!|_]{1,}[' ']{0,}[:]{1,}[' ']{0,}[A-Z|a-z]{0,}[' ']{0,}[;]{0,}[' ']{0,}"),
        Nombre_Archivo_num("[' ']{0,}[0-9]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}[A-Z|a-z]{0,}[' ']{0,}[;]{0,}[' ']{0,}"),
        Reservado("([' ']{0,})([ELSE|IF|FOR]{1,}[a-zA-Z|0-9|' ']{0,}[;])"),
+       //varias variables identificador repetido
        Definicion_variables5 ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,})([:]{1})([' ']{0,})(INTERGER|FLOAT||float|CHARACTER)([' ']{0,})([;]{1})([' ']{0,})"),
+       //varias variables sin tipo error 24
        Definicion_variables ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,}[:]{1})([' ']{0,})"),
+       //multiples variables de forma correcta
+       Definicion_variables_Correcta ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,}[:]{1})([' ']{0,})(INTERGER|FLOAT||float|CHARACTER)([' ']{0,})([;]{1})([' ']{0,})"),
+       //varias variables falta ; error 25
        Definicion_variables1 ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,}[:]{1})([' ']{0,})(INTERGER|FLOAT||float|CHARACTER)([' ']{0,})"),
+       //varias variables sobre coma al inicio error 26
        Definicion_variables2 ("([' ']{0,})([,]{1,})([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,}[:]{1})([' ']{0,})(INTERGER|FLOAT|float|CHARACTER)([' ']{0,})([;]{1})([' ']{0,})"),
+        //varias variables sobra coma al final error 27
        Definicion_variables3 ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,}[,]{1,})([' ']{0,})([:]{1})([' ']{0,})(INTERGER|FLOAT|float|CHARACTER)([' ']{0,})([;]{1})([' ']{0,})"),
+       //  varias variables no corresponde el tipo de variable
        Definicion_variables4 ("([' ']{0,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([,]{1,}[' ']{1,})([[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]{1,})([[,]{1,}[' ']{1,}[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}]]{0,})([' ']{0,})([:]{1})([' ']{0,})([A-Z|a-z]*)([' ']{0,})([;]{1})([' ']{0,})"),
-       
-       Definicion_variables7("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{2,}[' ']{0,}[a-z|A-Z]*{0,}[' ']{0,}[;]{0,}[' ']{0,}"),
-       Definicion_variables8("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[=]{1,}[' ']{0,}[a-z|A-Z]*{0,}[' ']{0,}[;]{0,}[' ']{0,}"),
-       Definicion_variables9("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}[a-z|A-Z]*{0,}[' ']{0,}"),
-       Definicion_variables10("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}[a-z|A-Z]*{0,}[' ']{0,}[;]{0,}[' ']{0,}"),
+       //varias variables repetido ::
+       Definicion_variables7("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{2,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER){0,}[' ']{0,}[;]{0,}[' ']{0,}"),
+       //varias variables falta :
+       Definicion_variables8("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{0}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER){0,}[' ']{0,}[;]{0,}[' ']{0,}"),
+      //una sola falta ;
+       Definicion_variables9("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}"),
+       //una sola que no tiene nada
+       Definicion_variables10("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}[;]{0,}[' ']{0,}"),
+       Definicion_variables_Correcta_sola("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}([;]{1})([' ']{0,})"),
+       //una sola coma al inicio suelta
+       Definicion_variables11("[' ']{0,}([,]{1,})([' ']{0,})[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}([;]{1})([' ']{0,})"),
+       //una sola coma al final suelta
+       Definicion_variables12("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}([,]{1,})([' ']{0,})[:]{1,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}([;]{1})([' ']{0,})"),
+       //una sola repetido ::
+       Definicion_variables13("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{2,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}([;]{1})([' ']{0,})"),
+       //una sola falta :
+       Definicion_variables14("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[^:]{1,}[' ']{0,}(INTERGER|FLOAT|float|CHARACTER)[' ']{0,}([;]{1})([' ']{0,})"),
+       //una sola sin tipo
+       Definicion_variables15("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}([;]{1})([' ']{0,})"),
+       // una sola que no corresponde a nada
+        Definicion_variables16("[' ']{0,}[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}[' ']{0,}[:]{1,}[' ']{0,}([A-Z|a-z]*)([' ']{0,})([;]{1})([' ']{0,})"),
        linea("[[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}][:=][' '|(|[A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,}|)][\n]{0,5}([;])"),
        //  Reservado( "{1,}[a-zA-Z|0-9|' ']{0,}[;]"),
         Etiqueta1("([\\<<]{1,})([a-zA-Z|0-9|' '|-|!|\"|#|$|%|&|/|(|)|=|?|¡|-|.|°|<|>|\\*].{0,})([^\\>>])"),

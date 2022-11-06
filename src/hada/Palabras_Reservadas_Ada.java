@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 public class Palabras_Reservadas_Ada {
     
-    static final public String lista (){
+     public String lista (){
         String palabras =""; 
         String letraCapital;
         String restoLetra;

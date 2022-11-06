@@ -49,6 +49,8 @@ public class Errores {
             case 33: Error = ("\n\t>!!!Error [" +codigo+"] Un identificador no puede finalizar con un carácter especial " ); break;
             case 34: Error = ("\n\t>!!!Error [" +codigo+"] Repetido carácter \":\" en la definición de variable " ); break;
             case 35: Error = ("\n\t>!!!Error [" +codigo+"] Falta carácter \":\" en la definición de variable " ); break;
+            case 36: Error = ("\n\t>!!!Error [" +codigo+"] Supera 5 reglones sin \"; \" lo que es un error " ); break;
+            case 37: Error = ("\n\t>!!!Error [" +codigo+"] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN " ); break;
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );
                 throw new AssertionError();
