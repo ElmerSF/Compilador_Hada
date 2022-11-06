@@ -26,7 +26,8 @@ public static void main(String[] args) throws InterruptedException {
             
             Archivo = (args[0]+"");
             
-            String nom1Archivo = Archivo.substring((Archivo.lastIndexOf('\\')+1));
+            try {
+                String nom1Archivo = Archivo.substring((Archivo.lastIndexOf('\\')+1));
             String nomArchivo = nom1Archivo.substring(0, nom1Archivo.indexOf('.'));
                  if (nomArchivo.length()>20)  {
                    continuar = false;
@@ -57,6 +58,10 @@ public static void main(String[] args) throws InterruptedException {
                 }  
                 }
                 }
+            } catch (Exception e) {
+               log_Aplicacion.escribe_log(0, "Error"+e);
+            }
+            
             
                         if (continuar){
                                     

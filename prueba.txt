@@ -1,3 +1,12 @@
+is
+carlos is;
+Procedure
+Procedure is
+
+Procedure Amigo is;
+pROCEDure carlos is
+
+Procedure;
 Factor2 := (factor2)
 *
 1,08;

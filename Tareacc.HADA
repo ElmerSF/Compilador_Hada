@@ -40,7 +40,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
        Respuesta   :      character       ;
    -- vamos con las comas guindando :-)
        ,Factor1,Factor2,Factor3:           float      ;
-       Factor1 Factor2,Factor3:           float      ;
+       Factor1 Factor2, Factor3, FACTOR4:           character      ;
        Factor1, Factor2 Factor3:           float      ;
        Factor1, Factor2, Factor3:           float      ;
        Factor1, Factor2,, Factor3:           float      ;
@@ -65,7 +65,7 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *     
      *****************************************************************     
      --     Inicio   del   procedure; ya pasamos BEGIN
-Max_Anos_Entera_21    :   integer;
+        Max_Anos_Entera_21    :   integer;
      No_procede :   float      ;
     -- Esta linea tiene mas de 80 caracteres
     null                                                                       ;      
@@ -74,7 +74,8 @@ Max_Anos_Entera_21    :   integer;
     -- Palabra reservada de ADA
     deLAY 10;
     End;     
-    end     oTRO_nOMBRE;                         
+    end     oTRO_nOMBRE;     
+	end     oTRO_nOMBRE                    
     end     taREA1
     end     taREA1;  
     fin del programa    Tarea1

@@ -51,6 +51,9 @@ public class Errores {
             case 35: Error = ("\n\t>!!!Error [" +codigo+"] Falta carácter \":\" en la definición de variable " ); break;
             case 36: Error = ("\n\t>!!!Error [" +codigo+"] Supera 5 reglones sin \"; \" lo que es un error " ); break;
             case 37: Error = ("\n\t>!!!Error [" +codigo+"] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN " ); break;
+            case 38: Error = ("\n\t>!!!Error [" +codigo+"] Después de END y el nombre del Programa debe llevar \";\" " ); break;
+            case 39: Error = ("\n\t>!!!Error [" +codigo+"] El nombre del programa declarado en PROCEDURE no coincide con el de END " ); break;
+            
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );
                 throw new AssertionError();
