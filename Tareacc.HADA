@@ -68,16 +68,16 @@ WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;
         Max_Anos_Entera_21    :   integer;
      No_procede :   float      ;
     -- Esta linea tiene mas de 80 caracteres
-    null                                   
+    null;                                   
 <<CArlos<<
 >> etiqueta1>>
 <<et@quteta>>
               << etiqueta3       >>
-       << _etiqueta>>
+       << _etiqueta>>;
    < < etiq_ueta>>
 -- esta es la buena
 <<etique_ta4>>
-;      
+    
     -- esta es el unico comando valido del programa
     null    ; 
     -- Palabra reservada de ADA

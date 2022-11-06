@@ -37,8 +37,9 @@ public class TabladeSimbolos {
         Numero_Real("[0-9]*[.][0-9]*"),
         coma ("[,]"),
         finlinea("(;)"),
+        Etiqueta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,})[(;)]{1,}"),
         Etiqueta_correcta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,})"),
-        Etiqueta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,}[;])"),
+        
         asignacion("[:]"),
         Agrupacion("(\\(|\\)|\\{|\\}|\\[|\\])");
         

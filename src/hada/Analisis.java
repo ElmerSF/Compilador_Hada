@@ -18,6 +18,7 @@ public class Analisis {
     int cuenta_errores = 0, procedure = 0, begin =0, end =0,ada =0, ContadorLineas=0;
     boolean multilinea = false, PrimerToken = false, comaLinea = true;
     ArrayList<String> variables = new ArrayList<String>();
+    ArrayList<String> etiquetas = new ArrayList<String>();
     boolean Seccion_variables = false, Seccion_comandos = false, end_programa=false;      
     static String delimitador=" <>(){};";
     String nomArchivo;
@@ -87,7 +88,9 @@ public class Analisis {
                                         
                                     case End:    clasificacion = "End";  Seccion_comandos = false; end++; TokenClasificado = true; break;
                                     case Nombre_Archivo: 
-                                        boolean esta=false;
+                                        
+                                        if (Seccion_variables){
+                                            boolean esta=false;
                                       
                                         
                                         for (int i = 0; i < variables.size(); i++) {
@@ -108,8 +111,10 @@ public class Analisis {
                                        {
                                           ID = true; clasificacion = "Identificador";  PrimerToken = true; TokenClasificado = true; break;                                   
                                        }
-                                        
-                                        
+                                        }else
+                                        {
+                                            ID = true; clasificacion = "Identificador";  PrimerToken = true; TokenClasificado = true; break;
+                                        }
                                         
                                     case Numero_Entero: clasificacion = "Numero_Entero"; TokenClasificado = true; break;
                                     case Numero_Real:    clasificacion = "Numero_Real"; TokenClasificado = true; break;
@@ -120,7 +125,34 @@ public class Analisis {
                                     case Operadores:  clasificacion = "Operadores";   TokenClasificado = true; break;
                                     case finlinea:     clasificacion = "finlinea";  TokenClasificado = true; break;
                                     case Etiqueta:    clasificacion = "Etiqueta";   cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
-                                    case Etiqueta_correcta:   System.out.println(" etiqueta pegado "+ token); clasificacion = "Etiqueta";   cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
+                                    case Etiqueta_correcta:
+                                        if (Seccion_comandos){
+                                        boolean esta_etiqueta = false;
+                                        String tempeti = token.substring(2, token.indexOf(">>")); //le quitamos los << >> a la etiqueta
+                                        for (int i = 0; i < etiquetas.size(); i++) {
+                                            if (etiquetas.get(i).toUpperCase().equals(token.toUpperCase())){
+                                                esta_etiqueta = true;
+                                                break;
+                                            }
+                                            
+                                        }
+                                        if (!esta_etiqueta){
+                                            etiquetas.add(tempeti);
+                                        }
+                                        if (esta_etiqueta){
+                                            cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(41) + "[" + token + "] ");
+                                        }
+                                        
+                                        System.out.println("ajustado es " + tempeti);
+                                        System.out.println(" etiqueta pegado "+ token); clasificacion = "Etiqueta";  
+                                        TokenClasificado = true; break;  
+                                            
+                                        }else{
+                                            clasificacion = "Etiqueta";
+                                            TokenClasificado = true; break;
+                                        }
+                                        
+                                        
                                     case Agrupacion:   clasificacion = "Agrupacion";  TokenClasificado = true; break;
                                     default:             Respuesta = (" ");  break;
                                 }
@@ -291,9 +323,48 @@ public class Analisis {
                                  cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true;
                             case Final:       encontrado = true; break;
                             case Comentario:  encontrado = true; break;
-                            case Etiqueta_correcta: System.out.println(" etiqueta correcta " + TxtLinea); encontrado = true; break;
+                            case Etiqueta_correcta: 
+                                 
+                                if (Seccion_comandos){
+                                   if (TxtLinea.trim().contains(" ")){
+                                     boolean esta_etiqueta = false;
+                                        
+                                        String tempeti = TxtLinea.substring(TxtLinea.lastIndexOf("<<")+2, TxtLinea.indexOf(">>")); //le quitamos los << >> a la etiqueta
+                                        tempeti = tempeti.trim();
+                                        for (int i = 0; i < etiquetas.size(); i++) {
+                                            if (etiquetas.get(i).toUpperCase().equals(TxtLinea.toUpperCase())){
+                                                esta_etiqueta = true;
+                                                break;
+                                            }
+                                            
+                                        }
+                                        if (!esta_etiqueta){
+                                            etiquetas.add(tempeti);
+                                        }
+                                        if (esta_etiqueta){
+                                            cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(41) + "[" + TxtLinea + "] ");
+                                        }
+                                 System.out.println(" etiqueta correcta " + TxtLinea); 
+                                  System.out.println(" etiqueta arreglada " + tempeti); 
+                                 encontrado = true; break;
+                                 
+                                }else{
+                                     System.out.println(" etiqueta ya calisifcada " + TxtLinea); 
+                                     encontrado = true; break;
+                                } 
+                                }
+                                encontrado = true; break;
+                                
+                                
+                                
                             case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Etiqueta2:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(10) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                            case Etiqueta3:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(42) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                             case Etiqueta5:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(43) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                              case Etiqueta6:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(44) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                               case Etiqueta7:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(45) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                               case Etiqueta8:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(46) + " [" + TxtLinea + "] ");   encontrado = true; break;
+                               case Etiqueta9:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(47) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             case Suma:        cuenta_errores++; Respuesta = (falla = error.Asigna_Error(11) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
@@ -326,11 +397,17 @@ public class Analisis {
     
 
     public int valida_errores(String nomArchivo) {
+        System.out.print("\n VARIABLES: ");
         for (int i = 0; i < variables.size() ; i++) {
-            System.out.print(variables.get(i)+"\t");
+            System.out.print(variables.get(i)+" | ");
          
        }
-//       
+        System.out.print("\n ETIQUETAS: ");
+          for (int i = 0; i < etiquetas.size() ; i++) {
+            System.out.print(etiquetas.get(i)+" | ");
+         
+       }
+       System.out.print("\n");
         if (cuenta_errores > 0) {
              System.err.println("\n\t !!!!!!!!\033[31m Se encontraron " + cuenta_errores + " Errores \033[32m!!!!!!!!!!!!\n\n\u001B[0m");
             String directoryName = System.getProperty("user.dir");

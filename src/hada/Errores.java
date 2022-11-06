@@ -54,7 +54,13 @@ public class Errores {
             case 38: Error = ("\n\t>!!!Error [" +codigo+"] Después de END y el nombre del Programa debe llevar \";\" " ); break;
             case 39: Error = ("\n\t>!!!Error [" +codigo+"] El nombre del programa declarado en PROCEDURE no coincide con el de END " ); break;
             case 40: Error = ("\n\t>!!!Error [" +codigo+"] Lexemna END y NOMBRE DEL PROGRAMA aparecen más de una ocasión " ); break;
-            
+            case 41: Error = ("\n\t>!!!Error [" +codigo+"] Etiqueta ya había sido definida anteriormente, las etiquetas no pueden ser repetidas " ); break;
+            case 42: Error = ("\n\t>!!!Error [" +codigo+"] Una Etiqueta no puede llevar un carácter especial como identificador " ); break;
+            case 43: Error = ("\n\t>!!!Error [" +codigo+"] Una Etiqueta no puede empezar con un número como identificador " ); break;
+            case 44: Error = ("\n\t>!!!Error [" +codigo+"] Una etiqueta no puede empezar con \"_\" como identificador " ); break;
+            case 45: Error = ("\n\t>!!!Error [" +codigo+"] Una etiqueta no puede terminar con \"_\" como identificador " ); break;
+             case 46: Error = ("\n\t>!!!Error [" +codigo+"] No puede llevar espacios en los << de apertura " ); break;
+             case 47: Error = ("\n\t>!!!Error [" +codigo+"] No puede llevar espacios en los >> de cierre " ); break;
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );
                 throw new AssertionError();
