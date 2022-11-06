@@ -1,0 +1,3614 @@
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>;                          
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;] 
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>;                         
+]   
+00080                                     ;       
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00081     -- esta es el unico comando valido del programa 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00082     null    ;  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]   
+00083     -- Palabra reservada de ADA 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00084     deLAY 10; 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00086    -- end     oTRO_nOMBRE;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00087 --	end     oTRO_nOMBRE                     
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00088   --  end     taREA1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00089     end     taREA1;   
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+00090     fin del programa    Tarea1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]   
+00091  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]   
+00092     --     fin del programa    Tarea1 	 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>;]  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>                            
+00080                                     ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>                         
+                                    ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>                            
+00080                                      ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>                         
+                                     ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>                            
+00080                                      ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>                         
+                                     ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>                            
+00080                                      ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>                         
+                                     ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>                            
+00080                                      ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>                         
+                                     ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>                            
+00080                                      ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>                         
+                                     ;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 << etique_ta4 >>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<< etique_ta4 >>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>>   
+00080 ;       
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa  
+00082     null    ;    
+00083     -- Palabra reservada de ADA  
+00084     deLAY 10;   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;       
+00086    -- end     oTRO_nOMBRE;       
+00087 --	end     oTRO_nOMBRE                      
+00088   --  end     taREA1  
+00089     end     taREA1;    
+00090     fin del programa    Tarea1   
+00091    
+00092     --     fin del programa    Tarea1 	  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>   
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>> 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00080 ;       
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00082     null    ;  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00083     -- Palabra reservada de ADA 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00084     deLAY 10; 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00086    -- end     oTRO_nOMBRE;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00087 --	end     oTRO_nOMBRE                     
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00088   --  end     taREA1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00089     end     taREA1;   
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00090     fin del programa    Tarea1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00091  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00092     --     fin del programa    Tarea1 	 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces
+00001 uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;   
+00002 WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;   
+00003 -- Vamos a validar procedure; que solo aparezca una vez valida 
+00004  
+00005       PROCEdure        TAREA1                      xxx 
+00006       PROCEDURE 1Tarea1_        aS            
+00007       PROCEDURE Tarea1_        aS            
+00008       PROCEDURE Tarea1        aS               
+ [uSE] ¤{Advertencia instrucción no soportada por esta versión}¤    
+ [WIth] ¤{Advertencia instrucción no soportada por esta versión}¤      
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEdure        TAREA1                      xxx]      
+	>!!!Error [6] Nombre de Identificador Termina con _ [      PROCEDURE Tarea1_        aS           ]  
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ] 
+00009       PROCEDURE Tarea1        iS           ; 
+	>!!!Error [4] falta palabra Reservada IS en la declaración inicial [      PROCEDURE Tarea1        aS           ]   
+00010           
+00011    -- La siguiente es correcta  
+00012       PROCEDURE Tarea1        iS   
+00013 -- Viene la validsacion de identificadores;    mucha suerte	  
+00014    1Max_Anos_Entera_Mas    :   integer; 
+	>!!!Error [30] Un identificador no puede empezar con número  [   1Max_Anos_Entera_Mas    :   integer;]   
+00015    $Max_Anos_Entera_Mas    :   integer;    
+	>!!!Error [31] Un identificador no puede empezar con un carácter especial  [   $Max_Anos_Entera_Mas    :   integer;   ]   
+00016    Max-Anos_Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max-Anos_Entera_Mas2    :   integer;   ]   
+00017    Max_Anos-Entera_Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos-Entera_Mas2    :   integer;   ]   
+00018    Max_Anos_Entera-Mas2    :   integer;    
+	>!!!Error [32] Un identificador no puede contener un carácter especial  [   Max_Anos_Entera-Mas2    :   integer;   ]   
+00019    Max_Anos_Entera_Mas_    :   integer;    
+	>!!!Error [33] Un identificador no puede finalizar con un carácter especial  [   Max_Anos_Entera_Mas_    :   integer;   ]   
+00020    Max_Anos_Entera_Mas20    :   integer;          
+00021    Max_Anos_Entera__Mas    ::   integer;    
+	>!!!Error [34] Repetido carácter ":" en la definición de variable  [   Max_Anos_Entera__Mas    ::   integer;   ]   
+00022    Max_Anos_Entera_20    =   integer;    
+	>!!!Error [35] Falta carácter ":" en la definición de variable  [   Max_Anos_Entera_20    =   integer;   ]  
+00023    Max_Anos_Entera_20    =   entera;      
+00024    Max_Anos_Entera_20    :   integers   ;    
+00025    Max_Anos_Entera_20    :   integer;    
+00026    -- La siguiente es correcta  
+00027    Max_Anos_Entera_20    :   integer;    
+00028    Max_Anos      
+00029 1     
+00030 2     
+00031 3     
+00032 4     
+00033 5     
+00034 6        
+00035        integer   
+00036        ;  
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [   Max_Anos   
+1
+2
+3
+4
+5
+6   
+       integer
+       ; 
+]  
+00037    
+00038    -- otro tipo de datos --  
+00039        Respuesta   :      caracter       ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Respuesta   :      caracter       ;]   
+00040        Respuesta   :      character       ;    
+00041    -- vamos con las comas guindando :-)  
+00042        ,Factor1,Factor2,Factor3:           float      ; 
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [,Factor1,Factor2,Factor3:]   
+00043        Factor1 Factor2, Factor3, FACTOR4:           character      ;   
+00044        Factor1, Factor2 Factor3:           float      ;   
+00045        Factor1, Factor2, Factor3:           float      ;   
+00046        Factor1, Factor2,, Factor3:           float      ;   
+00047        Factor1, Factor2, Factor3 =           float      ;   
+00048        Factor1, Factor2, Factor3 :           flotante      ; 
+	>!!!Error [28] El tipo de variable no corresponde a: "INTEGER, FLOAT, CHARACTER"  [       Factor1, Factor2, Factor3 :           flotante      ;]  
+00049        Factor1, Factor2, Factor3 :           floatt      ;   
+00050        Factor1, Factor2, Factor3 :           float   ;       
+00051        -- La siguiente es correcta  
+00052        Factor1,Factor2,Factor3:           float      ;	  
+	>!!!Error [23] Para más de un identificador debe llevar coma y espacio  [Factor1,Factor2,Factor3:]   
+00053    
+00054 -- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	     
+00055    
+00056        beginxyz   
+00057    
+00058        beGIN  ;    
+	>!!!Error [14] Despues de PROCEDURE, BEGIN, IF, ELSE o FOR no debe llevar ; [       beGIN  ;   ]  
+00059    beGIN   
+00060      Vamos a validar que los comentarios no den error como esta linea   
+00061      *****************************************************************    
+00062   -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *    
+00063   -  * encontrar el factor por el cual cualquier moneda, tales como  *     
+00064    - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *      
+00065   -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *       
+00066      *****************************************************************        
+00067      --     Inicio   del   procedure; ya pasamos BEGIN  
+00068         Max_Anos_Entera_21    :   integer; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [        Max_Anos_Entera_21    :   integer;]   
+00069      No_procede :   float      ; 
+	>!!!Error [37] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN  [     No_procede :   float      ;]   
+00070     -- Esta linea tiene mas de 80 caracteres  
+00071     null                                      
+00072 <<CArlos<<   
+00073 >> etiqueta1>>   
+00074 <<et@quteta>>   
+00075               << etiqueta3       >>  
+00076        << _etiqueta>>   
+00077    < < etiq_ueta>>    
+00078 -- esta es la buena  
+00079 <<etique_ta4>> 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00080 ;       
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [36] Supera 5 reglones sin "; " lo que es un error  [    null                                   
+<<CArlos<<
+>> etiqueta1>>
+<<et@quteta>>
+              << etiqueta3       >>
+       << _etiqueta>>
+   < < etiq_ueta>>
+<<etique_ta4>>
+;      
+]  
+00081     -- esta es el unico comando valido del programa 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00082     null    ;  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00083     -- Palabra reservada de ADA 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00084     deLAY 10; 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+ [deLAY] ¤{Advertencia instrucción no soportada por esta versión}¤
+00085     --End;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00086    -- end     oTRO_nOMBRE;      
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00087 --	end     oTRO_nOMBRE                     
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00088   --  end     taREA1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00089     end     taREA1;   
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+00090     fin del programa    Tarea1 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>] 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00091  
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]   
+00092     --     fin del programa    Tarea1 	 
+	>!!!Error [16] Una Etiqueta no debe llevar ; al final [<<etique_ta4>>]  
+
+	>!!!Error [17] La palabra Reservada "Procedure" aparece [6] veces
+	>!!!Error [18] La palabra Reservada "Begin" aparece [2] veces

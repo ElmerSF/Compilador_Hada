@@ -53,6 +53,7 @@ public class Errores {
             case 37: Error = ("\n\t>!!!Error [" +codigo+"] No se pueden definir varibles fuera de la sección comprendida despues de PROCEDURE y antes de BEGIN " ); break;
             case 38: Error = ("\n\t>!!!Error [" +codigo+"] Después de END y el nombre del Programa debe llevar \";\" " ); break;
             case 39: Error = ("\n\t>!!!Error [" +codigo+"] El nombre del programa declarado en PROCEDURE no coincide con el de END " ); break;
+            case 40: Error = ("\n\t>!!!Error [" +codigo+"] Lexemna END y NOMBRE DEL PROGRAMA aparecen más de una ocasión " ); break;
             
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );

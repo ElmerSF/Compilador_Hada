@@ -18,7 +18,7 @@ public class Analisis {
     int cuenta_errores = 0, procedure = 0, begin =0, end =0,ada =0, ContadorLineas=0;
     boolean multilinea = false, PrimerToken = false, comaLinea = true;
     ArrayList<String> variables = new ArrayList<String>();
-    boolean Seccion_variables = false, Seccion_comandos = false;      
+    boolean Seccion_variables = false, Seccion_comandos = false, end_programa=false;      
     static String delimitador=" <>(){};";
     String nomArchivo;
     
@@ -81,24 +81,46 @@ public class Analisis {
                                     case Procedure:  clasificacion = "Procedure";    comaLinea = false; procedure++; TokenClasificado = true; break;
                                     case Is:      clasificacion = "Is";       TokenClasificado = true; break;
                                     case Begin:    clasificacion = "Begin";  Seccion_variables=false; Seccion_comandos = true;
-                                           System.out.println(" terminamos sección de variables " + Seccion_variables + " " + token);
+                                          // System.out.println(" terminamos sección de variables " + Seccion_variables + " " + token);
                                     begin++; TokenClasificado = true; break;
                                         
                                         
                                     case End:    clasificacion = "End";  Seccion_comandos = false; end++; TokenClasificado = true; break;
                                     case Nombre_Archivo: 
-                                       
-                                        variables.add(token);
-                                        ID = true; clasificacion = "Identificador"; variables.add(token); PrimerToken = true; TokenClasificado = true; break;                                  
+                                        boolean esta=false;
+                                      
+                                        
+                                        for (int i = 0; i < variables.size(); i++) {
+                                            String valor =variables.get(i).toUpperCase();
+                                            if (valor.equals(token.trim().toUpperCase())|| variables.contains(token)){
+                                            esta = true;
+                                            break;
+                                        }else{
+                                            esta =false;
+                                            
+                                        }
+                                         
+                                       }
+                                      if (esta ==false){
+                                            variables.add(token.trim());
+                                             ID = true; clasificacion = "Identificador"; PrimerToken = true; TokenClasificado = true; break;                                  
+                                       }else
+                                       {
+                                          ID = true; clasificacion = "Identificador";  PrimerToken = true; TokenClasificado = true; break;                                   
+                                       }
+                                        
+                                        
+                                        
                                     case Numero_Entero: clasificacion = "Numero_Entero"; TokenClasificado = true; break;
                                     case Numero_Real:    clasificacion = "Numero_Real"; TokenClasificado = true; break;
-                                    case comentario:   clasificacion = "comentario"; comaLinea = false; TokenClasificado = true; comentario =true; break;
+                                    case comentario:  clasificacion = "comentario"; comaLinea = false; TokenClasificado = true; comentario =true; break;
                                     case lista_variables: clasificacion = "lista_variables";cuenta_errores++;  Respuesta = (falla = error.Asigna_Error(23) + " [" + token + "] "); TokenClasificado = true;  break;
                                     case tiposVaribles:  clasificacion = "tiposVariables"; TokenClasificado = true;  break;
                                     
                                     case Operadores:  clasificacion = "Operadores";   TokenClasificado = true; break;
                                     case finlinea:     clasificacion = "finlinea";  TokenClasificado = true; break;
                                     case Etiqueta:    clasificacion = "Etiqueta";   cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
+                                    case Etiqueta_correcta:   System.out.println(" etiqueta pegado "+ token); clasificacion = "Etiqueta";   cuenta_errores++;  reporte = reporte + (falla = error.Asigna_Error(16) + " [" + token + "] ");       TokenClasificado = true; break;  
                                     case Agrupacion:   clasificacion = "Agrupacion";  TokenClasificado = true; break;
                                     default:             Respuesta = (" ");  break;
                                 }
@@ -164,28 +186,34 @@ public class Analisis {
                               
                                 if (Expresion.toUpperCase().contains("IS")){
                                   encontrado = true; 
-                                  System.out.println("se definio PROCEDURE ---- IS correctamente ["+ Expresion+"] ");
+                                  //System.out.println("se definio PROCEDURE ---- IS correctamente ["+ Expresion+"] ");
                                   
                                     String nom1Archivo = TxtLinea.trim().substring(10);
+                                    
                                     nomArchivo = nom1Archivo.substring(0, nom1Archivo.indexOf(' '));
                                   
                                   Seccion_variables = true;
-                                    System.out.println("°°°°iniciamos sección de variables°°°° " + Seccion_variables + " "+ Expresion);
+                                    //System.out.println("°°°°iniciamos sección de variables°°°° " + Seccion_variables + " "+ Expresion);
                                   break;
                                 }else{
                                   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(4) + " [" + TxtLinea + "] ");    encontrado = true; break;
                                 }
                                 
                             case END:     
+                               if (end_programa){
+                                cuenta_errores++; Respuesta = (falla = error.Asigna_Error(40) + " [" + TxtLinea + "] ");
+                            }
+                               end_programa = true;
                                 try {
                                 String temp =TxtLinea.trim().substring(3);
                                 String temp2 = temp.trim();
                                 temp = temp2.substring(0, temp2.indexOf(';'));
                                 if (temp.toUpperCase().equals(nomArchivo.toUpperCase())){
-                                    System.out.println("TERMINA BIEN " + TxtLinea);
+                                   // System.out.println("TERMINA BIEN " + TxtLinea);
+                                    end_programa = true;
                                      encontrado = true; break;
                                 }else{
-                                     System.out.println("TERMINA MAL " + TxtLinea);
+                                    // System.out.println("TERMINA MAL " + TxtLinea);
                                     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(39) + " [" + TxtLinea + "] ");    encontrado = true; break;   
                                     
                                 }
@@ -196,7 +224,13 @@ public class Analisis {
                                 
                             case END_mal:    cuenta_errores++; Respuesta = (falla = error.Asigna_Error(38) + " [" + TxtLinea + "] ");    encontrado = true; break;  
                            case Inicio1:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(8) + " [" + TxtLinea + "] ");    encontrado = true; break;
-                           case Inicio2:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                           case Inicio2:  
+                               if (TxtLinea.toUpperCase().contains("END")){
+                                    encontrado = true; break;
+                               }else{
+                                    cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");    encontrado = true; break;
+                               }
+                              
                            case Inicio3:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(5) + " [" + TxtLinea + "] ");    encontrado = true; break;
                            case Inicio4:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(6) + " [" + TxtLinea + "] ");    encontrado = true; break;
 //                            case Inicio5:     cuenta_errores++; Respuesta = (falla = error.Asigna_Error(7) + " [" + TxtLinea + "] ");    encontrado = true; break;
@@ -222,12 +256,12 @@ public class Analisis {
                               
                              
                                if (Seccion_variables){
-                               System.out.println(" definición correcta " + TxtLinea);     
+                             //  System.out.println(" definición correcta " + TxtLinea);     
                                encontrado = true; break;
                            }else{
                                 cuenta_errores++; 
                                 Respuesta = (falla = error.Asigna_Error(37) + " [" + TxtLinea + "] "); 
-                                 System.out.println(" definición FUERA DE SECCIÓN " + TxtLinea);
+                               //  System.out.println(" definición FUERA DE SECCIÓN " + TxtLinea);
                                encontrado = true; break;
                            }
                            case Definicion_variables4://, Definicion_variables16: 
@@ -236,25 +270,7 @@ public class Analisis {
                                     encontrado = true; break;
                                 }else{
                                 cuenta_errores++; Respuesta = (falla = error.Asigna_Error(28) + " [" + TxtLinea + "] ");    encontrado = true; break;}
-                           
-                           //case Definicion_variables5://, Definicion_variables_Correcta_sola:
-//                                elemento =Expresion.substring(identificadores.length(), Expresion.indexOf(':'));
-//                                if (identificadores.contains(elemento)){
-//                                   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(29) + " [" + TxtLinea + "] ");    
-//                                  // System.out.println("ERROR identificador repetido"); 
-//                                   encontrado = true; break;
-//                               }else{
-//                                   identificadores = identificadores + elemento;
-//                                   System.out.println(" definición correcta " + TxtLinea);
-//                               if (Seccion_variables){
-//                               encontrado = true; break;
-//                           }else{
-//                                cuenta_errores++; Respuesta = (falla = error.Asigna_Error(37) + " [" + TxtLinea + "] "); 
-//                               encontrado = true; break;
-//                           }  
-//                                   
-//                               }
-//                                
+                                  
                            case Definicion_variables7, Definicion_variables13: cuenta_errores++; Respuesta = (falla = error.Asigna_Error(34) + " [" + TxtLinea + "] ");    encontrado = true; break;
                            case Definicion_variables8, Definicion_variables14:
                                if (ID){
@@ -275,16 +291,21 @@ public class Analisis {
                                  cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true;
                             case Final:       encontrado = true; break;
                             case Comentario:  encontrado = true; break;
+                            case Etiqueta_correcta: System.out.println(" etiqueta correcta " + TxtLinea); encontrado = true; break;
                             case Etiqueta1:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(9) + " [" + TxtLinea + "] ");    encontrado = true; break;
                             case Etiqueta2:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(10) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             case Suma:        cuenta_errores++; Respuesta = (falla = error.Asigna_Error(11) + " [" + TxtLinea + "] ");   encontrado = true; break;
                             case Resta:       encontrado = true; break;
                             case Multiplica:  encontrado = true; break;
                             case final_linea: encontrado = true; break;
-                            case Reservado:   cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true;
+                            case Reservado:  
+                                 if (TxtLinea.toUpperCase().contains("END")){
+                                    encontrado = true; break;
+                               }else{
+                                cuenta_errores++; Respuesta = (falla = error.Asigna_Error(14) + " [" + TxtLinea + "] ");   encontrado = true;
                              
                             break;
-                            
+                                 }
  
                             default: Respuesta = (Respuesta + " ");
                         }
@@ -305,10 +326,10 @@ public class Analisis {
     
 
     public int valida_errores(String nomArchivo) {
-//        for (int i = 0; i < variables.size() ; i++) {
-//            System.out.print(variables.get(i)+"\t");
-//         
-//       }
+        for (int i = 0; i < variables.size() ; i++) {
+            System.out.print(variables.get(i)+"\t");
+         
+       }
 //       
         if (cuenta_errores > 0) {
              System.err.println("\n\t !!!!!!!!\033[31m Se encontraron " + cuenta_errores + " Errores \033[32m!!!!!!!!!!!!\n\n\u001B[0m");
