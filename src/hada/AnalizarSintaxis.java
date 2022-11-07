@@ -1,17 +1,23 @@
 /*
-UNED Informática Compiladores 3307
-Estudiante Elmer Eduardo Salazar Flores 3-0426-0158
-III Cuatrimestre 2022
-Basado en los ejemplos compartidos en la Tutoría en esta clase se verifican los toquen y las expresiones
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package hada;
 
+import static hada.TabladeExpresiones.Tipos.Definicion_variables11;
+import static hada.TabladeExpresiones.Tipos.Definicion_variables12;
+import static hada.TabladeExpresiones.Tipos.Definicion_variables13;
+import static hada.TabladeExpresiones.Tipos.Definicion_variables14;
+import static hada.TabladeExpresiones.Tipos.Definicion_variables9;
+import static hada.TabladeExpresiones.Tipos.Definicion_variables_Correcta;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Analisis {
-//variables globales
-
+/**
+ *
+ * @author elmer
+ */
+public class AnalizarSintaxis {
     String reporte = "";
     Read_Archivo txt = new Read_Archivo();
     Errores error = new Errores();
@@ -21,14 +27,15 @@ public class Analisis {
     ArrayList<String> variables = new ArrayList<String>();
     ArrayList<String> etiquetas = new ArrayList<String>();
     boolean Seccion_variables = false, Seccion_comandos = false, end_programa = false, get = false;
-    static String delimitador = " <>(){};";
+    static String delimitador = " <>(){};:=";
     String nomArchivo;
-
-    public String AnalizaTexto(String TxtLinea) {
+    boolean asignacion =false, put = false, skip = false;
+    Sintaxis sintax = new Sintaxis();
+     public String AnalizaTexto(String TxtLinea) {
 //donde iremos guardando el resultado del análisis
         ArrayList<String> LineaProcesada = new ArrayList<String>();
 
-        StringTokenizer segmentos = new StringTokenizer(TxtLinea);
+        StringTokenizer segmentos = new StringTokenizer(TxtLinea, delimitador, true);
         int cuenta = 0;
         String Expresion = new String();
         boolean TokenClasificado = false, comentario = false, ID = false;
@@ -42,10 +49,6 @@ public class Analisis {
             }
         } else {
             comaLinea = true;
-        }
-        if (TxtLinea.toUpperCase().contains("GET")||(TxtLinea.toUpperCase().contains("SKIP_LINE"))||(TxtLinea.toUpperCase().contains(":="))||(TxtLinea.toUpperCase().contains("PUT"))){
-            AnalizarSintaxis sintaxis = new AnalizarSintaxis();
-            falla = sintaxis.AnalizaTexto(TxtLinea);
         }
         if (TxtLinea.isEmpty()) {
             Respuesta = " ";
@@ -76,7 +79,7 @@ public class Analisis {
                         } else {
                             copia = token;
                             if ((copia.toUpperCase()).matches(comparaTOKENS.patron)) {
-  
+                              
                                 switch (comparaTOKENS) {
                                     case Reservada_Hada:
                                         clasificacion = "Reservada_Hada";
@@ -90,6 +93,29 @@ public class Analisis {
                                         ada++;
                                         TokenClasificado = true;
                                         break;
+                                    
+                                    case asignacion:
+                                        clasificacion = "Asignacion";
+                                        asignacion = true;
+                                        TokenClasificado = true;
+                                        break;    
+                                    case expresion:
+                                        clasificacion = "expresion";
+                                        TokenClasificado = true;
+                                        break;    
+                                        
+                                    case PUT:
+                                        clasificacion = "PUT";
+                                        put = true;
+                                        TokenClasificado = true;
+                                        break;   
+                                        
+                                    case SKIP_LINE:
+                                        clasificacion = "SKIP_LINE";
+                                        skip = true;
+                                        TokenClasificado = true;
+                                        break;         
+                                        
 //                                    case Cadena:
 //                                        clasificacion = "Cadena";
 //                                        TokenClasificado = true;
@@ -123,7 +149,7 @@ public class Analisis {
                                         TokenClasificado = true;
                                         break;
                                     case Nombre_Archivo:
-
+                                            clasificacion = "Identificador";
                                         if (Seccion_variables) {
                                             boolean esta = false;
 
@@ -141,7 +167,7 @@ public class Analisis {
                                             if (esta == false) {
                                                 variables.add(token.trim());
                                                 ID = true;
-                                                clasificacion = "Identificador";
+                                                
                                                 PrimerToken = true;
                                                 TokenClasificado = true;
                                                 break;
@@ -241,9 +267,11 @@ public class Analisis {
 
                     }
                     if (clasificacion.length() > 1) {
-                        LineaProcesada.add(token);
+                      LineaProcesada.add(clasificacion);
+                      //  LineaProcesada.add(token);
                     } else {
-                        LineaProcesada.add(clasificacion);
+                         LineaProcesada.add(token);
+                      //  LineaProcesada.add(clasificacion);
                     }
                     if (cuenta == 0) {
                         Expresion = Expresion + token;
@@ -254,6 +282,25 @@ public class Analisis {
                     cuenta++;
                 }
                 
+                if (get) {
+                     
+                    Respuesta = sintax.procesa_get(LineaProcesada);
+                    get=false;
+                }
+                if(put){
+                    falla = sintax.procesa_put_integer(LineaProcesada);
+                    put=false;
+                }
+                if(skip){
+                    falla = sintax.procesa_skip_line(LineaProcesada);
+                    skip = false;
+                }
+                if(asignacion){
+                    falla = sintax.procesa_definir_varible(LineaProcesada);
+                    asignacion = false;
+                }
+                    
+                    
 
                 //En esta sección vamos a validar declaraciones multilínea          
                 if (PrimerToken && comaLinea) { //es un identificador, o palabra reserveda y no lleva coma
@@ -556,6 +603,13 @@ public class Analisis {
                             case final_linea:
                                 encontrado = true;
                                 break;
+                            case Asignacion:
+                                System.out.println(" se esta asignando " + TxtLinea);
+                                encontrado = true;
+                                break;
+                            
+                            
+                            
                             case Reservado:
                                 if (TxtLinea.toUpperCase().contains("END")) {
                                     encontrado = true;
@@ -580,70 +634,6 @@ public class Analisis {
             }
         }
 
-        return reporte + Respuesta;
+        return  reporte + Respuesta;
     }
-
-    public int valida_errores(String nomArchivo) {
-        System.out.print("\n VARIABLES: ");
-        for (int i = 0; i < variables.size(); i++) {
-            System.out.print(variables.get(i) + " | ");
-
-        }
-        System.out.print("\n ETIQUETAS: ");
-        for (int i = 0; i < etiquetas.size(); i++) {
-            System.out.print(etiquetas.get(i) + " | ");
-
-        }
-        System.out.print("\n");
-        if (cuenta_errores > 0) {
-            System.err.println("\n\t !!!!!!!!\033[31m Se encontraron " + cuenta_errores + " Errores \033[32m!!!!!!!!!!!!\n\n\u001B[0m");
-            String directoryName = System.getProperty("user.dir");
-            System.out.println("\033[33m !!!Es necesario que revise el archivo " + nomArchivo + "-errores.txt");
-            System.out.println("\n También puede ver el Log de la herramienta llamado Hada_log.txt, ambos en la ruta: " + directoryName);
-
-        } else {
-            System.err.println("\n\t\033[32m !!!!!!!! No see encontraron Errores !!!!!!!!!!!!\n\n\u001B[0m");
-        }
-        return cuenta_errores;
-    } //se revisa cuantos errores se han originado
-
-    String palabras_reservadas() {
-        String resultado = "";
-
-        if (procedure > 1) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(17) + procedure + "] veces");
-        }
-        if (begin > 1) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(18) + begin + "] veces");
-        }
-        if (end > 1) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(19) + end + "] veces");
-        }
-        if (procedure == 0) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(20));
-        }
-        if (begin == 0) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(21));
-        }
-        if (end == 0) {
-            cuenta_errores++;
-            resultado = (resultado + error.Asigna_Error(22));
-        }
-        return resultado;
-    } // busca las palabras obligatorias en el texto
-
-    public String ada() {
-        String mensaje = "";
-        if (ada > 0) {
-            mensaje = "\n" + No_soportada + "] ¤{Advertencia instrucción no soportada por esta versión}¤";
-        }
-        ada = 0;
-        No_soportada = "";
-        return mensaje;
-    } // Valida palabras reservadas de ADA que no estén en HADA
 }

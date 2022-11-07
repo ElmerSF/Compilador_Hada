@@ -5,10 +5,9 @@
         <group>
             <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/Analisis.java</file>
             <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/TabladeExpresiones.java</file>
-            <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/HADA.java</file>
-            <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/Read_Archivo.java</file>
+            <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/Sintaxis.java</file>
             <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/TabladeSimbolos.java</file>
-            <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/Errores.java</file>
+            <file>file:/C:/Users/elmer/OneDrive/Documents/NetBeansProjects/HADA/src/hada/AnalizarSintaxis.java</file>
         </group>
     </open-files>
 </project-private>

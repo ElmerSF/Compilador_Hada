@@ -64,7 +64,9 @@ public static void main(String[] args) throws InterruptedException {
             
             
                         if (continuar){
-                                    
+                                    System.out.println("--------------------------------------------------------------------------------------------------------------");
+                                    System.out.println("\t Para una mejor experiencia visual (a colores) favor activar en la ruta:\n \tEquipo\\HKEY_CURRENT_USER\\Console la clave VirtualTerminalLevel con valor 1" );
+                                     System.out.println("--------------------------------------------------------------------------------------------------------------\n");
                                     System.out.println("Estamos en la ubicación " + directoryName);
                                     log_Aplicacion.escribe_log(1, directoryName);
                                     log_Aplicacion.escribe_log(3, Archivo);
