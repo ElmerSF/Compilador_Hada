@@ -17,13 +17,14 @@ public class TabladeSimbolos {
 
         Procedure("PROCEDURE|procedure|Procedure"),
         Is("IS|is"),
-        tiposVaribles("INTERGER|FLOAT|CHARACTER"),
+        
         Begin("BEGIN|Begin|begin"),
         End("END|end|End"),
          GET("GET|get"),
          PUT("PUT|put"),
          SKIP_LINE("SKIP_LINE|skip_line"),
        comentario("[--]."),
+       tiposVaribles("INTEGER|FLOAT|CHARACTER"),
         Reservada_Hada("" + Reservadas_ha),
         Reservada_Ada("" + Reservadas),
        
@@ -42,6 +43,7 @@ public class TabladeSimbolos {
         Etiqueta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,})[(;)]{1,}"),
         Etiqueta_correcta("([<<]{1,})([A-Z|a-z]{1,}[a-z|A-Z|0-9|_]*{0,}[a-z|A-Z|0-9]{1,})([>>]{1,})"),
         asignacion("[:=]{1,}"),
+        vacio("[' ']"),
         Agrupacion("(\\(|\\)|\\{|\\}|\\[|\\])");
 
         public final String patron;

@@ -61,6 +61,13 @@ public class Errores {
             case 45: Error = ("\n\t>!!!Error [" +codigo+"] Una etiqueta no puede terminar con \"_\" como identificador " ); break;
              case 46: Error = ("\n\t>!!!Error [" +codigo+"] No puede llevar espacios en los << de apertura " ); break;
              case 47: Error = ("\n\t>!!!Error [" +codigo+"] No puede llevar espacios en los >> de cierre " ); break;
+             
+             //errores del tipo 50 errores de sintaxis en definición de variables
+             case 50: Error = ("\n\t>!!!Error [" +codigo+"] En la definición de variable, el identificador, se recibió " ); break;
+             case 51: Error = ("\n\t>!!!Error [" +codigo+"] En la definición de variable, el simbolo de Asignación \":\" se recibió " ); break;
+             case 52: Error = ("\n\t>!!!Error [" +codigo+"] En la definición de variable, el tipo de variable INTEGER, FLOAT, CHARACTER, se recibió " ); break;
+             case 53: Error = ("\n\t>!!!Error [" +codigo+"] En la definición de variable, el fin de línea \";\" se recibió " ); break;
+             
             default:
                 Error = (">!!!Error [" +codigo+"] No ha sido clasificado" );
                 throw new AssertionError();

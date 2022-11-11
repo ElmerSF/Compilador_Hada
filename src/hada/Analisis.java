@@ -15,20 +15,24 @@ public class Analisis {
     String reporte = "";
     Read_Archivo txt = new Read_Archivo();
     Errores error = new Errores();
-    String falla = "", No_soportada = "", identificadores = "", elemento = "", LineaAnterior = "";
+    String falla = "", No_soportada = "", identificadores = "", elemento = "", LineaAnterior = "", falla_sintaxis = "";
     int cuenta_errores = 0, procedure = 0, begin = 0, end = 0, ada = 0, ContadorLineas = 0;
     boolean multilinea = false, PrimerToken = false, comaLinea = true;
     ArrayList<String> variables = new ArrayList<String>();
     ArrayList<String> etiquetas = new ArrayList<String>();
     boolean Seccion_variables = false, Seccion_comandos = false, end_programa = false, get = false;
-    static String delimitador = " <>(){};";
+    static String delimitador = " <>(){};,";
+    boolean asignacion =false, put = false, skip = false;
     String nomArchivo;
+    Sintaxis sintax = new Sintaxis();
+    ArrayList<String> copiaLineaProcesada = new ArrayList<String>();
 
     public String AnalizaTexto(String TxtLinea) {
 //donde iremos guardando el resultado del análisis
         ArrayList<String> LineaProcesada = new ArrayList<String>();
+        
 
-        StringTokenizer segmentos = new StringTokenizer(TxtLinea);
+        StringTokenizer segmentos = new StringTokenizer(TxtLinea, delimitador, true);
         int cuenta = 0;
         String Expresion = new String();
         boolean TokenClasificado = false, comentario = false, ID = false;
@@ -37,16 +41,17 @@ public class Analisis {
 
         if (TxtLinea.contains(";")) {
             comaLinea = false;
+            
             if (multilinea) {
                 comaLinea = true;
             }
         } else {
             comaLinea = true;
         }
-        if (TxtLinea.toUpperCase().contains("GET")||(TxtLinea.toUpperCase().contains("SKIP_LINE"))||(TxtLinea.toUpperCase().contains(":="))||(TxtLinea.toUpperCase().contains("PUT"))){
-            AnalizarSintaxis sintaxis = new AnalizarSintaxis();
-            falla = sintaxis.AnalizaTexto(TxtLinea);
-        }
+//        if (TxtLinea.toUpperCase().contains("GET")||(TxtLinea.toUpperCase().contains("SKIP_LINE"))||(TxtLinea.toUpperCase().contains(":="))||(TxtLinea.toUpperCase().contains("PUT"))){
+//            AnalizarSintaxis sintaxis = new AnalizarSintaxis();
+//            falla = sintaxis.AnalizaTexto(TxtLinea);
+//        }
         if (TxtLinea.isEmpty()) {
             Respuesta = " ";
         } else {
@@ -94,10 +99,36 @@ public class Analisis {
 //                                        clasificacion = "Cadena";
 //                                        TokenClasificado = true;
 //                                        break;
+                                        
+                                    case asignacion:
+                                        clasificacion = ":";
+                                        asignacion = true;
+                                        TokenClasificado = true;
+                                        break;    
+                                    case expresion:
+                                        clasificacion = "expresion";
+                                        TokenClasificado = true;
+                                        break;    
+                                        
+                                    case PUT:
+                                        clasificacion = "PUT";
+                                        put = true;
+                                        TokenClasificado = true;
+                                        break;   
+                                        
+                                    case SKIP_LINE:
+                                        clasificacion = "SKIP_LINE";
+                                        skip = true;
+                                        TokenClasificado = true;
+                                        break;     
                                     case Procedure:
                                         clasificacion = "Procedure";
                                         comaLinea = false;
                                         procedure++;
+                                        TokenClasificado = true;
+                                        break;
+                                    case vacio:
+                                        clasificacion = "vacio";
                                         TokenClasificado = true;
                                         break;
                                     case Is:
@@ -241,9 +272,15 @@ public class Analisis {
 
                     }
                     if (clasificacion.length() > 1) {
-                        LineaProcesada.add(token);
+                       if (clasificacion.equals("vacio")){
+                           
+                       }else{
+                           LineaProcesada.add(clasificacion);
+                       }
+                           
+                        
                     } else {
-                        LineaProcesada.add(clasificacion);
+                        LineaProcesada.add(token);
                     }
                     if (cuenta == 0) {
                         Expresion = Expresion + token;
@@ -254,12 +291,38 @@ public class Analisis {
                     cuenta++;
                 }
                 
+//                if (get) {
+//                     
+//                    Respuesta = sintax.procesa_get(LineaProcesada);
+//                    get=false;
+//                }
+//                if(put){
+//                    falla = sintax.procesa_put_integer(LineaProcesada);
+//                    put=false;
+//                }
+//                if(skip){
+//                    falla = sintax.procesa_skip_line(LineaProcesada);
+//                    skip = false;
+//                }
+//                if(asignacion){
+//                    falla_sintaxis = sintax.procesa_definir_varible(LineaProcesada);
+//                    if (falla_sintaxis.length()>1){
+//                        cuenta_errores++;
+//                        falla_sintaxis = falla_sintaxis + ". En la linea: ["+TxtLinea+"] ";
+//                    }
+//                        
+//                    asignacion = false;
+//                }
 
                 //En esta sección vamos a validar declaraciones multilínea          
                 if (PrimerToken && comaLinea) { //es un identificador, o palabra reserveda y no lleva coma
                     multilinea = true;
                     ContadorLineas++;
                     LineaAnterior = LineaAnterior + TxtLinea + "\n";
+                    if (!LineaProcesada.isEmpty()){
+                        copiaLineaProcesada.add(LineaProcesada.get(0));
+                    }
+                    
 
                     if (TxtLinea.contains(";")) {
                         if (ContadorLineas > 5) {
@@ -269,11 +332,21 @@ public class Analisis {
                             LineaAnterior = "";
                             multilinea = false;
                             ContadorLineas = 0;
+                            copiaLineaProcesada.clear();
                         } else {
                             // System.out.println("\n multilinea correcto " + LineaAnterior);
                             LineaAnterior = "";
                             multilinea = false;
                             ContadorLineas = 0;
+                            if (!copiaLineaProcesada.isEmpty()){
+                                LineaProcesada.clear();
+                                for (int i = 0; i < copiaLineaProcesada.size(); i++) {
+                                LineaProcesada.add(copiaLineaProcesada.get(i));
+                                    System.out.println(""+LineaProcesada.get(i));
+                            }
+                            copiaLineaProcesada.clear();
+                                
+                            }
                         }
 
                     }
@@ -402,7 +475,7 @@ public class Analisis {
                                 Respuesta = (falla = error.Asigna_Error(25) + " [" + TxtLinea + "] ");
                                 encontrado = true;
                                 break;
-                            case Definicion_variables2, Definicion_variables11:
+                            case Definicion_variables2://, Definicion_variables11:
                                 cuenta_errores++;
                                 Respuesta = (falla = error.Asigna_Error(26) + " [" + TxtLinea + "] ");
                                 encontrado = true;
@@ -577,10 +650,33 @@ public class Analisis {
                     Respuesta = (reporte + Respuesta + " ");
 
                 }
+                if (get) {
+                     
+                    Respuesta = sintax.procesa_get(LineaProcesada);
+                    get=false;
+                }
+                if(put){
+                    falla = sintax.procesa_put_integer(LineaProcesada);
+                    put=false;
+                }
+                if(skip){
+                    falla = sintax.procesa_skip_line(LineaProcesada);
+                    skip = false;
+                }
+//                if((asignacion)&&(!multilinea)){
+//                    falla_sintaxis = sintax.procesa_definir_varible(LineaProcesada);
+//                    if (falla_sintaxis.length()>1){
+//                        cuenta_errores++;
+//                        falla_sintaxis = falla_sintaxis + ". En la linea: ["+TxtLinea+"] ";
+//                    }
+//                        
+//                    asignacion = false;
+//                }
+                
             }
         }
 
-        return reporte + Respuesta;
+        return reporte + Respuesta + falla_sintaxis;
     }
 
     public int valida_errores(String nomArchivo) {

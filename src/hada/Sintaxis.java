@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class Sintaxis {
     Errores error = new Errores();
-    public String Sintaxis_definir_variable [] = {"Identificador","Asignacion","Asignacion","expresion"};
+    public String Sintaxis_definir_variable [] = {"Identificador",":","tiposVariables","finlinea"};
      public String Sintaxis_get [] = {"GET","(","tiposVariables",")"};
      public String Sintaxis_skip_line [] = {"SKIP_LINE"};
      public String Sintaxis_put_integer [] = {"PUT","(","Var_integer",")"};
@@ -27,16 +27,14 @@ public class Sintaxis {
         for (int i = 0; i < Sintaxis_definir_variable.length; i++) {
             //String string = Sintaxis_definir_variable[i];
              if (datosxProcesar.size()<i+1){
-                resultado =("Se omite --> "+Sintaxis_definir_variable[i]+" <--");
+               // resultado =("Se omite --> "+Sintaxis_definir_variable[i]+" <--");
                  System.out.println(resultado);
             }else{
                 if (datosxProcesar.get(i).trim().equals(Sintaxis_definir_variable[i].trim()))
                 {}
                 else
                 {
-                    resultado =("\nLa definición de variable presenta un error en posición "+(i+1)+" en el dato ["
-                            +datosxProcesar.get(i)
-                            +"] el dato que se esperaba  es --> "+ Sintaxis_definir_variable[i] +" <--");
+                    resultado = resultado + error.Asigna_Error(i+50) +" ["+ datosxProcesar.get(i)+"] se esperaba un dato valido de " + Sintaxis_definir_variable[i];
                     System.out.println(resultado);
                     
                 }

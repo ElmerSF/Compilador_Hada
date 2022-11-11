@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+
+
+
+uSE     ADA.Text_IO,    Ada.Integer_Text_IO,    ADA.Float_Text_IO    ;  
+WIth    Ada.Text_IO  ,  Ada.Integer_Text_IO  ,  Ada.Float_Text_IO    ;  
+-- Vamos a validar procedure; que solo aparezca una vez valida
+
+      PROCEdure        TAREA1                      xxx
+      PROCEDURE 1Tarea1_        aS           
+      PROCEDURE Tarea1_        aS           
+      PROCEDURE Tarea1        aS           
+      PROCEDURE Tarea1        iS           ;
+      
+   -- La siguiente es correcta
+      PROCEDURE Tarea1        iS 
+-- Viene la validsacion de identificadores;    mucha suerte	
+   1Max_Anos_Entera_Mas    :   integer;
+   $Max_Anos_Entera_Mas    :   integer;   
+   Max-Anos_Entera_Mas2    :   integer;   
+   Max_Anos-Entera_Mas2    :   integer;   
+   Max_Anos_Entera-Mas2    :   integer;   
+   Max_Anos_Entera_Mas_    :   integer;   
+   Max_Anos_Entera_Mas20    :   integer;      
+   Max_Anos_Entera__Mas    ::   integer;   
+   Max_Anos_Entera_20    =   integer;   
+   Max_Anos_Entera_20    =   entera;   
+   Max_Anos_Entera_20    :   integers   ;
+   Max_Anos_Entera_20    :   integer
+   -- La siguiente es correcta
+   Max_Anos_Entera_20    :   integer;
+   Max_Anos    :   integer;   
+   -- una multilinea
+       Ano     
+       =   
+       integer
+       ; 
+   -- otro tipo de datos --
+       Respuesta   :      caracter       ;
+       Respuesta   :      character       ;
+   -- vamos con las comas guindando 
+,FACTOR1,FACTOR2,FACTOR3:FLOAT;
+       Factor1 Factor2,Factor3:           float      ;
+       Factor1, Factor2 Factor3:           float      ;
+       Factor1, Factor2, Factor3:           float      ;
+       Factor1, Factor2,, Factor3:           float      ;
+       Factor1, Factor2, Factor3 =           float      ;
+       Factor1, Factor2, Factor3 :           flotante      ;
+       Factor1, Factor2, Factor3 :           floatt      ;
+       Factor1, Factor2, Factor3 :           float      
+       -- La siguiente es correcta
+       Factor1,Factor2,Factor3:           float      ;	 
+
+-- Ahora vamos a validar BEGIN; que solo aparezca una vez valida	   
+
+       beginxyz
+
+       beGIN  ;   
+   beGIN
+     Vamos a validar que los comentarios no den error como esta linea
+     ***************************************************************** 
+  -- * Asumiendo tasas de inflacion anual de 7%, 8%, y 10%,          *  
+  -  * encontrar el factor por el cual cualquier moneda, tales como  *   
+   - * el franco, el dolar, la libra esterlina, el marco, el rublo,  *    
+  -- * el yen o el florin han sido devaluadas en 1, 2, ...., N anos. *     
+     *****************************************************************     
+     --     Inicio   del   procedure; ya pasamos BEGIN
+     No_procede :   float      ;
+    -- Esta linea tiene mas de 80 caracteres
+    null                                                                       ;      
+    -- esta es el unico comando valido del programa
+    null    ; 
+    -- Palabra reservada de ADA
+    deLAY 10;
+    End;     
+    end     oTRO_nOMBRE;                         
+    end     taREA1
+    end     taREA1;  
+    fin del programa    Tarea1
+
+    --     fin del programa    Tarea1 	
